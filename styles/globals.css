@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+div.container {
+    @apply bg-bg text-primaryText
+}
 
 ul.navbar {
     @apply list-none bg-bg text-primaryText 

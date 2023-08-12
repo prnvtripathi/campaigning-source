@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
                     <button className="btn-primary"><FaGithub size={24} /> GitHub</button>
                 </div>
             </div>
-            <div>
+            <div className='container'>
                 {children}
             </div>
         </>
