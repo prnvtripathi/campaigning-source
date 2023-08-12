@@ -1,9 +1,15 @@
+import Layout from "@/components/Layout"
+import Head from "next/head"
+
 const Home = () => {
   return (
     <>
-      <div>
+    <Head>
+      <title>Campaigning Source</title>
+    </Head>
+      <Layout>
         <h1>Home</h1>
-      </div>
+      </Layout>
     </>
   )
 }
