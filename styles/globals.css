@@ -4,15 +4,19 @@
 
 
 ul.navbar {
-    @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-6 rounded-xl
+    @apply list-none bg-bg text-primaryText 
+    flex flex-row justify-between items-center gap-3 
+    py-2 px-14 rounded-full
 }
 
 ul.navbar li {
-    @apply inline-block
+    @apply py-0.5 px-2
+    transition-all duration-300 ease-in-out
+    hover:rounded-3xl hover:px-4 hover:bg-gray-600
 }
 
 ul.navbar li a {
-    @apply text-primaryText font-semibold transition-colors
+    @apply text-primaryText text-lg
 }
 
 
