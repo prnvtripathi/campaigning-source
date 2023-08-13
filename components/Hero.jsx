@@ -10,7 +10,6 @@ import Link from 'next/link'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
-    display: 'swap',
     weights: [400, 500, 600, 700],
 })
 

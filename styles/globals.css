@@ -14,6 +14,11 @@ body {
     }
 }
 
+.input {
+    @apply border-black border-2 rounded-md text-primaryText;
+
+}
+
 ul.navbar {
     @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full;
 }
