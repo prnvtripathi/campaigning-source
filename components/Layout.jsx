@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
-import { FaGithub } from "react-icons/fa"
 import logo from "@/assets/logo.png"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
     return (
@@ -26,6 +26,7 @@ const Layout = ({ children }) => {
             <div className='container'>
                 {children}
             </div>
+            <Footer />
         </>
     )
 }
