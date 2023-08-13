@@ -8,8 +8,11 @@ const Hero = () => {
                         Let's Start
                     </div>
                 </div>
-                <div className="h-[8rem] p-2 flex items-center bg-blue-500 text-2xl rounded-lg">
+                <div className="h-[8rem] p-2 flex justify-between items-center bg-blue-500 text-2xl rounded-lg">
                     Business Development
+                    <div className="bg-bg py-2 px-3 rounded-full text-base hover:bg-gray-600 cursor-pointer">
+                        Let's Start
+                    </div>
                 </div>
             </div>
         </div>

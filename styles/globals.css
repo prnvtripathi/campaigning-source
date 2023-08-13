@@ -7,15 +7,11 @@ div.container {
 }
 
 ul.navbar {
-    @apply list-none bg-bg text-primaryText 
-    flex flex-row justify-between items-center gap-3 
-    py-2 px-14 rounded-full
+    @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full
 }
 
 ul.navbar li {
-    @apply py-0.5 px-2
-    transition-all duration-300 ease-in-out
-    hover:rounded-3xl hover:px-4 hover:bg-gray-600
+    @apply py-0.5 px-2 transition-all duration-300 ease-in-out hover:rounded-3xl hover:px-4 hover:bg-gray-600
 }
 
 ul.navbar li a {
@@ -24,7 +20,5 @@ ul.navbar li a {
 
 
 .btn-primary {
-    @apply bg-bg px-4 py-2 rounded-xl text-primaryText flex gap-2
-    transition duration-300 ease-in-out
-    hover:bg-primaryText hover:text-bg
+    @apply bg-bg px-4 py-2 rounded-xl text-primaryText flex gap-2 transition duration-300 ease-in-out hover:bg-primaryText hover:text-bg
 }
