@@ -23,7 +23,8 @@ const Layout = ({ children }) => {
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
                 <div>
-                    <button className="btn-primary"><FaGithub size={24} /> GitHub</button>
+                    <Link href="https://github.com/prnvtripathi/campaigning-source/"><button className="btn-primary"><FaGithub size={24} /> GitHub</button></Link>
+                    
                 </div>
             </div>
             <div className='container'>

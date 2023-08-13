@@ -11,9 +11,9 @@ const Home = () => {
       <title>Campaigning Source</title>
     </Head>
       <Layout>
-        <div className='w-[75%] ml-auto mr-auto'>
+        <div className='w-[80%] ml-auto mr-auto'>
           <div className="flex p-4 items-center justify-between">
-            <h2 className="text-3xl">Social Media Boost</h2>
+            <h2 className="text-3xl font-bold">Social Media Boost</h2>
             <ul className='flex justify-around items-center gap-3 bg-gray-500 py-1 px-4 rounded-md'>
               <li className='bg-blue-800 py-0.5 px-1 rounded-lg transition duration-200 hover:bg-slate-600'>
                 <Link className='flex gap-1 items-center' href='/'><AiOutlineLike />Likes</Link>
