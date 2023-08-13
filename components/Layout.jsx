@@ -6,7 +6,7 @@ import logo from "@/assets/logo.png"
 const Layout = ({ children }) => {
     return (
         <>
-            <div className='flex justify-between items-center px-6'>
+            <div className='flex justify-around items-center px-6 mb-4'>
                 <div className='p-4 '>
                     <Link href="/">
                         <Image
@@ -20,12 +20,8 @@ const Layout = ({ children }) => {
                 <ul className="navbar">
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/about">About</Link></li>
-                    <li><Link href="/contact">Contact</Link></li>
+                    <li><Link href="/contact">Contact Us</Link></li>
                 </ul>
-                <div>
-                    <Link href="https://github.com/prnvtripathi/campaigning-source/"><button className="btn-primary"><FaGithub size={24} /> GitHub</button></Link>
-                    
-                </div>
             </div>
             <div className='container'>
                 {children}

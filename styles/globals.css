@@ -2,28 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-div.container {
-    @apply bg-gradient-to-r from-slate-900 to-slate-700 text-primaryText
+body {
+    @apply bg-gradient-to-r from-neutral-300 to-stone-400 text-primaryText;
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
 }
 
 ul.navbar {
-    @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full
+    @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full;
 }
 
 ul.navbar li {
-    @apply py-0.5 px-2 transition-all duration-300 ease-in-out hover:rounded-3xl hover:px-4 hover:bg-gray-600
+    @apply py-0.5 px-2 transition-all duration-300 ease-in-out hover:rounded-3xl hover:px-4 hover:bg-gray-600;
 }
 
 ul.navbar li a {
-    @apply text-primaryText text-lg
+    @apply text-primaryText text-lg;
 }
 
 
 .btn-primary {
-    @apply bg-bg px-4 py-2 rounded-xl text-primaryText flex gap-2 transition duration-300 ease-in-out hover:bg-primaryText hover:text-bg
+    @apply bg-bg px-4 py-2 rounded-xl text-primaryText flex gap-2 transition duration-300 ease-in-out hover:bg-primaryText hover:text-bg;
 }
 
 img {
-    @apply scale-95 transition-all ease-in-out duration-300
-    hover:scale-100
+    @apply scale-95 transition-all ease-in-out duration-300 hover:scale-100;
+}
+
+html::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, rgb(122, 153, 217)),
+            color-stop(0.72, rgb(73, 125, 189)),
+            color-stop(0.86, rgb(28, 58, 148)));
 }
