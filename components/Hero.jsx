@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center bg-gradient-to-r from-fuchsia-600 to-purple-600 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-3">Political Election Promotion</h2></span>
                     <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
-                    <Link href='/'>
+                    <Link href='/politics'>
                         <div className="bg-bg py-2 px-3 rounded-full text-base font-normal hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -36,7 +36,7 @@ const Hero = () => {
                     </Link>
                 </div>
                 <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-gradient-to-r from-emerald-500 to-emerald-900 md:text-4xl font-bold rounded-lg">
-                    <span className={montserrat.className}><h2 className="ml-2">Website Development<br /> & Design</h2></span>
+                    <span className={montserrat.className}><h2 className="ml-2">Website & Application<br />Development</h2></span>
                     <Image src={website} alt="website" width={175} height={175} />
                     <Link href="/">
                         <div className="bg-bg py-2 px-3 rounded-full font-normal text-base hover:bg-gray-600">
@@ -68,7 +68,7 @@ const Hero = () => {
                         Whatsapp Broadcast</span>
                     <Image src={messaging} alt="messaging" width={190} height={190} />
                     <Link href="/">
-                        <div className="bg-bg py-2 px-3 rounded-full font-normal text-base hover:bg-gray-600">
+                        <div className="bg-bg py-2 px-3 rounded-full mb-2 font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
                     </Link>
