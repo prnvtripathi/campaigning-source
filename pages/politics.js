@@ -3,9 +3,11 @@ import Head from "next/head"
 import { Montserrat } from "next/font/google"
 import { FaSms, FaVoteYea, FaVideo, FaUsers, FaFire, FaFlag, FaChessRook, FaDoorOpen } from 'react-icons/fa'
 import { GoFileMedia } from 'react-icons/go'
-import {GiMagnifyingGlass} from 'react-icons/gi'
+import { GiMagnifyingGlass } from 'react-icons/gi'
 import { RiAdvertisementFill } from 'react-icons/ri'
 import { MdVerified } from 'react-icons/md'
+import Carousel from "@/components/Carousel"
+import Link from "next/link"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -94,18 +96,30 @@ const Politics = () => {
                 <title>Politics | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-lg my-2 p-4">
+                <div className="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-lg my-2 p-4 flex flex-col justify-center items-center">
                     <h1 className="text-3xl font-semibold text-center my-2 py-2"><span className={montserrat.className}>Politics Election Promotion</span></h1>
+                    <Link href="/contact" className="my-3">
+                        <button className="btn-primary text-xl">Let's Go</button>
+                    </Link>
                     <div className="flex flex-wrap justify-center items-center">
                         {politicsData.map((data) => (
                             <div key={data.id} className="w-full md:w-1/2 lg:w-1/3 p-2">
                                 <div className="bg-gradient-to-r from-teal-200 to-teal-500 flex flex-col justify-center items-center text-black rounded-lg transition-all duration-200 ease-in-out p-4 scale-95 hover:scale-100">
                                     <span className="text-4xl mb-1">{data.logo}</span>
-                                    <h2 className="text-2xl font-semibold text-center"><span className={montserrat.className}>{data.title}</span></h2>
-                                    <p className="text-md font-medium text-center my-2 py-2"><span className={montserrat.className}>{data.content}</span></p>
+                                    <h2 className="text-2xl font-bold text-center"><span className={montserrat.className}>{data.title}</span></h2>
+                                    <p className="text-md  text-center my-2 py-2"><span className={montserrat.className}>{data.content}</span></p>
                                 </div>
                             </div>
                         ))}
+                    </div>
+                    <Link href="/contact" className="my-3">
+                        <button className="btn-primary text-xl">Let's Go</button>
+                    </Link>
+                </div>
+                <div className="bg-gradient-to-r from-emerald-500 to-teal-700 p-4 my-2 rounded-lg">
+                    <h2 className="text-4xl font-semibold text-center mt-5 bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text text-transparent">Examples</h2>
+                    <div>
+                        <Carousel />
                     </div>
                 </div>
             </Layout>
