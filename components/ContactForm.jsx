@@ -19,8 +19,10 @@ export const ContactForm = () => {
         emailjs.sendForm('service_pazplff', 'template_nez5obe', form.current, 'NkREpU3WwM0aYiRku')
             .then((result) => {
                 createAlert('Message Sent Successfully!');
+                console.log(result.text);
             }, (error) => {
                 createAlert('Message Sending Failed!, Try Again Later!');
+                console.log(error.text);
             });
     };
 
