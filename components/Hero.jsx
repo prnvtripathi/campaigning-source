@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center bg-[#EADBC8] md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-3">Political Election Promotion</h2></span>
                     <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
-                    <Link href='/politics'>
+                    <Link href='/services/politics'>
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText text-base font-normal hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#FFDBC3] md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}>Business<br /> Development</span>
                     <Image src={graph} alt="graph" width={190} height={190} />
-                    <Link href="/">
+                    <Link href="/services/business">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
