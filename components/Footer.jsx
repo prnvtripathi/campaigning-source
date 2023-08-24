@@ -6,7 +6,7 @@ const Footer = () => {
     const year = date.getFullYear()
 
     return (
-        <footer className="bg-gradient-to-r from-slate-500 to-slate-800 text-center rounded-md flex flex-col justify-around items-center">
+        <footer className="bg-[#e3e3e4] text-center rounded-md flex flex-col justify-around items-center">
             <div className="flex items-center text-3xl gap-4 mt-3 p-2">
                 <Link href="https://github.com/prnvtripathi/campaigning-source" className="transition-all ease-in-out duration-200 hover:text-gray-500 hover:scale-125"><FaGithub /></Link>
                 <Link href="/" className="transition-all ease-in-out duration-200 hover:text-blue-500 hover:scale-125"><FaTwitter /></Link>

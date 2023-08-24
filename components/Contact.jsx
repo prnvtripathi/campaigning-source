@@ -8,7 +8,7 @@ const montserrat = Montserrat({
 
 const Contact = () => {
     return (
-        <div className="bg-gradient-to-r from-fuchsia-500 to-pink-500 my-2 px-2 rounded-md">
+        <div className="bg-[#FFDBC3] my-2 px-2 rounded-md">
             <span className={montserrat.className}><h1 className="text-4xl font-bold text-center py-4">Contact Us</h1></span>
             <div className="flex justify-around items-center py-4">
                 <div className="outline p-2 rounded-md w-[25%]">

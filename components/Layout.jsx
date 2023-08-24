@@ -12,8 +12,8 @@ const Layout = ({ children }) => {
                         <Image
                             src={logo}
                             alt="logo"
-                            width={200}
-                            height={200}
+                            width={225}
+                            height={225}
                         />
                     </Link>
                 </div>

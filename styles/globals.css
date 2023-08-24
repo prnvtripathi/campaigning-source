@@ -24,7 +24,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    @apply bg-gradient-to-r from-neutral-300 to-stone-400 text-primaryText;
+    @apply text-primaryText;
+    background-color: #F8F0E5;
     width: 85%;
     margin: 0 auto;
 }
@@ -41,7 +42,7 @@ body {
 }
 
 ul.navbar {
-    @apply list-none bg-bg text-primaryText flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full;
+    @apply list-none bg-bg flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full;
 }
 
 ul.navbar li {
@@ -49,12 +50,12 @@ ul.navbar li {
 }
 
 ul.navbar li a {
-    @apply text-primaryText text-lg;
+    @apply text-secondaryText text-lg;
 }
 
 
 .btn-primary {
-    @apply bg-bg px-4 py-2 rounded-lg text-primaryText flex w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 ease-in-out hover:bg-primaryText hover:text-bg;
+    @apply bg-bg px-4 py-2 rounded-lg text-secondaryText flex w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 ease-in-out hover:bg-secondaryText hover:text-bg;
 }
 
 img {
