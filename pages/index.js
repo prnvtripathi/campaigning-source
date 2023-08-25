@@ -11,6 +11,10 @@ const Home = () => {
     <>
       <Head>
         <title>Campaigning Source</title>
+        <meta name="description" content="Campaigning Source" />
+        <meta name="keywords" content="Campaigning Source" />
+        <meta name="author" content="Campaigning Source" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <Layout>
         <SocialMedia />
