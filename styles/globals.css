@@ -70,12 +70,20 @@ label {
 
 input,
 textarea {
-    @apply outline outline-gray-500 rounded-md px-2 py-1 m-2 text-black;
+    @apply outline-none rounded-md px-2 py-1 m-2 text-black;
 }
 
 input:focus,
 textarea:focus {
-    @apply outline-none;
+    @apply outline-gray-500;
+}
+
+textarea {
+    @apply resize-none;
+}
+
+select {
+    @apply outline-none rounded-md px-2 py-1 m-2 text-black;
 }
 
 .alert {
