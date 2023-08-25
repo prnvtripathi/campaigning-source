@@ -1,0 +1,57 @@
+import { Montserrat } from "next/font/google";
+import aap from "@/assets/pastCustomers/aap.png"
+import bjp from "@/assets/pastCustomers/bjp.png"
+import inc from "@/assets/pastCustomers/inc.png"
+import rjd from "@/assets/pastCustomers/rjd.png"
+import aastha from "@/assets/pastCustomers/aastha.png"
+import fabnic from "@/assets/pastCustomers/fabnic.png"
+import Image from "next/image";
+
+const customers = [
+    {
+        id: 1,
+        img: aap,
+    },
+    {
+        id: 2,
+        img: bjp,
+    },
+    {
+        id: 3,
+        img: inc,
+    },
+    {
+        id: 4,
+        img: rjd,
+    },
+    {
+        id: 5,
+        img: aastha,
+    },
+    {
+        id: 6,
+        img: fabnic,
+    }
+]
+
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    weights: [400, 500, 600, 700]
+})
+
+const PastCustomers = () => {
+    return (
+        <div className="text-center bg-[#DAC0A3] rounded-md py-2 my-3">
+            <h1 className="text-4xl font-bold py-3"><span className={montserrat.className}>Past Customers</span></h1>
+            <div className="flex justify-evenly items-center py-3">
+                {customers.map((customer) => (
+                    <div key={customer.id}>
+                        <Image src={customer.img} alt="customer" className="w-40" />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default PastCustomers;
