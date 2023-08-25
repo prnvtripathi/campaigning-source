@@ -7,6 +7,7 @@ import social from "@/assets/social.png"
 import Image from 'next/image'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
+import Offer from './Offer'
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -35,9 +36,8 @@ const Hero = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#FFDBC3] md:text-4xl font-bold rounded-lg">
-                    <span className={montserrat.className}><h2 className="ml-2">Prices and Offers</h2></span>
-                    
+                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#FFDBC3] md:text-xl font-bold rounded-lg">
+                    <Offer />
                 </div>
                 <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center bg-[#DAC0A3] md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-2">Website &<br />Application Development</h2></span>

@@ -1,0 +1,66 @@
+import { useState, useEffect } from "react";
+import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+
+const offersList = [
+    {
+        id: 1,
+        title: "Get Graphics Designing for your Business",
+        price: "₹ 599",
+    },
+    {
+        id: 2,
+        title: "Website Development",
+        price: "₹ 9999",
+    },
+    {
+        id: 3,
+        title: "Get your Business on Google",
+        price: "₹ 999",
+    },
+    {
+        id: 4,
+        title: "Get your Business on Facebook",
+        price: "₹ 999",
+    },
+]
+
+const OfferBox = ({ offer }) => (
+    <div className="bg-transparent p-4 rounded-xl duration-300 hover:scale-105 md:m-6 m-2 border hover:bg-gradient-to-r from-violet-200 to-pink-200">
+        <h1 className="text-2xl font-bold"><span className="text-emerald-600">{offer.title}</span> at just <span className="text-red-600">{offer.price}</span></h1>
+    </div>
+);
+
+const Offer = () => {
+
+    const [current, setCurrent] = useState(0);
+    
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCurrent(prev => (prev + 1) % offersList.length);
+        }, 3000);
+        
+        return () => clearInterval(interval);
+    }, []);
+
+    const goToPrev = () => {
+        setCurrent(prev => (prev - 1 + offersList.length) % offersList.length);
+    }
+
+    const goToNext = () => {
+        setCurrent(prev => (prev + 1) % offersList.length);
+    }
+
+    return (
+        <div>
+            <div className="flex justify-between items-center">
+                <button onClick={goToPrev}><FaArrowCircleLeft /></button>
+                <div className="flex items-center">
+                    <OfferBox key={offersList[current].id} offer={offersList[current]} />
+                </div>
+                <button onClick={goToNext}><FaArrowCircleRight /></button>
+            </div>
+        </div>
+    )
+}
+
+export default Offer;

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+import Image from "next/image";
 import election1 from "@/assets/election/election1.png";
 import election2 from "@/assets/election/election2.png";
 import election3 from "@/assets/election/election3.png";
@@ -11,7 +12,6 @@ import election8 from "@/assets/election/election8.png";
 import election9 from "@/assets/election/election9.png";
 import election10 from "@/assets/election/election10.png";
 import election11 from "@/assets/election/election11.png";
-import Image from "next/image";
 
 const testimonials = [
     {
