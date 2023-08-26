@@ -60,6 +60,7 @@ ul.navbar li a {
 
 img {
     @apply scale-95 transition-all ease-in-out duration-300 hover:scale-100;
+    filter: drop-shadow(0 0 0.75rem #24242450);
 }
 
 
