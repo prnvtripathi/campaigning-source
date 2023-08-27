@@ -35,7 +35,7 @@ const Contact = () => {
             </Head>
             <Layout>
                 <div className="flex flex-col justify-center items-center">
-                    <h1 className="text-4xl font-bold mx-auto my-2">Contact Us</h1>
+                    <h1 className="title">Contact Us</h1>
                     <div className="flex justify-around items-center w-full my-3 bg-[#FFDBC3] py-5 rounded-lg">
                         <div className="outline p-2 rounded-md w-[35%]">
                             <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
