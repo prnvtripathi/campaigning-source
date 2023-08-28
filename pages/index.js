@@ -15,6 +15,7 @@ const Home = () => {
         <meta name="keywords" content="Campaigning Source" />
         <meta name="author" content="Campaigning Source" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="google-site-verification" content="wuImTDqbWJwqAK-DAqsRtO-vJP6fxbe5wDrnEFc29Lw" />
       </Head>
       <Layout>
         <SocialMedia />
