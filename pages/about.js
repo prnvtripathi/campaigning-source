@@ -8,6 +8,7 @@ import { GoGraph, GoFileMedia, GoBroadcast } from "react-icons/go"
 import { AiOutlineFundProjectionScreen } from "react-icons/ai"
 import { PiTelevisionSimpleLight } from "react-icons/pi"
 import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
+import user from "@/assets/user.png"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -89,6 +90,54 @@ const services = [
         icon: <FaTwitter />,
         title: "Twitter Trend Management",
         description: "Lead conversations and trends on Twitter, leveraging the platform's influence. Our Twitter trend management services are designed to boost your visibility."
+    }
+]
+
+const team = [
+    {
+        img: user,
+        name: "Vansh Tyagi",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Vanshika Gupta",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Tanishk Attri",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Tanishka Garg",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Umang Gupta",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Pranav Tripathi",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Sushant Sharma",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Shaily Bhati",
+        position: "Team Member"
+    },
+    {
+        img: user,
+        name: "Kajal Tyagi",
+        position: "Team Member"
     }
 ]
 
@@ -180,7 +229,19 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Our team */}
+                <div className="bg-gradient-to-r from-slate-300 to-slate-500 p-3 rounded-lg">
+                    <h2 className="title">Our Team</h2>
+                    <div className="flex flex-wrap justify-center items-center gap-2">
+                        {team.map((member, index) => (
+                            <div key={index}
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-1/4 text-center hover:scale-105 transition ease-in-out duration-200">
+                                <Image src={member.img} alt="member" className="rounded-full" width={100} height={100} />
+                                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                                <p className="text-center font-thin">{member.position}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
             </Layout>
         </>
     )
