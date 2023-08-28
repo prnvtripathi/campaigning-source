@@ -2,7 +2,6 @@ import Image from "next/image"
 import Link from "next/link"
 import logo from "@/assets/logo.png"
 import Footer from "./Footer"
-import Analytics from "@vercel/analytics/react"
 
 const Layout = ({ children }) => {
     return (
@@ -26,7 +25,6 @@ const Layout = ({ children }) => {
             </div>
             <div className='container'>
                 {children}
-                <Analytics />
             </div>
             <Footer />
         </>
