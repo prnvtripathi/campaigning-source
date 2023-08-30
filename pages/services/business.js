@@ -18,72 +18,84 @@ const businessData = [
     {
         id: 1,
         logo: <MdWeb />,
+        link: '/services/business',
         title: 'Website Development',
         content: 'We can provide you with website development for your business development. We can develop your website for your business campaign.'
     },
     {
         id: 2,
         logo: <FaMobile />,
+        link: '/services/business',
         title: 'App Development',
         content: 'We can provide you with app development for your business development. We can develop your app for your business campaign.'
     },
     {
         id: 3,
         logo: <GoFileMedia />,
+        link: '/services/business',
         title: 'Social Media Marketing',
         content: 'We can provide you with social media marketing for your business development. We can promote your business on social media.'
     },
     {
         id: 4,
         logo: <RiAdvertisementFill />,
+        link: '/services/business',
         title: 'Advertisements',
         content: 'We can provide you with advertisements for your business promotions. We can advertise your business on social media.'
     },
     {
         id: 5,
         logo: <MdCall />,
+        link: '/services/ivr',
         title: 'IVR Calls',
         content: 'We can provide you with IVR calls for your business management. We can send IVR calls to your customers'
     },
     {
         id: 6,
         logo: <MdSms />,
+        link: '/services/business',
         title: 'Broadcast Messages',
         content: 'We can provide you with broadcast messages for your business management. We can send broadcast messages to your customers.'
     },
     {
         id: 7,
         logo: <FaUsers />,
+        link: '/services/business',
         title: 'Bulk Calls',
         content: 'We can provide you with bulk calls for your business management. We can bulk calls to your customers.'
     },
     {
         id: 8,
         logo: <FaHeadphones />,
+        link: '/services/business',
         title: 'CRM',
         content: 'We can provide you with CRM for your business management. We can manage your CRM.'
     },
     {
         id: 9,
         logo: <GiClapperboard />,
+        link: '/services/business',
         title: 'Videos',
         content: 'We can provide you with videos for your business management. We can make videos for your business.'
     },
     {
         id: 10,
         logo: <GoGraph />,
+        link: '/services/business',
         title: 'Analytics',
         content: 'We can provide you with analytics for your business management. We can manage your analytics.'
     },
     {
         id: 11,
         logo: <AiOutlineShop />,
+        link: '/services/business',
         title: 'Sales Management',
         content: 'We can provide you with sales management for your business management. We can manage your sales.'
     },
     {
         id: 12,
         logo: <GiMagnifyingGlass />,
+        link: '/services/business',
         title: 'SEM & SEO',
         content: 'We can provide you with SEM & SEO for your business management. We can manage your SEM & SEO.'
     }
@@ -104,11 +116,14 @@ const Business = () => {
                     <div className="flex flex-wrap justify-center items-center">
                         {businessData.map((data) => (
                             <div key={data.id} className="w-full md:w-1/2 lg:w-1/3 p-2">
-                                <div className="bg-gradient-to-r from-teal-200 to-teal-500 flex flex-col justify-center items-center text-black rounded-lg transition-all duration-200 ease-in-out p-4 scale-95 hover:scale-100">
-                                    <span className="text-4xl mb-1">{data.logo}</span>
-                                    <h2 className="text-2xl font-bold text-center"><span className={montserrat.className}>{data.title}</span></h2>
-                                    <p className="text-md  text-center my-2 py-2"><span className={montserrat.className}>{data.content}</span></p>
-                                </div>
+                                <Link href={data.link}>
+                                    <div className="bg-gradient-to-r from-teal-200 to-teal-500 flex flex-col justify-center items-center text-black rounded-lg transition-all duration-200 ease-in-out p-4 scale-95 hover:scale-100">
+                                        <span className="text-4xl mb-1">{data.logo}</span>
+                                        <h2 className="text-2xl font-bold text-center"><span className={montserrat.className}>{data.title}</span></h2>
+                                        <p className="text-md  text-center my-2 py-2"><span className={montserrat.className}>{data.content}</span></p>
+                                    </div>
+                                </Link>
+
                             </div>
                         ))}
                     </div>
