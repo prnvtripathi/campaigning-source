@@ -71,7 +71,7 @@ const Hero = () => {
                         Broadcast SMS,<br />
                         Whatsapp Broadcast</span>
                     <Image src={messaging} alt="messaging" width={190} height={190} />
-                    <Link href="/services/ivr">
+                    <Link href="/services/default">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText mb-2 font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
