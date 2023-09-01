@@ -10,7 +10,7 @@ const IVR = () => {
                 <title>IVR Services | Campaigning Source</title>
             </Head>
             <Layout>
-                <div>
+                <div className='bg-[#CBC5C4] p-3 rounded-md'>
                     <h1 className="title">IVR Services</h1>
                     <div className='flex justify-around items-center'>
                         <p className='w-1/2 text-xl font-light'>
@@ -20,22 +20,23 @@ const IVR = () => {
                             touch-tone keypad selection and provides appropriate responses in the form of voice,
                             fax, callback, email and perhaps other media.
                         </p>
-                        <Image src={ivr} alt="IVR" width={360}/>
+                        <Image src={ivr} alt="IVR" width={400} height={400}/>
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-4 my-5'>
                     <h2 className='title'>Let's see how you're going to avail this service?</h2>
                     <ol className='flex flex-col justify-center items-start list-decimal outline outline-gray-500 rounded-lg py-3 px-8 w-[75%]'>
                         <li>First of all you need to upload an excel file of contacts.</li>
-                        <input type="file" name="contact-file" id="contact-file" className='my-2'/>
+                        <input type="file" name="contact-file" id="contact-file" className='my-2' required />
                         <li>Then, upload an excel file of all the forwarding contacts you have.</li>
-                        <input type="file" name="forwarding-file" id="forwarding-file" className='my-2'/>
+                        <input type="file" name="forwarding-file" id="forwarding-file" className='my-2' required />
                         <li>Now, upload an audio file of the recorded message you have.</li>
-                        <input type="file" name="audio-file" id="audio-file" className='my-2'/>
+                        <input type="file" name="audio-file" id="audio-file" className='my-2' required />
                         <li>Tell us your Whatsapp number.</li>
-                        <input type="text" name="whatsapp-number" id="whatsapp-number" className='my-2'/>
+                        <input type="text" name="whatsapp-number" id="whatsapp-number" className='my-2' required />
                         <li>Finally, upload an workflow chart in the form of pdf or image, of how these calls will work</li>
-                        <input type="file" name="workflow-file" id="workflow-file" className='my-2'/>
+                        <input type="file" name="workflow-file" id="workflow-file" className='my-2' required />
+                        <button className='btn-primary'>Submit</button>
                     </ol>
                 </div>
             </Layout>
