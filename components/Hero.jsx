@@ -42,7 +42,7 @@ const Hero = () => {
                 <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center bg-[#DAC0A3] md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-2">Website &<br />Application Development</h2></span>
                     <Image src={website} alt="website" width={175} height={175} />
-                    <Link href="/services/webdev">
+                    <Link href="/services/default2">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>

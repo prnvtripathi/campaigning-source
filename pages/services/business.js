@@ -18,14 +18,14 @@ const businessData = [
     {
         id: 1,
         logo: <MdWeb />,
-        link: '/services/business',
+        link: '/services/webdev',
         title: 'Website Development',
         content: 'We can provide you with website development for your business development. We can develop your website for your business campaign.'
     },
     {
         id: 2,
         logo: <FaMobile />,
-        link: '/services/business',
+        link: '/services/appdev',
         title: 'App Development',
         content: 'We can provide you with app development for your business development. We can develop your app for your business campaign.'
     },
@@ -53,14 +53,14 @@ const businessData = [
     {
         id: 6,
         logo: <MdSms />,
-        link: '/services/business',
+        link: '/services/bulksms',
         title: 'Broadcast Messages',
         content: 'We can provide you with broadcast messages for your business management. We can send broadcast messages to your customers.'
     },
     {
         id: 7,
         logo: <FaUsers />,
-        link: '/services/business',
+        link: '/services/bulkcall',
         title: 'Bulk Calls',
         content: 'We can provide you with bulk calls for your business management. We can bulk calls to your customers.'
     },
