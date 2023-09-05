@@ -6,18 +6,19 @@ import Footer from "./Footer"
 const Layout = ({ children }) => {
     return (
         <>
-            <div className="offers">
-                <h3>Boost your business in this festive season to the new heights. 🗻</h3>
-            </div>
-            <div className="content">
+            <div className="sticky top-0 left-0 right-0 bg-[#e3e3e4] z-10">
+                <div className="offers">
+                    <h3>Boost your business in this festive season to the new heights. 🗻</h3>
+                </div>
                 <div className='flex justify-around items-center px-6 mb-4'>
-                    <div className='p-4 '>
+                    <div>
                         <Link href="/">
                             <Image
                                 src={logo}
                                 alt="logo"
                                 width={225}
                                 height={225}
+                                className="p-2"
                             />
                         </Link>
                     </div>
@@ -31,6 +32,9 @@ const Layout = ({ children }) => {
                         <li><Link href="/contact">Internship</Link></li>
                     </ul>
                 </div>
+            </div>
+
+            <div className="content">
                 <div className='container'>
                     {children}
                 </div>
