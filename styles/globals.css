@@ -26,7 +26,11 @@ html::-webkit-scrollbar-thumb {
 body {
     @apply text-primaryText;
     background-color: #E3E3E4;
-    width: 85%;
+    margin: 0 auto;
+}
+
+.content {
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -41,23 +45,39 @@ body {
 
 }
 
-ul.navbar {
-    @apply list-none bg-bg flex flex-row justify-between items-center gap-3 py-2 px-14 rounded-full;
+.offers {
+    text-align: center;
+    background-color: #04216f;
+    color: #eee;
+    font-size: 1.3rem;
 }
 
-ul.navbar li {
-    @apply py-0.5 px-2 transition-all duration-300 ease-in-out hover:rounded-3xl hover:px-4 hover:bg-gray-600;
+ul.navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 ul.navbar li a {
-    @apply text-secondaryText text-lg;
+    color: #242424;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+ul.navbar li a:hover {
+    background-color: #a6a6a6;
+    border-radius: 22px;
 }
 
 
 .btn-primary {
-    @apply bg-bg px-4 py-2 rounded-lg text-secondaryText flex 
-    w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 
-    ease-in-out hover:bg-secondaryText hover:text-bg hover:scale-95
+    @apply bg-bg px-4 py-2 rounded-lg text-secondaryText flex w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 ease-in-out hover:bg-secondaryText hover:text-bg hover:scale-95
 }
 
 img {
