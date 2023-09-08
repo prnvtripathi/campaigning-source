@@ -92,8 +92,8 @@ label {
 }
 
 input,
-textarea {
-    @apply outline-none rounded-md px-2 py-1 m-2 text-black;
+textarea, select {
+    @apply outline-none rounded-md px-2 py-1 m-2 text-black bg-slate-200 mb-20
 }
 
 input:focus,
@@ -102,11 +102,12 @@ textarea:focus {
 }
 
 textarea {
-    @apply resize-none;
+    @apply resize-none w-[95%];
 }
 
-select {
-    @apply outline-none rounded-md px-2 py-1 m-2 text-black;
+.half {
+    width: 46%;
+    height: 3rem;
 }
 
 .title {
