@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <>
             <div className="grid grid-rows-5 gap-2 p-2 md:grid-rows-3 md:grid-cols-5 mx-auto">
-                <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center bg-[#EADBC8] md:text-4xl font-bold rounded-lg">
+                <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-3">Political Election Promotion</h2></span>
                     <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
                     <Link href='/services/politics'>
@@ -27,7 +27,7 @@ const Hero = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#FFDBC3] md:text-4xl font-bold rounded-lg">
+                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center text-white bg-blue-400 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}>Business<br /> Development</span>
                     <Image src={graph} alt="graph" width={190} height={190} />
                     <Link href="/services/business">
@@ -36,10 +36,10 @@ const Hero = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#FFDBC3] md:text-xl font-bold rounded-lg">
+                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-blue-200 md:text-xl font-bold rounded-lg">
                     <Offer />
                 </div>
-                <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center bg-[#DAC0A3] md:text-4xl font-bold rounded-lg">
+                <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center text-white bg-blue-500 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-2">Website &<br />Application Development</h2></span>
                     <Image src={website} alt="website" width={175} height={175} />
                     <Link href="/services/default2">
@@ -48,7 +48,7 @@ const Hero = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center bg-[#DAC0A3] md:text-2xl font-bold rounded-lg">
+                <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-2xl font-bold rounded-lg">
                     <span className={montserrat.className}>
                         <ul className="ml-4">
                             <li className="list-disc">Graphic Designing</li>
@@ -65,7 +65,7 @@ const Hero = () => {
                         </div>
                     </Link>
                 </div>
-                <div className="md:col-span-2 p-1 flex flex-wrap justify-around items-center bg-[#EADBC8] md:text-2xl font-bold rounded-lg">
+                <div className="md:col-span-2 p-1 flex flex-wrap justify-around items-center text-black bg-blue-200 md:text-2xl font-bold rounded-lg">
                     <span className={montserrat.className}>
                         IVR, Bulk Voice Calls<br />
                         Broadcast SMS,<br />

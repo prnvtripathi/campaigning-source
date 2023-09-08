@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
                 <div className="offers">
                     <h3>Boost your business in this festive season to new heights. 🗻</h3>
                 </div>
-                <div className='flex justify-around items-center bg-[#E3E3E4] px-6 mb-4 bg-opacity-80'>
+                <div className='flex justify-around items-center bg-white px-6 mb-4 bg-opacity-90'>
                     <div>
                         <Link href="/">
                             <Image

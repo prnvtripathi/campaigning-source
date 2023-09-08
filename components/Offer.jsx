@@ -25,7 +25,7 @@ const offersList = [
 ]
 
 const OfferBox = ({ offer }) => (
-    <div className="bg-transparent p-4 rounded-xl duration-300 hover:scale-105 md:m-6 m-2 border hover:bg-gradient-to-r from-violet-200 to-pink-200">
+    <div className=" p-4 rounded-xl duration-300 hover:scale-105 md:m-6 m-2 border text-gray-600 hover:bg-white hover:text-black">
         <h1 className="text-2xl font-bold"><span className="text-emerald-600">{offer.title}</span> at just <span className="text-red-600">{offer.price}</span></h1>
     </div>
 );
@@ -53,11 +53,11 @@ const Offer = () => {
     return (
         <div>
             <div className="flex justify-between items-center">
-                <button onClick={goToPrev}><FaArrowCircleLeft /></button>
+                <button onClick={goToPrev} className="hover:scale-110"><FaArrowCircleLeft /></button>
                 <div className="flex items-center">
                     <OfferBox key={offersList[current].id} offer={offersList[current]} />
                 </div>
-                <button onClick={goToNext}><FaArrowCircleRight /></button>
+                <button onClick={goToNext} className="hover:scale-110"><FaArrowCircleRight /></button>
             </div>
         </div>
     )

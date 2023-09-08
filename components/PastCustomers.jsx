@@ -41,7 +41,7 @@ const montserrat = Montserrat({
 
 const PastCustomers = () => {
     return (
-        <div className="text-center bg-[#DAC0A3] rounded-md py-2 my-3">
+        <div className="text-center bg-white rounded-md py-2 my-3 outline">
             <h1 className="title py-3"><span className={montserrat.className}>Our Collaborations</span></h1>
             <div className="flex justify-evenly items-center py-3">
                 {customers.map((customer) => (

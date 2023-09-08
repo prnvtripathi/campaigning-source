@@ -8,8 +8,8 @@ const montserrat = Montserrat({
 
 const Contact = () => {
     return (
-        <div className="bg-[#FFDBC3] my-2 px-2 rounded-md">
-            <span className={montserrat.className}><h1 className="title py-4">Contact Us</h1></span>
+        <div className="bg-blue-200 my-2 px-2 rounded-md">
+            <span className={montserrat.className}><h1 className="title py-4 text-black">Contact Us</h1></span>
             <div className="flex justify-around items-center py-4">
                 <div className="outline p-2 rounded-md w-[25%]">
                     <ContactForm />

@@ -15,14 +15,14 @@ const Default2 = () => {
             </Head>
             <Layout>
                 <div>
-                    <h1 className="title">Software Development</h1>
+                    <h1 className="title text-black">Software Development</h1>
                     <div className='grid grid-cols-5'>
                         <div className='col-span-3 row-span-2'>
                             <Image src={default2} alt="default2" width={720} />
                         </div>
                         <div className='col-span-2'>
                             <div className="flex flex-col gap-4 mb-6 p-4 rounded-md">
-                                <div className="flex flex-col justify-around items-center bg-[#F6F1F1]">
+                                <div className="flex flex-col justify-around items-center outline rounded-md">
                                     <h2 className='sub-title'>Web Development</h2>
                                     <div className='flex justify-around items-center'>
                                         <Image src={webdev} alt="web development" width={180} height={180} className='mt-2 mb-3' />
@@ -34,7 +34,7 @@ const Default2 = () => {
                                         Learn more
                                     </Link>
                                 </div>
-                                <div className="flex flex-col justify-around items-center bg-[#F6F1F1]">
+                                <div className="flex flex-col justify-around items-center outline rounded-md">
                                     <h2 className='sub-title'>App Development</h2>
                                     <div className='flex justify-around items-center'>
                                         <Image src={appdev} alt="app development" width={180} height={180} className='mt-2 mb-3' />
