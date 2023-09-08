@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import logo from "@/assets/logo.png";
-import Footer from "./Footer";
-import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
+import React, { useState } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import logo from "@/assets/logo.png"
+import Footer from "./Footer"
+import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 
 const Layout = ({ children }) => {
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
     return (
         <>
@@ -35,12 +35,16 @@ const Layout = ({ children }) => {
                                 <Link
                                     href="#"
                                     className="group flex items-center"
-                                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                    onMouseEnter={() => setIsDropdownOpen(true)}
+                                    onMouseLeave={() => setIsDropdownOpen(false)}
                                 >
                                     Services{isDropdownOpen ? <MdArrowDropUp size={28} /> : <MdArrowDropDown size={28} />}
                                 </Link>
                                 {isDropdownOpen && (
-                                    <div className="absolute top-10 right-0 bg-[#e2e2e2] shadow-lg transition ease-in-out duration-200">
+                                    <div className="absolute top-full right-0 bg-[#e2e2e2] shadow-lg transition ease-in-out duration-200"
+                                        onMouseEnter={() => setIsDropdownOpen(true)}
+                                        onMouseLeave={() => setIsDropdownOpen(false)}
+                                    >
                                         <ul className="p-2">
                                             <li className="min-w-max"><Link href="/services/politics">Political Election Promotion</Link></li>
                                             <li className="min-w-max"><Link href="/services/business">Business Development</Link></li>
@@ -65,7 +69,7 @@ const Layout = ({ children }) => {
                 <Footer />
             </div>
         </>
-    );
+    )
 }
 
-export default Layout;
+export default Layout
