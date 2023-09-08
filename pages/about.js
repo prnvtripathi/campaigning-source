@@ -148,11 +148,11 @@ const About = () => {
                 <title>About | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="bg-gradient-to-r from-amber-200 to-yellow-500 p-3 rounded-lg my-3">
-                    <h1 className="title">About Us</h1>
+                <div className="bg-blue-200 p-3 rounded-lg my-3">
+                    <h1 className="title text-black ">About Us</h1>
                     <div className="flex items-center justify-around">
                         <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto">
+                            <p className="w-3/4 mx-auto text-black">
                                 Welcome to <strong>Campaigning Source</strong>, your ultimate destination for
                                 comprehensive business development and election promotion solutions.
                                 Our mission is to propel businesses to unprecedented heights and
@@ -165,12 +165,12 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-amber-200 to-yellow-500 p-3 rounded-lg my-3">
-                    <h2 className="title">History</h2>
+                <div className="bg-blue-200 p-3 rounded-lg my-3">
+                    <h2 className="title text-black ">History</h2>
                     <div className="flex items-center justify-around">
                         <Image src={tiranga} alt="indian-flag" className="rounded-md" />
                         <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto">
+                            <p className="w-3/4 mx-auto text-black">
                                 <strong>Campaigning Source</strong> embarked on its journey with a singular vision:
                                 to bridge the gap between potential and success. Over time, we've evolved
                                 into a powerhouse of expertise, catering not only to business growth but also
@@ -181,8 +181,8 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-slate-300 to-slate-500 p-3 rounded-lg">
-                    <h2 className="title">Our Services</h2>
+                <div className="outline p-3 rounded-lg text-black">
+                    <h2 className="title text-black ">Our Services</h2>
                     <div className="flex flex-wrap justify-center items-center gap-2">
                         {services.map((service, index) => (
                             <div key={index}
@@ -195,12 +195,12 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-amber-200 to-yellow-500 p-3 rounded-lg my-3">
-                    <h2 className="title">Social Proof</h2>
+                <div className="bg-blue-200 p-3 rounded-lg my-3">
+                    <h2 className="title text-black ">Social Proof</h2>
                     <div className="flex items-center justify-around">
                         <Image src={tiranga} alt="indian-flag" className="rounded-md" />
                         <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto">
+                            <p className="w-3/4 mx-auto text-black">
                                 <strong>Campaigning Source's</strong> legacy is built on a foundation of
                                 successful collaborations and delighted clients. From small enterprises
                                 witnessing exponential growth to political leaders securing resounding
@@ -212,11 +212,11 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-amber-200 to-yellow-500 p-3 rounded-lg my-3">
-                    <h2 className="title">Join us in crafting success.</h2>
+                <div className="bg-blue-200 p-3 rounded-lg my-3">
+                    <h2 className="title text-black ">Join us in crafting success.</h2>
                     <div className="flex items-center justify-around">
                         <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto">
+                            <p className="w-3/4 mx-auto text-black">
                                 <strong>Campaigning Source's</strong> legacy is built on a foundation of
                                 successful collaborations and delighted clients. From small enterprises
                                 witnessing exponential growth to political leaders securing resounding
@@ -229,15 +229,15 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-slate-300 to-slate-500 p-3 rounded-lg">
-                    <h2 className="title">Our Team</h2>
+                <div className="outline p-3 rounded-lg mb-3">
+                    <h2 className="title text-black ">Our Team</h2>
                     <div className="flex flex-wrap justify-center items-center gap-2">
                         {team.map((member, index) => (
                             <div key={index}
                                 className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-1/4 text-center hover:scale-105 transition ease-in-out duration-200">
                                 <Image src={member.img} alt="member" className="rounded-full" width={100} height={100} />
-                                <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                                <p className="text-center font-thin">{member.position}</p>
+                                <h3 className="text-xl font-bold mb-2 text-black">{member.name}</h3>
+                                <p className="text-center font-thin text-black">{member.position}</p>
                             </div>
                         ))}
                     </div>
