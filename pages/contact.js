@@ -42,11 +42,11 @@ const Contact = () => {
                         <div className="p-3 w-3/4 mx-auto">
                             <form ref={form} onSubmit={sendEmail} className='flex flex-col'>
                                 <div>
-                                    <input type="text" name="user_name" placeholder='Your Name' className="half h-left" required />
-                                    <input type="email" name="user_email" placeholder='Your Email' className="half h-right" required />
+                                    <input type="text" name="user_name" placeholder='Your Name' className="input-form half h-left" required />
+                                    <input type="email" name="user_email" placeholder='Your Email' className="input-form half h-right" required />
                                 </div>
                                 <div>
-                                    <select name="service" required className="half h-left">
+                                    <select name="service" required className="input-form half h-left">
                                         <option value="None">{`<`}Select{`>`}</option>
                                         <option value="Campaigning">Campaigning</option>
                                         <option value="Social Media Marketing">Social Media Marketing</option>
@@ -60,9 +60,9 @@ const Contact = () => {
                                         <option value="Videography">Videography</option>
                                         <option value="Others">Others</option>
                                     </select>
-                                    <input type="text" name="purpose" placeholder='For? Like Company, Political Party etc.' className="half h-right" required />
+                                    <input type="text" name="purpose" placeholder='For? Like Company, Political Party etc.' className="input-form half h-right" required />
                                 </div>
-                                <textarea name="message" placeholder='Your Message' required />
+                                <textarea name="message" placeholder='Your Message' required className="input-form"/>
                                 <button
                                     className='bg-orange-500 px-4 py-2 w-1/3 rounded-full text-secondaryText mt-2 transition duration-200 ease-in-out hover:bg-secondaryText hover:text-bg hover:scale-95'>
                                     Submit

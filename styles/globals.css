@@ -91,8 +91,9 @@ label {
     @apply text-primaryText font-semibold;
 }
 
-input,
-textarea, select {
+input.input-form,
+textarea.input-form, 
+select.input-form {
     @apply outline-none rounded-md px-2 py-1 m-2 text-black bg-slate-200 mb-20
 }
 

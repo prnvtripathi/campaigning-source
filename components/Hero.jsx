@@ -59,7 +59,7 @@ const Hero = () => {
                         </ul>
                     </span>
                     <Image src={social} alt="social" width={180} height={180} />
-                    <Link href="/">
+                    <Link href="/services/graphics">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
