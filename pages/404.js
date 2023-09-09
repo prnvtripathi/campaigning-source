@@ -10,9 +10,9 @@ const Custom404 = () => {
             <Layout>
                 <div>
                     <div className="mb-3">
-                        <div class="bg-transparent">
-                            <div class="flex h-screen">
-                                <div class="m-auto text-center">
+                        <div className="bg-transparent">
+                            <div className="flex h-screen">
+                                <div className="m-auto text-center">
                                     <div>
                                         <svg width="631" height="379" viewBox="0 0 631 379" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0)">
@@ -189,11 +189,11 @@ const Custom404 = () => {
                                             </defs>
                                         </svg>
                                     </div>
-                                    <p class="text-sm md:text-base text-primaryText p-2 mb-4">The stuff you were looking for doesn't exist
+                                    <p className="text-sm md:text-base text-primaryText p-2 mb-4">The stuff you were looking for doesn't exist
                                     </p>
                                     <a
                                         href="/"
-                                        class="bg-bg text-secondaryText px-4 py-2 text-xl rounded-lg transition ease-in-out duration-200 hover:bg-transparent hover:text-primaryText hover:outline">
+                                        className="bg-bg text-secondaryText px-4 py-2 text-xl rounded-lg transition ease-in-out duration-200 hover:bg-transparent hover:text-primaryText hover:outline">
                                         Retry
                                     </a>
                                 </div>
