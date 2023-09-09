@@ -4,24 +4,24 @@ import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 const offersList = [
     {
         id: 1,
-        title: "Get Graphics Designing for your Business",
-        price: "₹ 599",
+        title: "Get trending on Twitter",
+        price: "as cheap as ₹ 999",
     },
-    {
-        id: 2,
-        title: "Website Development",
-        price: "₹ 9999",
-    },
-    {
-        id: 3,
-        title: "Get your Business on Google",
-        price: "₹ 999",
-    },
-    {
-        id: 4,
-        title: "Get your Business on Facebook",
-        price: "₹ 999",
-    },
+    // {
+    //     id: 2,
+    //     title: "Website Development",
+    //     price: "₹ 9999",
+    // },
+    // {
+    //     id: 3,
+    //     title: "Get your Business on Google",
+    //     price: "₹ 999",
+    // },
+    // {
+    //     id: 4,
+    //     title: "Get your Business on Facebook",
+    //     price: "₹ 999",
+    // },
 ]
 
 const OfferBox = ({ offer }) => (
