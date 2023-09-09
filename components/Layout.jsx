@@ -4,12 +4,14 @@ import Link from "next/link"
 import logo from "@/assets/logo.png"
 import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
+import Background from "./Background"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 
     return (
         <>
+            <Background />
             <div className="sticky top-0 left-0 right-0 z-10">
                 <div className="offers">
                     <h3>Boost your business in this festive season to new heights. 🗻</h3>

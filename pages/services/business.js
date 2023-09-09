@@ -108,8 +108,8 @@ const Business = () => {
                 <title>Business | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-lg my-2 p-4 flex flex-col justify-center items-center">
-                    <h1 className="text-3xl font-semibold text-center my-2 py-2 text-secondaryText"><span className={montserrat.className}>Business Development</span></h1>
+                <div className="bg-transparent outline rounded-lg my-2 p-4 flex flex-col justify-center items-center">
+                    <h1 className="text-4xl font-bold text-center my-2 py-2 text-black"><span className={montserrat.className}>Business Development</span></h1>
                     <Link href="/contact" className="my-3">
                         <button className="btn-primary text-xl">Let's Go</button>
                     </Link>

@@ -108,8 +108,8 @@ const Politics = () => {
                 <title>Politics | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="bg-gradient-to-r from-blue-800 to-indigo-900 rounded-lg my-2 p-4 flex flex-col justify-center items-center">
-                    <h1 className="text-3xl font-semibold text-center my-2 py-2 text-secondaryText"><span className={montserrat.className}>Politics Election Promotion</span></h1>
+                <div className="bg-transparent outline rounded-lg my-2 p-4 flex flex-col justify-center items-center">
+                    <h1 className="title text-black"><span className={montserrat.className}>Politics Election Promotion</span></h1>
                     <Link href="/contact" className="my-3">
                         <button className="btn-primary text-xl">Let's Go</button>
                     </Link>
@@ -131,8 +131,8 @@ const Politics = () => {
                         <button className="btn-primary text-xl">Let's Go</button>
                     </Link>
                 </div>
-                <div className="bg-gradient-to-r from-emerald-500 to-teal-700 p-4 my-2 rounded-lg">
-                    <h2 className="text-4xl font-semibold text-center mt-5 bg-gradient-to-r from-violet-200 to-pink-200 bg-clip-text text-transparent">Examples</h2>
+                <div className="bg-blue-200 bg-opacity-60 outline p-4 my-2 rounded-lg">
+                    <h2 className="title text-black">Examples</h2>
                     <div>
                         <Carousel />
                     </div>

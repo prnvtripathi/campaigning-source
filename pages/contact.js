@@ -78,17 +78,17 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="flex flex-col justify-center items-center gap-3">
-                        <div className="outline bg-blue-200 rounded px-3 w-1/2 h-1/4">
+                        <div className="outline bg-blue-200 bg-opacity-40 rounded px-3 w-1/2 h-1/4">
                             <h1 className="text-xl text-black mb-5">Address:</h1>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.87140791622!2d77.44511047522582!3d28.63361588403194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cee3d4e3485ed%3A0xe0fe1689b57c7d2e!2sABESIT%20GROUP%20OF%20INSTITUTIONS!5e0!3m2!1sen!2sin!4v1691946892434!5m2!1sen!2sin"
                                 width="315" height="100" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="outline outline-black my-2 rounded-md"></iframe>
                         </div>
-                        <div className="outline outline-orange-300 bg-orange-100 rounded py-3 w-1/2 px-3 h-1/4">
+                        <div className="outline outline-orange-300 bg-orange-100 bg-opacity-40 rounded py-3 w-1/2 px-3 h-1/4">
                             <h1 className="text-xl text-black mb-5">Phone:</h1>
                             <p className="text-gray-600 mb-3">Assistance Hours:<br /> Monday - Friday, 9AM to 5PM</p>
                             <p className="text-black">+91 9876543210</p>
                         </div>
-                        <div className="outline outline-green-600 bg-green-200 rounded py-3 w-1/2 px-3 h-1/4">
+                        <div className="outline outline-green-600 bg-green-200 bg-opacity-40 rounded py-3 w-1/2 px-3 h-1/4">
                             <h1 className="text-xl text-black mb-5">Email:</h1>
                             <p className="text-gray-600 mb-3">Our team will get back to you in 24 business hours</p>
                             <Link href="mailto:info@campaigningsource.com" className="text-black underline">info@campaigningsource.com</Link>
