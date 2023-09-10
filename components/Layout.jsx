@@ -52,6 +52,7 @@ const Layout = ({ children }) => {
                                             <li className="min-w-max"><Link href="/services/business">Business Development</Link></li>
                                             <li className="min-w-max"><Link href="/services/default2">Website & Application Development</Link></li>
                                             <li className="min-w-max"><Link href="/services/default">IVR, Bulk SMS, Whatsapp Broadcasts</Link></li>
+                                            <li className="min-w-max"><Link href="/services/graphics">Graphic Designing</Link></li>
                                         </ul>
                                     </div>
                                 )}

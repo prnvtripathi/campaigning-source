@@ -6,6 +6,71 @@ import appdev from '@/assets/services/appdev.png'
 import default2 from '@/assets/services/default2.png'
 import Link from 'next/link'
 import Banner from '@/components/Banner'
+import { FaCss3, FaGithubSquare, FaHtml5, FaJsSquare, FaNodeJs, FaPython, FaReact } from 'react-icons/fa'
+import { SiExpress, SiMongodb, SiNextdotjs, SiTailwindcss, SiVercel } from 'react-icons/si'
+
+const icons = [
+    {
+        id: 1,
+        name: "React",
+        icon: <FaReact />,
+    },
+    {
+        id: 2,
+        name: "Next.js",
+        icon: <SiNextdotjs />
+    },
+    {
+        id: 3,
+        name: "TailwindCSS",
+        icon: <SiTailwindcss />
+    },
+    {
+        id: 4,
+        name: "Node.js",
+        icon: <FaNodeJs />
+    },
+    {
+        id: 5,
+        name: "Express.js",
+        icon: <SiExpress />
+    },
+    {
+        id: 6,
+        name: "MongoDB",
+        icon: <SiMongodb />
+    },
+    {
+        id: 7,
+        name: "HTML",
+        icon: <FaHtml5 />
+    },
+    {
+        id: 8,
+        name: "CSS",
+        icon: <FaCss3 />
+    },
+    {
+        id: 9,
+        name: "JavaScript",
+        icon: <FaJsSquare />
+    },
+    {
+        id: 10,
+        name: "Vercel",
+        icon: <SiVercel />
+    },
+    {
+        id: 11,
+        name: "Python",
+        icon: <FaPython />
+    },
+    {
+        id: 12,
+        name: "GitHub",
+        icon: <FaGithubSquare />
+    }
+]
 
 const Default2 = () => {
     return (
@@ -50,6 +115,17 @@ const Default2 = () => {
                         </div>
                     </div>
                     <Banner />
+                    <div className='mb-4 mt-4 outline rounded-md'>
+                        <h1 className="title text-black">Technologies we use</h1>
+                        <div className="flex flex-wrap justify-center items-center gap-4 w-1/2 mx-auto">
+                            {icons.map((icon) => (
+                                <div key={icon.id} className="w-24 mb-3 flex flex-col justify-center items-center gap-2 p-4 rounded-md bg-gray-100 hover:bg-gray-200 hover:scale-110 transition ease-in-out">
+                                    <div className="text-4xl text-black">{icon.icon}</div>
+                                    <p className="text-gray-600">{icon.name}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
             </Layout>
         </>

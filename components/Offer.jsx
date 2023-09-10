@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 
@@ -7,21 +8,21 @@ const offersList = [
         title: "Get trending on Twitter",
         price: "as cheap as ₹ 19,999",
     },
-    // {
-    //     id: 2,
-    //     title: "Website Development",
-    //     price: "₹ 9999",
-    // },
-    // {
-    //     id: 3,
-    //     title: "Get your Business on Google",
-    //     price: "₹ 999",
-    // },
-    // {
-    //     id: 4,
-    //     title: "Get your Business on Facebook",
-    //     price: "₹ 999",
-    // },
+    {
+        id: 2,
+        title: "Website Development",
+        price: "₹ 9999",
+    },
+    {
+        id: 3,
+        title: "Get your Business on Google",
+        price: "₹ 999",
+    },
+    {
+        id: 4,
+        title: "Get your Business on Facebook",
+        price: "₹ 999",
+    },
 ]
 
 const OfferBox = ({ offer }) => (
@@ -33,14 +34,17 @@ const OfferBox = ({ offer }) => (
 const Offer = () => {
 
     const [current, setCurrent] = useState(0);
-    
+    const [isPaused, setIsPaused] = useState(false);
+
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrent(prev => (prev + 1) % offersList.length);
+            if (!isPaused) {
+                setCurrent(prev => (prev + 1) % offersList.length);
+            }
         }, 3000);
-        
+
         return () => clearInterval(interval);
-    }, []);
+    }, [isPaused]);
 
     const goToPrev = () => {
         setCurrent(prev => (prev - 1 + offersList.length) % offersList.length);
@@ -50,13 +54,23 @@ const Offer = () => {
         setCurrent(prev => (prev + 1) % offersList.length);
     }
 
+    const handleCarouselHover = () => {
+        setIsPaused(true);
+    }
+
+    const handleCarouselLeave = () => {
+        setIsPaused(false);
+    }
+
     return (
-        <div>
+        <div onMouseEnter={handleCarouselHover} onMouseLeave={handleCarouselLeave}>
             <div className="flex justify-between items-center">
                 <button onClick={goToPrev} className="hover:scale-110"><FaArrowCircleLeft /></button>
-                <div className="flex items-center">
-                    <OfferBox key={offersList[current].id} offer={offersList[current]} />
-                </div>
+                <Link href='/contact'>
+                    <div className="flex items-center">
+                        <OfferBox key={offersList[current].id} offer={offersList[current]} />
+                    </div>
+                </Link>
                 <button onClick={goToNext} className="hover:scale-110"><FaArrowCircleRight /></button>
             </div>
         </div>
