@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -6,7 +8,7 @@ import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 import Background from "./Background"
 import { VscSignIn } from "react-icons/vsc"
-import { useSession } from "next-auth/react"
+import { signOut, useSession } from "next-auth/react"
 import UserProfile from "./UserProfile"
 
 const Layout = ({ children }) => {
@@ -64,6 +66,7 @@ const Layout = ({ children }) => {
                         <li><Link href="/contact">Pricing</Link></li>
                         {/* <li><Link href="/contact">Offers</Link></li> */}
                         <li><Link href="/contact">Internship</Link></li>
+                        {/* <li><div onClick={() => signOut()}>Logoout</div></li> */}
                         {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
 
                     </ul>

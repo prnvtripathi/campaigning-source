@@ -1,22 +1,106 @@
+"use client"
+
 import { useSession, signIn } from "next-auth/react"
 import { FcGoogle } from "react-icons/fc"
 import { useRouter } from "next/router"
+import Head from "next/head"
+import { useState } from "react"
+import Background from "@/components/Background"
 
 const Signin = () => {
+    const router = useRouter()
     const { data: session } = useSession()
     if (session) {
-        const router = useRouter()
         router.push("/")
     }
+
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    const [error, setError] = useState("")
+    const handleInputChange = (e) => {
+        const { name, value } = e.target
+        if (name === "email") {
+            setEmail(value)
+        } else if (name === "password") {
+            setPassword(value)
+        }
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+        try {
+            const res = await signIn("credentials", {
+                redirect: false,
+                email,
+                password,
+            })
+
+            if (res.error) {
+                setError("Invalid Credentials")
+            }
+
+            router.push("/")
+        } catch (error) {
+            setError(error.message)
+        }
+    }
+
     return <>
-        <div className="bg-blue-200 w-screen h-screen flex flex-col gap-3 items-center justify-center">
-            <h2 className="text-xl">Not signed in</h2>
-            <button
-                className="bg-white p-2 text-black flex items-center gap-2 rounded-full transition hover:scale-105"
-                onClick={() => signIn('google')}
-            >
-                <FcGoogle />Signin using Google
-            </button>
+        <Head>
+            <title>Sign Up | Campaigning Source</title>
+        </Head>
+        <Background />
+        <div className="mt-36">
+            <h2 className="title">Login</h2>
+            <div className="flex bg-blue-200 justify-around items-center w-[60%] mx-auto p-6">
+                <div>
+                    <form onSubmit={handleSubmit}>
+                        <div className='flex flex-col justify-center items-center'>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                value={email}
+                                onChange={handleInputChange}
+                                placeholder="Email ID"
+                                className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
+                            // required
+                            />
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                value={password}
+                                onChange={handleInputChange}
+                                placeholder="Password"
+                                className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
+                            // required
+                            />
+                        </div>
+                        <div className='flex justify-center items-center'>
+                            <button
+                                type="submit"
+                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                            >
+                                Sign In
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div className="flex flex-col gap-3 items-center justify-center">
+                    <h2 className="text-xl">or</h2>
+                    <button
+                        className="bg-white p-2 text-black flex items-center gap-2 rounded-full transition hover:scale-105"
+                        onClick={() => signIn('google')}
+                    >
+                        <FcGoogle />Signin using Google
+                    </button>
+                </div>
+                {error && <div className="bg-red-600 text-white p-3 rounded-md">{error}</div>}
+            </div>
+            <div>
+                <p className="text-center text-black">Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a></p>
+            </div>
         </div>
     </>
 }
