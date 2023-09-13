@@ -6,10 +6,12 @@ import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 import Background from "./Background"
 import { VscSignIn } from "react-icons/vsc"
+import { useSession } from "next-auth/react"
+import UserProfile from "./UserProfile"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
-
+    const { data: session } = useSession()
     return (
         <>
             <Background />
@@ -62,7 +64,8 @@ const Layout = ({ children }) => {
                         <li><Link href="/contact">Pricing</Link></li>
                         {/* <li><Link href="/contact">Offers</Link></li> */}
                         <li><Link href="/contact">Internship</Link></li>
-                        <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li>
+                        {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
+
                     </ul>
                 </div>
             </div>
