@@ -86,7 +86,7 @@ const Contact = () => {
                         <div className="outline outline-orange-300 bg-orange-100 bg-opacity-40 rounded py-3 w-1/2 px-3 h-1/4">
                             <h1 className="text-xl text-black mb-5">Phone:</h1>
                             <p className="text-gray-600 mb-3">Assistance Hours:<br /> Monday - Friday, 9AM to 5PM</p>
-                            <p className="text-black">+91 9811393288</p>
+                            <p className="text-black">+91 98113 93288</p>
                         </div>
                         <div className="outline outline-green-600 bg-green-200 bg-opacity-40 rounded py-3 w-1/2 px-3 h-1/4">
                             <h1 className="text-xl text-black mb-5">Email:</h1>

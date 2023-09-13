@@ -96,7 +96,7 @@ const services = [
 const team = [
     {
         img: user,
-        name: "Vansh Tyagi",
+        name: "Mr. Anonymous‌",
         position: "Team Member"
     },
     {
@@ -136,7 +136,7 @@ const team = [
     },
     {
         img: user,
-        name: "Kajal Tyagi",
+        name: "Tushar Aggarwal",
         position: "Team Member"
     }
 ]
