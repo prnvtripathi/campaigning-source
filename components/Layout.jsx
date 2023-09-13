@@ -5,6 +5,7 @@ import logo from "@/assets/logo.png"
 import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 import Background from "./Background"
+import { VscSignIn } from "react-icons/vsc"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -59,8 +60,9 @@ const Layout = ({ children }) => {
                             </div>
                         </li>
                         <li><Link href="/contact">Pricing</Link></li>
-                        <li><Link href="/contact">Offers</Link></li>
+                        {/* <li><Link href="/contact">Offers</Link></li> */}
                         <li><Link href="/contact">Internship</Link></li>
+                        <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li>
                     </ul>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const Hero = () => {
                 <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-3">Political Election Promotion</h2></span>
                     <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
-                    <Link href='/services/politics'>
+                    <Link href='/services/politics' target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText text-base font-normal hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -30,7 +30,7 @@ const Hero = () => {
                 <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center text-white bg-blue-400 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}>Business<br /> Development</span>
                     <Image src={graph} alt="graph" width={190} height={190} />
-                    <Link href="/services/business">
+                    <Link href="/services/business" target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -42,7 +42,7 @@ const Hero = () => {
                 <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center text-white bg-blue-500 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-2">Website &<br />Application Development</h2></span>
                     <Image src={website} alt="website" width={175} height={175} />
-                    <Link href="/services/default2">
+                    <Link href="/services/default2" target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                         </ul>
                     </span>
                     <Image src={social} alt="social" width={180} height={180} />
-                    <Link href="/services/graphics">
+                    <Link href="/services/graphics" target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
@@ -71,7 +71,7 @@ const Hero = () => {
                         Broadcast SMS,<br />
                         Whatsapp Broadcast</span>
                     <Image src={messaging} alt="messaging" width={190} height={190} />
-                    <Link href="/services/default">
+                    <Link href="/services/default" target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText mb-2 font-normal text-base hover:bg-gray-600">
                             Let's Start
                         </div>
