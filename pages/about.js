@@ -136,7 +136,7 @@ const team = [
     },
     {
         img: user,
-        name: "Kajal Tyagi",
+        name: "Tushar Aggarwal",
         position: "Team Member"
     }
 ]
