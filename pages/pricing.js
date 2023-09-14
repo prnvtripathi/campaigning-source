@@ -61,7 +61,7 @@ const data = [
     {
         id: 12,
         name: "Twitter Trending",
-        price: "As low as ₹15000/month"
+        price: "As low as ₹15000/hashtag"
     },
     {
         id: 13,
