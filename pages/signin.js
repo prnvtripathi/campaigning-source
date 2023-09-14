@@ -52,10 +52,10 @@ const Signin = () => {
             <title>Sign Up | Campaigning Source</title>
         </Head>
         <Background />
-        <div className="mt-36">
-            <h2 className="title">Login</h2>
-            <div className="flex bg-blue-200 justify-around items-center w-[60%] mx-auto p-6">
-                <div>
+        <div className="w-screen h-screen flex justify-center items-center">
+            <div className="w-[70%]">
+                <h2 className="text-black text-3xl text-center font-bold mb-2">Login</h2>
+                <div className="flex bg-blue-200 justify-around items-center mx-auto p-6">
                     <form onSubmit={handleSubmit}>
                         <div className='flex flex-col justify-center items-center'>
                             <input
@@ -88,20 +88,22 @@ const Signin = () => {
                             </button>
                         </div>
                     </form>
+                    <div className="flex flex-col gap-3 items-center justify-center">
+                        <h2 className="text-xl">or</h2>
+                        <button
+                            className="bg-white p-2 text-black flex items-center gap-2 rounded-full transition hover:scale-105"
+                            onClick={() => signIn('google')}
+                        >
+                            <FcGoogle />Signin using Google
+                        </button>
+                    </div>
                 </div>
-                <div className="flex flex-col gap-3 items-center justify-center">
-                    <h2 className="text-xl">or</h2>
-                    <button
-                        className="bg-white p-2 text-black flex items-center gap-2 rounded-full transition hover:scale-105"
-                        onClick={() => signIn('google')}
-                    >
-                        <FcGoogle />Signin using Google
-                    </button>
+                <div>
+                    <p className="text-center text-black">Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a></p>
                 </div>
-            </div>
-                {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
-            <div>
-                <p className="text-center text-black">Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a></p>
+                <div>
+                    {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
+                </div>
             </div>
         </div>
     </>
