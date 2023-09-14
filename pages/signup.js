@@ -1,7 +1,6 @@
 "use client"
 
 import Background from '@/components/Background';
-import Footer from '@/components/Footer';
 import Head from 'next/head';
 import { useState } from 'react';
 import { FaSignInAlt } from 'react-icons/fa';
@@ -322,7 +321,6 @@ const SignUp = () => {
                     {errorMessage && <p className='bg-red-600 text-white p-3 rounded-md w-1/4 text-center mt-2'>{errorMessage}</p>}
                 </div>
             </div>
-            <Footer />
         </>
     );
 };

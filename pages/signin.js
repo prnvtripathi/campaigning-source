@@ -39,7 +39,9 @@ const Signin = () => {
                 setError("Invalid Credentials")
             }
 
-            router.push("/")
+            if (res.success) {
+                router.push("/")
+            }
         } catch (error) {
             setError(error.message)
         }
@@ -96,8 +98,8 @@ const Signin = () => {
                         <FcGoogle />Signin using Google
                     </button>
                 </div>
-                {error && <div className="bg-red-600 text-white p-3 rounded-md">{error}</div>}
             </div>
+                {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
             <div>
                 <p className="text-center text-black">Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a></p>
             </div>

@@ -18,6 +18,7 @@ const UserProfile = () => {
         <div className="text-black flex gap-2 cursor-pointer">
             <div onClick={toggleDropdown} className="relative">
                 <div className='flex items-center gap-2'>
+                    <img src={session?.user?.image} alt='user' className='w-8 h-8 rounded-full' />
                     {session?.user?.name}
                 </div>
 

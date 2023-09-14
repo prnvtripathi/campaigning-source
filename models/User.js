@@ -4,6 +4,7 @@ const UserSchema = new Schema({
     firstName: { type: String, required: true },
     lastName: { type: String },
     name: { type: String },
+    image: { type: String, default: "https://photos.app.goo.gl/6B56bM1Xyt1nwEkv6" },
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     contactNumber: { type: String, required: true },

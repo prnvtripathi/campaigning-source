@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
                         {/* <li><Link href="/contact">Offers</Link></li> */}
                         <li><Link href="/contact">Internship</Link></li>
                         {/* <li><div onClick={() => signOut()}>Logoout</div></li> */}
-                        {!session ? <li><Link className="signin-button" href="/signup"><VscSignIn />Sign Up</Link></li> : <UserProfile />}
+                        {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
 
                     </ul>
                 </div>
