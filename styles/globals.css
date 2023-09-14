@@ -141,3 +141,28 @@ textarea {
 a.signin-button {
     @apply bg-blue-300 rounded-full flex items-center gap-2 hover:scale-95;
 }
+
+table.pricing-table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 12px;
+    @apply bg-blue-200;
+}
+
+table.pricing-table td,
+table.pricing-table th {
+    border: 1px solid #242424;
+    padding: 0.5rem;
+}
+
+table.pricing-table th {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: center;
+    color: white;
+    @apply bg-blue-500;
+}
+
+table.pricing-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

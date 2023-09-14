@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
                                 )}
                             </div>
                         </li>
-                        <li><Link href="/contact">Pricing</Link></li>
+                        <li><Link href="/pricing">Pricing</Link></li>
                         {/* <li><Link href="/contact">Offers</Link></li> */}
                         <li><Link href="/contact">Internship</Link></li>
                         {/* <li><div onClick={() => signOut()}>Logoout</div></li> */}
