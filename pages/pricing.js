@@ -77,6 +77,11 @@ const data = [
         id: 15,
         name: "IVR and Bulk Calls",
         price: "₹0.13/product"
+    },
+    {
+        id: 16,
+        name: "Boost your Social Media",
+        price: "Connect to our sales team"
     }
 ];
 
