@@ -10,6 +10,7 @@ import Background from "./Background"
 import { VscSignIn } from "react-icons/vsc"
 import { signOut, useSession } from "next-auth/react"
 import UserProfile from "./UserProfile"
+import Chatbot from "./Chatbot"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
@@ -48,7 +49,7 @@ const Layout = ({ children }) => {
                                     Services{isDropdownOpen ? <MdArrowDropUp size={28} /> : <MdArrowDropDown size={28} />}
                                 </Link>
                                 {isDropdownOpen && (
-                                    <div className="absolute top-full right-0 bg-[#e2e2e2] shadow-lg transition ease-in-out duration-200"
+                                    <div className="absolute top-full right-0 bg-[#fff] shadow-lg transition ease-in-out duration-200"
                                         onMouseEnter={() => setIsDropdownOpen(true)}
                                         onMouseLeave={() => setIsDropdownOpen(false)}
                                     >
@@ -78,6 +79,9 @@ const Layout = ({ children }) => {
                     {children}
                 </div>
                 <Footer />
+            </div>
+            <div>
+                <Chatbot />
             </div>
         </>
     )

@@ -45,11 +45,11 @@ const Default = () => {
                 <h1 className="title">Here are the services...</h1>
                 <div className="grid grid-cols-2 grid-rows-2 gap-2 my-4">
                     {data.map((item) => (
-                        <div key={item.id} className="bg-[#FFDBC3] p-3 rounded-lg flex flex-col items-center justify-around">
+                        <div key={item.id} className="bg-blue-200 bg-opacity-90 p-2 rounded-lg flex flex-col items-center justify-around">
                             <h2 className="text-2xl font-bold">{item.title}</h2>
                             <Image src={item.img} alt={item.title} width={200} height={200} className="my-2" />
                             <Link
-                                className="bg-bg text-secondaryText my-2 px-3 py-1 w-1/2 text-center font-light rounded-md transition duration-200 ease-in-out hover:rounded-none"
+                                className="bg-black text-white my-2 px-3 py-1 w-1/3 text-center font-light rounded-md transition duration-200 ease-in-out hover:rounded-none"
                                 href={item.link}>
                                 Let's go
                             </Link>
