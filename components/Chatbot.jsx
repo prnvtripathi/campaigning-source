@@ -1,17 +1,61 @@
-import { FaPhoneAlt } from "react-icons/fa";
-import Link from "next/link";
+import React, { useState } from 'react';
+import { FaPhoneAlt, FaTimes } from 'react-icons/fa'; // Import icons for open and close
 
 const Chatbot = () => {
+  const directLineURL =
+    'https://webchat.botframework.com/embed/ChatbotJabal-bot/gemini?b=ChatbotJabal-bot&s=qrXJvC7ZM9s.r6pPUeq0bRiBLw7hEbgU-E55IzwNmS-9yiVZIj03xnA&username=You';
 
-    const url = "https://webchat.botframework.com/embed/ChatbotJabal-bot/gemini?b=ChatbotJabal-bot&s=qrXJvC7ZM9s.r6pPUeq0bRiBLw7hEbgU-E55IzwNmS-9yiVZIj03xnA&username=You"
+  const [chatbotVisible, setChatbotVisible] = useState(false);
 
-    return (
-        <Link href={url} target="_blank">
-            <div className="fixed bottom-12 right-12 z-50 bg-yellow-400 p-3 text-black text-xl rounded-full transition hover:scale-125">
-                <FaPhoneAlt />
-            </div>
-        </Link>
-    )
-}
+  const toggleChatbot = () => {
+    setChatbotVisible(!chatbotVisible);
+  };
 
-export default Chatbot
+  // Function to close the chatbot
+  const closeChatbot = () => {
+    setChatbotVisible(false);
+  };
+
+  return (
+    <div>
+      {chatbotVisible && (
+        <div
+          style={{
+            position: 'fixed',
+            bottom: '20px',
+            right: '20px',
+            zIndex: '50',
+            width: '400px', // Adjust the width to your preference
+            height: '500px', // Adjust the height to your preference
+            boxShadow: '0px 0px 10px 0px rgba(0, 0, 0, 0.5)',
+            borderRadius: '10px',
+          }}
+        >
+          <iframe
+            src={directLineURL}
+            title="Chatbot"
+            width="100%"
+            height="100%"
+            frameBorder="0"
+          ></iframe>
+          <div
+            className="absolute top-2 right-2 cursor-pointer"
+            onClick={closeChatbot}
+          >
+            <FaTimes size={20} color="red" />
+          </div>
+        </div>
+      )}
+      <div
+        className={`fixed bottom-12 right-12 z-50 bg-yellow-400 p-3 text-black text-xl rounded-full transition hover:scale-125 ${
+          chatbotVisible ? 'hidden' : ''
+        }`}
+        onClick={toggleChatbot}
+      >
+        <FaPhoneAlt />
+      </div>
+    </div>
+  );
+};
+
+export default Chatbot;
