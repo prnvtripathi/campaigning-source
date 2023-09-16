@@ -96,47 +96,57 @@ const services = [
 const team = [
     {
         img: user,
-        name: "Mr. Anonymous‌",
+        name: "Vansh Tyagi",
         position: "Team Member"
     },
-    {
-        img: user,
-        name: "Vanshika Gupta",
-        position: "Team Member"
-    },
+    // {
+    //     img: user,
+    //     name: "Vanshika Gupta",
+    //     position: "Team Member"
+    // },
     {
         img: user,
         name: "Tanishk Attri",
         position: "Team Member"
     },
+    // {
+    //     img: user,
+    //     name: "Tanishka Garg",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Umang Gupta",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Pranav Tripathi",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Sushant Sharma",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Shaily Bhati",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Tushar Aggarwal",
+    //     position: "Team Member"
+    // }
     {
         img: user,
-        name: "Tanishka Garg",
+        name: "Sneha Pandey",
         position: "Team Member"
     },
     {
         img: user,
-        name: "Umang Gupta",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Pranav Tripathi",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Sushant Sharma",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Shaily Bhati",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Tushar Aggarwal",
+        name: "Shikhar Mishra",
         position: "Team Member"
     }
 ]
