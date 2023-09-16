@@ -9,6 +9,10 @@ import { AiOutlineFundProjectionScreen } from "react-icons/ai"
 import { PiTelevisionSimpleLight } from "react-icons/pi"
 import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
 import user from "@/assets/user.png"
+import vansh from "@/assets/team/vansh.jpg"
+import tanishk from "@/assets/team/tanishk.jpg"
+import sneha from "@/assets/team/sneha.jpg"
+import shikhar from "@/assets/team/shikhar.jpg"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -95,7 +99,7 @@ const services = [
 
 const team = [
     {
-        img: user,
+        img: vansh,
         name: "Vansh Tyagi",
         position: "Team Member"
     },
@@ -105,7 +109,7 @@ const team = [
     //     position: "Team Member"
     // },
     {
-        img: user,
+        img: tanishk,
         name: "Tanishk Attri",
         position: "Team Member"
     },
@@ -140,12 +144,12 @@ const team = [
     //     position: "Team Member"
     // }
     {
-        img: user,
+        img: sneha,
         name: "Sneha Pandey",
         position: "Team Member"
     },
     {
-        img: user,
+        img: shikhar,
         name: "Shikhar Mishra",
         position: "Team Member"
     }
