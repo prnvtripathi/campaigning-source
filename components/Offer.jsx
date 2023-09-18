@@ -6,7 +6,7 @@ const offersList = [
     {
         id: 1,
         title: "Get trending on Twitter",
-        price: "as cheap as ₹ 19,999",
+        price: "as cheap as ₹ 14,999",
     },
     {
         id: 2,
