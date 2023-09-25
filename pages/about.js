@@ -103,46 +103,46 @@ const team = [
         name: "Vansh Tyagi",
         position: "Team Member"
     },
-    // {
-    //     img: user,
-    //     name: "Vanshika Gupta",
-    //     position: "Team Member"
-    // },
+      {
+          img: user,
+          name: "Vanshika Gupta",
+          position: "Team Member"
+      },
     {
         img: tanishk,
         name: "Tanishk Attri",
         position: "Team Member"
     },
-    // {
-    //     img: user,
-    //     name: "Tanishka Garg",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Umang Gupta",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Pranav Tripathi",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Sushant Sharma",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Shaily Bhati",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Tushar Aggarwal",
-    //     position: "Team Member"
-    // }
+      {
+          img: user,
+          name: "Tanishka Garg",
+          position: "Team Member"
+      },
+      {
+          img: user,
+          name: "Umang Gupta",
+          position: "Team Member"
+      },
+      {
+          img: user,
+          name: "Pranav Tripathi",
+          position: "Team Member"
+      },
+      {
+          img: user,
+          name: "Sushant Sharma",
+          position: "Team Member"
+      },
+      {
+          img: user,
+          name: "Shaily Bhati",
+          position: "Team Member"
+      },
+      {
+          img: user,
+          name: "Tushar Aggarwal",
+          position: "Team Member"
+      }
     {
         img: sneha,
         name: "Sneha Pandey",
