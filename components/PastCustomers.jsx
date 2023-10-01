@@ -8,22 +8,22 @@ import fabnic from "@/assets/pastCustomers/fabnic.png"
 import Image from "next/image";
 
 const customers = [
-    {
-        id: 1,
-        img: aap,
-    },
-    {
-        id: 2,
-        img: bjp,
-    },
-    {
-        id: 3,
-        img: inc,
-    },
-    {
-        id: 4,
-        img: rjd,
-    },
+    // {
+    //     id: 1,
+    //     img: aap,
+    // },
+    // {
+    //     id: 2,
+    //     img: bjp,
+    // },
+    // {
+    //     id: 3,
+    //     img: inc,
+    // },
+    // {
+    //     id: 4,
+    //     img: rjd,
+    // },
     {
         id: 5,
         img: aastha,

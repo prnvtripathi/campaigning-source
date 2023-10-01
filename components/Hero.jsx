@@ -19,7 +19,7 @@ const Hero = () => {
         <>
             <div className="grid grid-rows-5 gap-2 p-2 md:grid-rows-3 md:grid-cols-5 mx-auto">
                 <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-4xl font-bold rounded-lg">
-                    <span className={montserrat.className}><h2 className="ml-3">Political Election Promotion</h2></span>
+                    <span className={montserrat.className}><h2 className="ml-3">Public Choice Promotion</h2></span>
                     <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
                     <Link href='/services/politics' target="_blank" rel="noopener noreferrer">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText text-base font-normal hover:bg-gray-600">
