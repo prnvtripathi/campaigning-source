@@ -50,13 +50,13 @@ const Hero = () => {
                 </div>
                 <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-2xl font-bold rounded-lg">
                     <span className={montserrat.className}>
-                        <ul className="ml-4">
-                            <li className="list-disc">Graphic Designing</li>
-                            <li className="list-disc">Advertisement</li>
-                            <li className="list-disc">Social Media Management</li>
-                            <li className="list-disc">Promotions</li>
-                            <li className="list-disc">Video Editing</li>
-                        </ul>
+                        <div className="ml-4">
+                            <div>Graphic Designing</div>
+                            <div>Advertisement</div>
+                            <div>Social Media Management</div>
+                            <div>Promotions</div>
+                            <div>Video Editing</div>
+                        </div>
                     </span>
                     <Image src={social} alt="social" width={180} height={180} />
                     <Link href="/services/graphics" target="_blank" rel="noopener noreferrer">

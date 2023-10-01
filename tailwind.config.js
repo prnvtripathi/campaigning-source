@@ -13,6 +13,10 @@ module.exports = {
         secondaryText: '#F2F2F2',
       }
     },
+    screens: {
+      'sm': '576px',
+      'md': '960px',
+    },
   },
   plugins: [],
 }

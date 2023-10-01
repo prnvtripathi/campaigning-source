@@ -47,7 +47,19 @@ body {
     font-size: 1.3rem;
 }
 
-ul.navbar {
+@media screen and (max-width: 768px) {
+    .offers {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 360) {
+    .offers {
+        font-size: 0.8rem;
+    }
+}
+
+ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -57,18 +69,80 @@ ul.navbar {
     padding: 0.5rem 1rem;
 }
 
-ul.navbar li a {
+ul li a {
     color: #242424;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0.35rem 0.75rem;
     transition: all 0.2s ease-in-out;
+    display: flex;
 }
 
-ul.navbar li a:hover {
+ul li a:hover {
     @apply bg-blue-500 rounded-full text-white;
 }
 
+@media screen and (max-width: 945px) {
+
+    ul {
+        display: none;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    ul.expanded {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 999;
+        background-color: #ffffff;
+        top: 0;
+        width: 70%;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 5em;
+        right: 5%;
+        margin-left: -2em;
+        margin-top: -45px;
+        width: 2em;
+        height: 45px;
+        z-index: 5;
+    }
+
+    .hamburger div {
+        position: relative;
+        width: 3rem;
+        height: 7px;
+        border-radius: 3px;
+        background-color: #000000;
+        margin-top: 8px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #toggle:checked+.hamburger .top-bun {
+        transform: rotate(-45deg);
+        margin-top: 25px;
+    }
+
+    #toggle:checked+.hamburger .bottom-bun {
+        opacity: 0;
+        transform: rotate(45deg);
+    }
+
+    #toggle:checked+.hamburger .meat {
+        transform: rotate(45deg);
+        margin-top: -7px;
+    }
+
+    #toggle:checked+.hamburger+.nav {
+        top: 0;
+        transform: scale(1);
+    }
+}
 
 .btn-primary {
     @apply bg-bg px-4 py-2 rounded-lg text-secondaryText flex w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 ease-in-out hover:bg-secondaryText hover:text-bg hover:scale-95
@@ -79,8 +153,6 @@ img {
     filter: drop-shadow(0 0 0.75rem #24242450);
 }
 
-
-
 label {
     @apply text-primaryText font-semibold;
 }
@@ -88,7 +160,7 @@ label {
 input.input-form,
 textarea.input-form,
 select.input-form {
-    @apply outline-none rounded-md px-2 py-1 m-2 text-black bg-slate-200 mb-20
+    @apply outline-none rounded-md px-2 py-1 m-2 text-black bg-slate-200 mb-20 w-full
 }
 
 input:focus,
@@ -97,7 +169,7 @@ textarea:focus {
 }
 
 textarea {
-    @apply resize-none w-[95%];
+    @apply resize-none w-full;
 }
 
 .half {
@@ -165,4 +237,14 @@ table.pricing-table th {
 
 table.pricing-table tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 0 0.5rem;
 }

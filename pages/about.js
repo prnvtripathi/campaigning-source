@@ -11,8 +11,6 @@ import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
 import user from "@/assets/user.png"
 import vansh from "@/assets/team/vansh.jpg"
 import tanishk from "@/assets/team/tanishk.jpg"
-import sneha from "@/assets/team/sneha.jpg"
-import shikhar from "@/assets/team/shikhar.jpg"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -143,16 +141,6 @@ const team = [
         name: "Tushar Aggarwal",
         position: "Team Member"
     },
-    {
-        img: sneha,
-        name: "Sneha Pandey",
-        position: "Team Member"
-    },
-    {
-        img: shikhar,
-        name: "Shikhar Mishra",
-        position: "Team Member"
-    },
 ]
 
 const About = () => {
@@ -163,44 +151,48 @@ const About = () => {
             </Head>
             <Layout>
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h1 className="title text-black ">About Us</h1>
-                    <div className="flex items-center justify-around">
-                        <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto text-black">
-                                Welcome to <strong>Campaigning Source</strong>, your ultimate destination for
-                                comprehensive business development and election promotion solutions.
-                                Our mission is to propel businesses to unprecedented heights and
-                                guide politicians to claim the chair of leadership. With a rich
-                                history of transforming aspirations into achievements, Campaigning
-                                Source stands as a beacon of success in the industry.
+                    <h1 className="title text-black text-center">About Us</h1>
+                    <div className="flex flex-col items-center md:flex-row justify-center">
+                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
+                            <p className="w-full text-black">
+                                Welcome to <strong>Campaigning Source</strong>, your ultimate destination for comprehensive
+                                business development and election promotion solutions. Our mission is to propel businesses
+                                to unprecedented heights and guide politicians to claim the chair of leadership. With a rich
+                                history of transforming aspirations into achievements, Campaigning Source stands as a beacon
+                                of success in the industry.
                             </p>
                         </div>
-                        <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="md:w-1/2 text-center">
+                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        </div>
                     </div>
                 </div>
 
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black ">History</h2>
-                    <div className="flex items-center justify-around">
-                        <Image src={tiranga} alt="indian-flag" className="rounded-md" />
-                        <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto text-black">
-                                <strong>Campaigning Source</strong> embarked on its journey with a singular vision:
-                                to bridge the gap between potential and success. Over time, we've evolved
-                                into a powerhouse of expertise, catering not only to business growth but also
-                                to effective election campaigns. Our experience is a testament to our
-                                adaptability and proficiency in driving results in these interconnected domains.
+                    <h2 className="title text-black text-center">History</h2>
+                    <div className="flex flex-col items-center md:flex-row justify-center">
+                        <div className="md:w-1/2 text-center">
+                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        </div>
+                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
+                            <p className="w-full text-black">
+                                <strong>Campaigning Source</strong> embarked on its journey with a singular vision: to bridge the
+                                gap between potential and success. Over time, we've evolved into a powerhouse of expertise, catering
+                                not only to business growth but also to effective election campaigns. Our experience is a testament
+                                to our adaptability and proficiency in driving results in these interconnected domains.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div className="outline p-3 rounded-lg text-black">
-                    <h2 className="title text-black ">Our Services</h2>
+                    <h2 className="title text-black text-center">Our Services</h2>
                     <div className="flex flex-wrap justify-center items-center gap-2">
                         {services.map((service, index) => (
-                            <div key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-1/5 h-72 text-center hover:scale-105 transition ease-in-out duration-200">
+                            <div
+                                key={index}
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
+                            >
                                 <span className="text-4xl my-2">{service.icon}</span>
                                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
                                 <p className="text-center font-thin">{service.description}</p>
@@ -209,56 +201,66 @@ const About = () => {
                     </div>
                 </div>
 
+
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black ">Social Proof</h2>
-                    <div className="flex items-center justify-around">
-                        <Image src={tiranga} alt="indian-flag" className="rounded-md" />
-                        <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto text-black">
-                                <strong>Campaigning Source's</strong> legacy is built on a foundation of
-                                successful collaborations and delighted clients. From small enterprises
-                                witnessing exponential growth to political leaders securing resounding
-                                victories, our impact speaks volumes. Our proven expertise in business
-                                development and election promotion stands as a testament to our unwavering
-                                commitment to excellence.
+                    <h2 className="title text-black text-center">Social Proof</h2>
+                    <div className="flex flex-col items-center md:flex-row justify-center">
+                        <div className="md:w-1/2 text-center">
+                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        </div>
+                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
+                            <p className="w-full text-black">
+                                <strong>Campaigning Source's</strong> legacy is built on a foundation of successful collaborations
+                                and delighted clients. From small enterprises witnessing exponential growth to political leaders
+                                securing resounding victories, our impact speaks volumes. Our proven expertise in business development
+                                and election promotion stands as a testament to our unwavering commitment to excellence.
                             </p>
                         </div>
                     </div>
                 </div>
 
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black ">Join us in crafting success.</h2>
-                    <div className="flex items-center justify-around">
-                        <div className={montserrat.className}>
-                            <p className="w-3/4 mx-auto text-black">
-                                <strong>Campaigning Source's</strong> legacy is built on a foundation of
-                                successful collaborations and delighted clients. From small enterprises
-                                witnessing exponential growth to political leaders securing resounding
-                                victories, our impact speaks volumes. Our proven expertise in business
-                                development and election promotion stands as a testament to our unwavering
-                                commitment to excellence.
+                    <h2 className="title text-black text-center">Join us in crafting success.</h2>
+                    <div className="flex flex-col items-center md:flex-row justify-center">
+                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
+                            <p className="w-full text-black">
+                                <strong>Campaigning Source's</strong> legacy is built on a foundation of successful collaborations and
+                                delighted clients. From small enterprises witnessing exponential growth to political leaders securing
+                                resounding victories, our impact speaks volumes. Our proven expertise in business development and election
+                                promotion stands as a testament to our unwavering commitment to excellence.
                             </p>
                         </div>
-                        <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="md:w-1/2 text-center">
+                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        </div>
                     </div>
                 </div>
 
                 <div className="outline p-3 rounded-lg mb-3">
-                    <h2 className="title text-black ">Our Team</h2>
+                    <h2 className="title text-black text-center">Our Team</h2>
                     <div className="flex flex-wrap justify-center items-center gap-2">
                         {team.map((member, index) => (
-                            <div key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-1/4 text-center hover:scale-105 transition ease-in-out duration-200">
-                                <Image src={member.img} alt="member" className="rounded-full" width={100} height={100} />
+                            <div
+                                key={index}
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
+                            >
+                                <Image
+                                    src={member.img}
+                                    alt="member"
+                                    className="rounded-full"
+                                    width={100}
+                                    height={100}
+                                />
                                 <h3 className="text-xl font-bold mb-2 text-black">{member.name}</h3>
                                 <p className="text-center font-thin text-black">{member.position}</p>
                             </div>
                         ))}
                     </div>
                 </div>
+
             </Layout>
         </>
-    )
-}
+    );
+};
 
-export default About
+export default About;

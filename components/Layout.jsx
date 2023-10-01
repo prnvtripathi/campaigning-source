@@ -14,16 +14,26 @@ import Chatbot from "./Chatbot"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+    const [menuExpanded, setMenuExpanded] = useState(false)
     const { data: session } = useSession()
     return (
         <>
             <Background />
+            <div className="offers">
+                <h3>Boost your business in this festive season to new heights. 🗻</h3>
+            </div>
             <div className="sticky top-0 left-0 right-0 z-10">
-                <div className="offers">
-                    <h3>Boost your business in this festive season to new heights. 🗻</h3>
-                </div>
+                <input id="toggle" type="checkbox" className="hidden" onClick={() => {
+                    setMenuExpanded(!menuExpanded)
+                }} />
+                <label htmlFor="toggle" className="hamburger">
+                    <div className="top-bun"></div>
+                    <div className="meat"></div>
+                    <div className="bottom-bun"></div>
+                </label>
+
                 <div className='flex justify-around items-center bg-white px-6 mb-4 bg-opacity-90'>
-                    <div>
+                    <div className="brand">
                         <Link href="/">
                             <Image
                                 src={logo}
@@ -34,7 +44,7 @@ const Layout = ({ children }) => {
                             />
                         </Link>
                     </div>
-                    <ul className="navbar">
+                    <ul className={`${menuExpanded ? "navbar expanded" : "navbar"}`}>
                         <li><Link href="/">Home</Link></li>
                         <li><Link href="/contact">Influencers</Link></li>
                         <li><Link href="/about">About Us</Link></li>
@@ -53,7 +63,7 @@ const Layout = ({ children }) => {
                                         onMouseEnter={() => setIsDropdownOpen(true)}
                                         onMouseLeave={() => setIsDropdownOpen(false)}
                                     >
-                                        <ul className="p-2">
+                                        <ul className="dropdown-menu">
                                             <li className="min-w-max"><Link href="/services/politics">Political Election Promotion</Link></li>
                                             <li className="min-w-max"><Link href="/services/business">Business Development</Link></li>
                                             <li className="min-w-max"><Link href="/services/default2">Website & Application Development</Link></li>
@@ -75,9 +85,8 @@ const Layout = ({ children }) => {
             </div>
 
             <div className="content">
-                <div className='container'>
-                    {children}
-                </div>
+                {children}
+
                 <Footer />
             </div>
             <div>
