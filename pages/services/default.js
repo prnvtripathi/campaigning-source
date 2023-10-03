@@ -7,6 +7,7 @@ import bulkcall from "@/assets/services/bulkcall.png"
 import bulksms from "@/assets/services/bulksms.png"
 import ivr from "@/assets/services/ivr.png"
 import whatsapp from "@/assets/services/whatsapp.png"
+import email from "@/assets/services/email.jpg"
 
 const data = [
     {
@@ -32,7 +33,13 @@ const data = [
         title: 'Bulk Voice Calls',
         img: bulkcall,
         link: '/services/bulkcall',
-    }
+    },
+    {
+        id: 5,
+        title: 'Email Marketing',
+        img: email,
+        link: '/',
+    },
 ]
 
 const Default = () => {
@@ -43,7 +50,7 @@ const Default = () => {
             </Head>
             <Layout>
                 <h1 className="title">Here are the services...</h1>
-                <div className="grid grid-cols-2 grid-rows-2 gap-2 my-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-2 my-4">
                     {data.map((item) => (
                         <div key={item.id} className="bg-blue-200 bg-opacity-90 p-2 rounded-lg flex flex-col items-center justify-around">
                             <h2 className="text-2xl font-bold">{item.title}</h2>
