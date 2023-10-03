@@ -3,8 +3,8 @@ import { AiOutlineLike, AiOutlineUser, AiOutlineEye, AiOutlineShareAlt, AiOutlin
 
 const SocialMedia = () => {
     return (
-        <div className="mx-2 flex p-4 items-center justify-between bg-blue-600 rounded-lg text-white">
-            <h2 className="text-md md:text-3xl font-bold">Elevate your social game, boost now!</h2>
+        <div className="mx-2 md:mx-4 lg:mx-8 xl:mx-10 flex flex-col md:flex-row p-4 items-center justify-between bg-blue-600 rounded-lg text-white">
+            <h2 className="text-md md:text-3xl lg:text-4xl xl:text-5xl font-bold mb-4 md:mb-0">Elevate your social game, boost now!</h2>
             <div className='flex flex-wrap justify-around items-center gap-2 py-1 px-4 rounded-md font-semibold text-secondaryText'>
                 <div className='bg-blue-600 py-0.5 px-1 rounded-lg transition duration-200 hover:bg-slate-600'>
                     <Link className='flex gap-1 items-center' href='https://myfameguru.com/' target="_blank" rel="noopener noreferrer">
