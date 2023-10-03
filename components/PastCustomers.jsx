@@ -1,10 +1,11 @@
 import { Montserrat } from "next/font/google";
-import aap from "@/assets/pastCustomers/aap.png"
-import bjp from "@/assets/pastCustomers/bjp.png"
-import inc from "@/assets/pastCustomers/inc.png"
-import rjd from "@/assets/pastCustomers/rjd.png"
+// import aap from "@/assets/pastCustomers/aap.png"
+// import bjp from "@/assets/pastCustomers/bjp.png"
+// import inc from "@/assets/pastCustomers/inc.png"
+// import rjd from "@/assets/pastCustomers/rjd.png"
 import aastha from "@/assets/pastCustomers/aastha.png"
 import fabnic from "@/assets/pastCustomers/fabnic.png"
+import saviralFoods from "@/assets/pastCustomers/saviralFoods.png"
 import Image from "next/image";
 
 const customers = [
@@ -31,6 +32,10 @@ const customers = [
     {
         id: 6,
         img: fabnic,
+    },
+    {
+        id:7,
+        img: saviralFoods,
     }
 ]
 
