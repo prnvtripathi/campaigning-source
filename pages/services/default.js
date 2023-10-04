@@ -8,6 +8,7 @@ import bulksms from "@/assets/services/bulksms.png"
 import ivr from "@/assets/services/ivr.png"
 import whatsapp from "@/assets/services/whatsapp.png"
 import email from "@/assets/services/email.jpg"
+import manyMore from "@/assets/services/manyMore.png"
 
 const data = [
     {
@@ -40,6 +41,12 @@ const data = [
         img: email,
         link: '/',
     },
+    {
+        id: 6,
+        title: '',
+        img: manyMore,
+        link: "/"
+    }
 ]
 
 const Default = () => {
