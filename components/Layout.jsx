@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import logo from "@/assets/logo.png"
@@ -8,14 +8,23 @@ import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 import Background from "./Background"
 import { VscSignIn } from "react-icons/vsc"
-import { signOut, useSession } from "next-auth/react"
+import { useSession } from "next-auth/react"
 import UserProfile from "./UserProfile"
 import Chatbot from "./Chatbot"
+import { useRouter } from "next/router"
 
 const Layout = ({ children }) => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false)
     const [menuExpanded, setMenuExpanded] = useState(false)
     const { data: session } = useSession()
+    const router = useRouter()
+
+    useEffect(() => {
+        if (!session) {
+            router.push("/signin")
+        }
+    }, [session, router])
+
     return (
         <>
             <Background />
