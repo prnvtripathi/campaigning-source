@@ -55,7 +55,7 @@ const Signin = () => {
         <div className="w-screen h-screen flex justify-center items-center">
             <div className="w-[70%]">
                 <h2 className="text-black text-3xl text-center font-bold mb-2">Login</h2>
-                <div className="flex bg-blue-200 justify-around items-center mx-auto p-6">
+                <div className="flex flex-col md:flex-row bg-blue-200 justify-around items-center mx-auto p-6">
                     <form onSubmit={handleSubmit}>
                         <div className='flex flex-col justify-center items-center'>
                             <input

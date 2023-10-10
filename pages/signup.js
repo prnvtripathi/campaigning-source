@@ -1,5 +1,3 @@
-"use client"
-
 import Background from '@/components/Background';
 import Head from 'next/head';
 import { useState } from 'react';
@@ -30,7 +28,6 @@ const SignUp = () => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [contactNumber, setContactNumber] = useState('');
-    // const [whatsappNumber, setWhatsappNumber] = useState('');
     const [designation, setDesignation] = useState('');
     const [socialProfile, setSocialProfile] = useState('');
     const [state, setState] = useState('');
@@ -50,7 +47,7 @@ const SignUp = () => {
             ...formData,
             [name]: value,
         });
-        // Update the corresponding individual state variable
+
         switch (name) {
             case 'firstName':
                 setFirstName(value);
@@ -60,9 +57,6 @@ const SignUp = () => {
                 break;
             case 'contactNumber':
                 setContactNumber(value);
-                break;
-            case 'whatsappNumber':
-                setWhatsappNumber(value);
                 break;
             case 'designation':
                 setDesignation(value);
@@ -109,7 +103,7 @@ const SignUp = () => {
             }
         } catch (error) {
             if (error.response && error.response.status === 400) {
-                setErrorMessage("User with same email already exists!");
+                setErrorMessage("User with the same email already exists!");
             } else {
                 console.error('Error:', error);
             }
@@ -123,11 +117,11 @@ const SignUp = () => {
             </Head>
             <Background />
             <div className='w-screen h-screen flex justify-center items-center'>
-                <div className='w-[70%]'>
+                <div className='w-[90%] md:w-[70%]'>
                     <h2 className='text-black text-3xl text-center font-bold mb-2'>Sign Up</h2>
-                    <div className='flex justify-around items-center p-3 bg-blue-200 bg-opacity-90 rounded-lg'>
-                        <form onSubmit={handleSubmit} className='flex flex-col items-center'>
-                            <div className='flex justify-center items-center'>
+                    <div className='flex flex-col md:flex-row justify-around items-center p-3 bg-blue-200 bg-opacity-90 rounded-lg'>
+                        <form onSubmit={handleSubmit} className='flex flex-col items-center text-center'>
+                            <div className='flex flex-col md:flex-row justify-center items-center'>
                                 <input
                                     type="text"
                                     id="firstName"
@@ -149,7 +143,7 @@ const SignUp = () => {
                                     required
                                 />
                             </div>
-                            <div className='flex justify-center items-center'>
+                            <div className='flex flex-col md:flex-row justify-center items-center'>
                                 <input
                                     type="text"
                                     id="contactNumber"
@@ -160,26 +154,12 @@ const SignUp = () => {
                                     className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
                                     required
                                 />
-
-                                {/* <div>
-                                <input
-                                    type="text"
-                                    id="whatsappNumber"
-                                    name="whatsappNumber"
-                                    value={whatsappNumber}
-                                    onChange={handleInputChange}
-                                    placeholder="Whatsapp Number"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                            </div> */}
-
                                 <select
                                     id="designation"
                                     name="designation"
                                     value={designation}
                                     onChange={handleInputChange}
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100 w-[43%]"
+                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100 w-[80%] md:w-[43%]"
                                     required
                                 >
                                     <option value="">Select Designation</option>
@@ -279,7 +259,7 @@ const SignUp = () => {
                                     ></textarea>
                                 </div>
                             ) : null}
-                            <div className='flex justify-center items-center'>
+                            <div className='flex flex-col md:flex-row justify-center items-center'>
                                 <input
                                     type="email"
                                     id="email"
@@ -306,7 +286,7 @@ const SignUp = () => {
                             </div>
                         </form>
                         <div className='flex flex-col items-center justify-center gap-3'>
-                            <p className='text-black'>Signin Using</p>
+                            <p className='text-black mt-4'>or Signin Using</p>
                             <button
                                 className='bg-white text-black flex items-center gap-2 text-lg px-2 py-1 rounded-full hover:scale-110 transition'
                                 onClick={() => signIn('google')}
@@ -319,7 +299,7 @@ const SignUp = () => {
                         </div>
                     </div>
                     <div>
-                        {errorMessage && <p className='bg-red-600 text-white p-3 rounded-md w-1/4 text-center mt-2'>{errorMessage}</p>}
+                        {errorMessage && <p className='bg-red-600 text-white p-3 rounded-md w-1/2 md:w-1/4 text-center mt-2'>{errorMessage}</p>}
                     </div>
                 </div>
             </div>
