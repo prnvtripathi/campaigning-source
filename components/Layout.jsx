@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     const router = useRouter()
 
     useEffect(() => {
-        if (!session) {
+        if (!session && router.pathname !== "/signin" && router.pathname !== "/signup") {
             router.push("/signin")
         }
     }, [session, router])
@@ -73,7 +73,7 @@ const Layout = ({ children }) => {
                                         onMouseLeave={() => setIsDropdownOpen(false)}
                                     >
                                         <ul className="dropdown-menu">
-                                            <li className="min-w-max"><Link href="/services/politics">Political Election Promotion</Link></li>
+                                            <li className="min-w-max"><Link href="/services/politics">Public Choice Promotion</Link></li>
                                             <li className="min-w-max"><Link href="/services/business">Business Development</Link></li>
                                             <li className="min-w-max"><Link href="/services/default2">Website & Application Development</Link></li>
                                             <li className="min-w-max"><Link href="/services/default">IVR, Bulk SMS, Whatsapp Broadcasts</Link></li>
