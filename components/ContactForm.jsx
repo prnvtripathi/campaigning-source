@@ -15,7 +15,7 @@ export const ContactForm = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_pazplff', 'template_nez5obe', form.current, 'NkREpU3WwM0aYiRku')
+        emailjs.sendForm('service_9bzyutl', 'template_r938qvo', form.current, 'Rv5e_uBZzEM1DIk9W')
             .then((result) => {
                 createAlert('Message Sent Successfully!');
                 console.log(result.text);
