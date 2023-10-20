@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaTimes } from 'react-icons/fa'; // Import icons for open a
 
 const Chatbot = () => {
   const directLineURL =
-    'https://webchat.botframework.com/embed/ChatbotJabal-bot/gemini?b=ChatbotJabal-bot&s=qrXJvC7ZM9s.r6pPUeq0bRiBLw7hEbgU-E55IzwNmS-9yiVZIj03xnA&username=You';
+    'https://webchat.botframework.com/embed/azureqnabot-bot/gemini?b=azureqnabot-bot&s=UhW5LXUKbQM.85BMRWusjCvgTvmGRbO_yuHG9gte-hj-z-o2OeCNAww&username=You';
 
   const [chatbotVisible, setChatbotVisible] = useState(false);
 
