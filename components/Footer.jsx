@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -25,10 +25,8 @@ const Footer = () => {
             </div>
             <div className="flex flex-col md:flex-row justify-center items-center md:items-end">
                 <div className="flex items-center text-2xl gap-4 mt-2 px-2">
-                    <Link href="https://github.com/prnvtripathi/campaigning-source" className="transition-all ease-in-out duration-200 hover:text-gray-500 hover:scale-125"><FaGithub /></Link>
-                    <Link href="/" className="transition-all ease-in-out duration-200 hover:text-blue-500 hover:scale-125"><FaTwitter /></Link>
-                    <Link href="/" className="transition-all ease-in-out duration-200 hover:text-blue-500 hover:scale-125"><FaFacebook /></Link>
-                    <Link href="/" className="transition-all ease-in-out duration-200 hover:text-purple-500 hover:scale-125"><FaInstagram /></Link>
+                    <Link target="_blank" href="https://www.instagram.com/campaigningsource/" className="transition hover:text-purple-500"><FaInstagram /></Link>
+                    <Link target="_blank" href="https://www.linkedin.com/company/100733755/" className="transition hover:text-blue-600"><FaLinkedin /></Link>
                 </div>
             </div>
             <p className="py-4 select-none">© {year} Campaigning Source</p>
