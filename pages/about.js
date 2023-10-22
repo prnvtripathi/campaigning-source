@@ -116,31 +116,31 @@ const team = [
         name: "Tanishka Garg",
         position: "Team Member"
     },
-    {
-        img: user,
-        name: "Umang Gupta",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Pranav Tripathi",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Sushant Sharma",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Shaily Bhati",
-        position: "Team Member"
-    },
-    {
-        img: user,
-        name: "Tushar Aggarwal",
-        position: "Team Member"
-    },
+    // {
+    //     img: user,
+    //     name: "Umang Gupta",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Pranav Tripathi",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Sushant Sharma",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Shaily Bhati",
+    //     position: "Team Member"
+    // },
+    // {
+    //     img: user,
+    //     name: "Tushar Aggarwal",
+    //     position: "Team Member"
+    // },
 ]
 
 const About = () => {
