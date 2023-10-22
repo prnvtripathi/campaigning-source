@@ -131,11 +131,11 @@ const team = [
     //     name: "Sushant Sharma",
     //     position: "Team Member"
     // },
-    // {
-    //     img: user,
-    //     name: "Shaily Bhati",
-    //     position: "Team Member"
-    // },
+    {
+        img: user,
+        name: "Shaily Bhati",
+         position: "Team Member"
+     },
     // {
     //     img: user,
     //     name: "Tushar Aggarwal",
