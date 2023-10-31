@@ -121,6 +121,13 @@ const Carousel = () => {
         }
     };
 
+    useEffect(() => {
+        const interval = setInterval(() => {
+            goToNext();
+        }, 3000);
+        return () => clearInterval(interval);
+    }, [current]);
+
     return (
         <div className="mb-5">
             <div className="flex flex-col items-center justify-center">
