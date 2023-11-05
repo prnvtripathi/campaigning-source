@@ -87,6 +87,7 @@ const Layout = ({ children }) => {
                         <li><Link href="/services/analytical">Analytical</Link></li>
                         <li><Link href="/contact">Internship</Link></li>
                         <li><Link href="/swags">Swags</Link></li>
+                        <li><Link href="/payments">Payment</Link></li>
                         {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
 
                     </ul>
