@@ -1,41 +1,23 @@
 import React, { useState } from 'react';
 
+const qrCodeImageUrl = 'YOUR_QR_CODE_IMAGE_URL';
+
 function Payment() {
-  const [amount, setAmount] = useState(0);
   const [receiver, setReceiver] = useState('');
+  const [amount, setAmount] = useState('');
 
-  const handlePayment = async () => {
-    try {
-      // Check if TonKeeper is available
-      if (typeof TonKeeper === 'undefined') {
-        alert('TonKeeper is not available. Please install the TonKeeper extension.');
-        return;
-      }
+  const handleTonTransfer = () => {
+    // Implement TON transfer logic here
+    // For example:
+    // Call an API to transfer TON from sender to receiver
 
-      // Create a payment object
-      const payment = {
-        to: receiver,
-        amount: amount,
-        currency: 'TON', // Adjust this based on your use case
-        message: 'Payment for your service', // Optional
-      };
-
-      // Prompt the user to sign the payment
-      const signedPayment = await TonKeeper.send(payment);
-
-      // Handle the signed payment, e.g., send it to your server for processing
-
-      // You can also provide feedback to the user, for example:
-      alert('Payment sent successfully!');
-    } catch (error) {
-      console.error('Payment failed:', error);
-      alert('Payment failed. Please try again later.');
-    }
+    // Open TonKeeper extension link
+    window.open('https://wallet.tonkeeper.com/', '_blank');
   };
 
   return (
     <div>
-      <h2>Make a Payment with TonKeeper</h2>
+      <h2>TON Cryptocurrency Transfer</h2>
       <div>
         <label>Receiver Address:</label>
         <input
@@ -47,12 +29,18 @@ function Payment() {
       <div>
         <label>Amount (TON):</label>
         <input
-          type="number"
+          type="text"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />
       </div>
-      <button onClick={handlePayment}>Send Payment</button>
+      <button onClick={handleTonTransfer}>Submit</button>
+
+      <div style={{ marginTop: '20px' }}>
+        <h3>OR</h3>
+        <h4>Make Payment using QR Code:</h4>
+        <img src={qrCodeImageUrl} alt="QR Code" />
+      </div>
     </div>
   );
 }
