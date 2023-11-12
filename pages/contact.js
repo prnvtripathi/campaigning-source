@@ -162,7 +162,7 @@ const Contact = () => {
                             <p className="text-gray-600 mb-3">
                                 Assistance Hours:<br /> Monday - Friday, 9AM to 5PM
                             </p>
-                            <p className="text-black">+91 98113 93288</p>
+                            <p className="text-black">+91 82874 04804</p>
                         </div>
                         <div className="outline outline-green-600 bg-green-200 bg-opacity-40 rounded py-3 w-full md:w-1/2 px-3 h-auto md:h-1/4">
                             <h1 className="text-xl text-black mb-5">Email:</h1>
