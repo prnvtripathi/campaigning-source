@@ -10,16 +10,26 @@ const offersList = [
     },
     {
         id: 2,
+        title: "Get Featured on WikiPedia",
+        price: "as cheap as ₹ 8000",
+    },
+     {
+        id: 3,
+        title: "Press Release Services",
+        price: "as cheap as ₹ 5000",
+    },
+    {
+        id: 4,
         title: "Website Development",
         price: "₹ 9999",
     },
     {
-        id: 3,
+        id: 5,
         title: "Get your Business on Google",
         price: "₹ 999",
     },
     {
-        id: 4,
+        id: 6,
         title: "Get your Business on Facebook",
         price: "₹ 999",
     },
