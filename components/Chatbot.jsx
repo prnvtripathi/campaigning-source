@@ -62,7 +62,7 @@
 // Chatbot.js
 import React, { useState } from 'react';
 import { FaPhoneAlt, FaTimes } from 'react-icons/fa';
-import getGPTResponse from './gptService'; // Adjust the path based on your project structure
+import getGPTResponse from '../pages/service/gptService'; // Adjust the path based on your project structure
 
 const Chatbot = () => {
   const directLineURL =
