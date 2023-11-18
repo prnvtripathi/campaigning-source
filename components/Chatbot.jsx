@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FaPhoneAlt } from 'react-icons/fa';
+import { MdClose } from 'react-icons/md';
 
 const Chatbot = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -16,16 +17,30 @@ const Chatbot = () => {
     setIsChatOpen(!isChatOpen);
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      handleSendMessage();
+    }
+  };
+
+  const chatContainerRef = useRef(null);
+  useEffect(() => {
+    // Scroll to the bottom of the chat container when chatHistory changes
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [chatHistory]);
+
   const handleSendMessage = () => {
     if (inputValue.trim() !== '') {
       // Set user's message
       const updatedChatHistory = [...chatHistory, { type: 'user', message: inputValue }];
       setChatHistory(updatedChatHistory);
-      // Assuming your chatbot logic is implemented here
-      // Replace this with your actual chatbot logic
-      const botResponse = getChatbotResponse(inputValue);
-      // Append bot's response
-      setChatHistory([...updatedChatHistory, { type: 'bot', message: botResponse }]);
+
+      setTimeout(() => {
+        const botResponse = getChatbotResponse(inputValue);
+        setChatHistory([...updatedChatHistory, { type: 'bot', message: botResponse }]);
+      }, 1250);
       setInputValue('');
     }
   };
@@ -35,22 +50,32 @@ const Chatbot = () => {
   const getChatbotResponse = (question) => {
     if (question.toLowerCase().includes('looking for strategies to increase')) {
       return response;
-    } else if (question.toLowerCase().includes('gpt based chat bot repo')) {
+    } else if (question.toLowerCase().includes('gpt based chat bot repo') || question.toLowerCase().includes('gpt based chatbot repo')) {
       const repoLink = "https://berack-ai.vercel.app/";
       return (
         <div>
-          You can use this:{" "}
+          here:{" "}
           <a className='underline' href={repoLink} target="_blank" rel="noopener noreferrer">
             {repoLink}
           </a>
         </div>
       );
+    } else if (question.toLowerCase().includes('hello') || question.toLowerCase().includes('hi')) {
+      return 'Hello! How can I help you?';
+    } else if (question.toLowerCase().includes('how are you')) {
+      return 'I am good. How are you?';
+    } else if (question.toLowerCase().includes('good')) {
+      return 'That is great!';
+    } else if (question.toLowerCase().includes('bad')) {
+      return 'I am sorry to hear that. How can I help you?';
+    } else if (question.toLowerCase().includes('help')) {
+      return 'I can help you with your queries related to your business.';
+    } else if (question.toLowerCase().includes('thank')) {
+      return 'You are welcome!';
+    } else if (question.toLowerCase().includes('bye')) {
+      return 'Bye! Have a nice day.';
     } else {
-      return (
-        <div>
-          I'm sorry, I didn't understand that question. Please ask something else.
-        </div>
-      );
+      return 'Sorry, I did not understand that.';
     }
   };
 
@@ -61,17 +86,24 @@ const Chatbot = () => {
         className={`bg-yellow-400 text-black p-3 rounded cursor-pointer`}
         onClick={handleChatToggle}
       >
-        {isChatOpen ? ("X") : (<FaPhoneAlt />)}
+        {isChatOpen ? (<MdClose />) : (<FaPhoneAlt />)}
       </div>
       {isChatOpen && (
         <div className="bg-white p-4 rounded-b-lg border-t border-blue-500">
-          <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
+          <div
+            ref={chatContainerRef}
+            className='max-h-60 overflow-y-scroll'
+          >
             {chatHistory.map((chat, index) => (
               <div
                 key={index}
-                className={`mb-2 ${chat.type === 'user' ? 'float-right text-white bg-blue-700 p-2 rounded' : 'float-left bg-green-500 text-white p-2 rounded'
-                  }`}
+                className={`mb-2 text-black bg-blue-100 p-2 rounded w-fit shadow-xl ${chat.type === 'user' ? 'ml-auto' : ''}`}
               >
+                {chat.type === 'user' ? (
+                  <span className="font-bold">You:</span>
+                ) : (
+                  <span className="font-bold">Bot:</span>
+                )}{' '}
                 {chat.message}
               </div>
             ))}
@@ -81,6 +113,7 @@ const Chatbot = () => {
               type="text"
               value={inputValue}
               onChange={handleInputChange}
+              onKeyDown={handleKeyDown} // Handle Enter key press
               className="flex-grow border p-2 rounded-l-md"
             />
             <button
