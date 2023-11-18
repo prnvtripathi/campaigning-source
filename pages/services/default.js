@@ -2,7 +2,6 @@ import Layout from "@/components/Layout"
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
-
 import bulkcall from "@/assets/services/bulkcall.png"
 import bulksms from "@/assets/services/bulksms.png"
 import ivr from "@/assets/services/ivr.png"
