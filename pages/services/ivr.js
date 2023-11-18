@@ -21,13 +21,16 @@ const IVR = () => {
                             touch-tone keypad selection and provides appropriate responses in the form of voice,
                             fax, callback, email and perhaps other media.
                         </p>
-                        <Image src={ivr} alt="IVR" width={400} height={400}/>
+                        <Image src={ivr} alt="IVR" width={400} height={400} />
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-4 my-5'>
                     <h2 className='title'>Let's see how you're going to avail this service?</h2>
-                    <p className='text-xl'>Fill this google form!</p>
-                    <Link className='w-1/6 mx-auto' href="https://forms.gle/3w66Vm79fk7NYiL27"><button className='btn-primary'>Let's go</button></Link>
+                    <div className='flex w-11/12 bg-blue-400 pb-3 mx-auto items-center rounded-lg bg-opacity-75 backdrop-blur-md'>
+                        <Link className='w-1/6 mx-auto' href="https://forms.gle/3w66Vm79fk7NYiL27"><button className='btn-primary'>Fill this form</button></Link>
+                        <p className='text-xl text-black'>or</p>
+                        <Link className='w-1/6 mx-auto' target='_blank' href="https://cloudshope.com/"><button className='btn-primary'>Sign Up for the service</button></Link>
+                    </div>
                     {/* <ol className='flex flex-col justify-center items-start list-decimal outline outline-gray-500 rounded-lg py-3 px-8 w-[75%]'>
                         <li>First of all you need to upload an excel file of contacts.</li>
                         <input type="file" name="contact-file" id="contact-file" className='my-2' required />
