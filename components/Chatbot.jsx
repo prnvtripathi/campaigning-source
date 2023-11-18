@@ -40,7 +40,7 @@ const Chatbot = () => {
       return (
         <div>
           You can use this:{" "}
-          <a href={repoLink} target="_blank" rel="noopener noreferrer">
+          <a className='underline' href={repoLink} target="_blank" rel="noopener noreferrer">
             {repoLink}
           </a>
         </div>
