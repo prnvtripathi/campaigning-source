@@ -109,7 +109,7 @@ const Politics = () => {
             </Head>
             <Layout>
                 <div className="bg-transparent outline rounded-lg my-2 p-4 flex flex-col justify-center items-center">
-                    <h1 className="title text-black"><span className={montserrat.className}>Public Choice Promotion</span></h1>
+                    <h1 className="title text-black"><span className={montserrat.className}>Political Promotion</span></h1>
                     <Link href="/contact" className="my-3">
                         <button className="btn-primary text-xl">Let's Go</button>
                     </Link>
