@@ -33,7 +33,7 @@ const Graphics = () => {
             </Head>
             <Layout>
                 <h1 className="title text-black">Get graphics on demand!</h1>
-                <div className='w-1/6 mb-3 mx-auto'><Link href="/https://designs.ai/en"><button className='btn-primary'>Let's go</button></Link></div>
+                <div className='w-1/6 mb-3 mx-auto'><Link href="/Contact"><button className='btn-primary'>Let's go</button></Link></div>
                 <div className='outline p-3 rounded-md mb-3 flex justify-around items-center bg-blue-100 bg-opacity-90'>
                     <Image src={imgSrc} onClick={() => setB(!b)} alt="brochure" width={500} className='rounded-md' />
                     <p className='text-xl text-gray-700'>
