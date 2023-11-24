@@ -28,7 +28,7 @@ const Whatsapp = () => {
                     <div className='flex w-11/12 bg-blue-400 pb-3 mx-auto items-center rounded-lg bg-opacity-75 backdrop-blur-md'>
                         <Link className='w-1/6 mx-auto' href="https://forms.gle/V2AoAPxjdkTanUCFA"><button className='btn-primary'>Fill this form</button></Link>
                         <p className='text-xl text-black'>or</p>
-                        <Link className='w-1/6 mx-auto' target='_blank' href="https://login.digitalsms.biz/signin.php"><button className='btn-primary'>Sign Up for the service</button></Link>
+                        <Link className='w-1/6 mx-auto' target='_blank' href="https://www.campaigningsource.com/contact"><button className='btn-primary'>Sign Up for the service</button></Link>
                     </div>
                     {/* <ol className='flex flex-col justify-center items-start list-decimal outline outline-gray-500 rounded-lg py-3 px-8 w-[75%]'>
                         <li>First of all you need to upload an excel file of contacts.</li>
