@@ -35,7 +35,7 @@ const Graphics = () => {
             <Layout>
                 <h1 className="title text-black">Get graphics on demand!</h1>
                 <div className='w-1/6 mb-3 mx-auto'>
-                    <Link target='_blank' href="https://designs.ai/en" className='btn-primary'>
+                    <Link target='_blank' href="https://www.campaigningsource.com/contact" className='btn-primary'>
                         Let's go
                     </Link>
                 </div>
