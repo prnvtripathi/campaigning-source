@@ -28,7 +28,7 @@ function Payment() {
         <div className="bg-blue-200 p-3 rounded-lg my-3">
           <h2 className="title text-black">Payments</h2>
           <div className='mx-auto w-11/12'>
-            <Image src={upiqr} alt="QR Code" className=''/>
+            <Image src={upiqr} alt="QR Code" className='my-2' />
           </div>
           <h2 className="title text-black">TON Cryptocurrency Transfer</h2>
           <form className="w-1/3 mx-auto flex flex-col justify-center items-center mt-12">
@@ -64,7 +64,7 @@ function Payment() {
           <div className="mt-12 text-center flex flex-col items-center">
             <h3 className="title text-black">OR</h3>
             <h4>Make Payment using QR Code:</h4>
-            <Image src={qrCodeImageUrl} alt="QR Code" className="w-1/3"/>
+            <Image src={qrCodeImageUrl} alt="QR Code" className="w-1/3" />
           </div>
         </div>
       </Layout>
