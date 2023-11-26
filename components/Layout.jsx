@@ -19,11 +19,11 @@ const Layout = ({ children }) => {
     const { data: session } = useSession()
     const router = useRouter()
 
-    useEffect(() => {
-        if (!session && router.pathname !== "/signin" && router.pathname !== "/signup") {
-            router.push("/signin")
-        }
-    }, [session, router])
+    // useEffect(() => {
+    //     if (!session && router.pathname !== "/signin" && router.pathname !== "/signup") {
+    //         router.push("/signin")
+    //     }
+    // }, [session, router])
 
     return (
         <>

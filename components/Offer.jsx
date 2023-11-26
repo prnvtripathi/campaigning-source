@@ -11,12 +11,12 @@ const offersList = [
     {
         id: 2,
         title: "Get Featured on WikiPedia",
-        price: "as cheap as ₹ 8000",
+        price: "as cheap as ₹ 25000",
     },
      {
         id: 3,
         title: "Press Release Services",
-        price: "as cheap as ₹ 5000",
+        price: "as cheap as ₹ 10000",
     },
     {
         id: 4,
