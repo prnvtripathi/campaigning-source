@@ -3,6 +3,8 @@ import qrCodeImageUrl from '../assets/qr.jpg'
 import Image from 'next/image';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
+import upiqr from '../assets/upiqr.jpg'
+
 function Payment() {
   const [receiver, setReceiver] = useState('');
   const [amount, setAmount] = useState('');
@@ -19,11 +21,15 @@ function Payment() {
   return (
     <>
       <Head>
-        <title>TON Cryptocurrency Transfer</title>
+        <title>Payments</title>
         <meta name="description" content="TON Cryptocurrency Transfer" />
       </Head>
       <Layout>
         <div className="bg-blue-200 p-3 rounded-lg my-3">
+          <h2 className="title text-black">Payments</h2>
+          <div className='mx-auto w-11/12'>
+            <Image src={upiqr} alt="QR Code" className=''/>
+          </div>
           <h2 className="title text-black">TON Cryptocurrency Transfer</h2>
           <form className="w-1/3 mx-auto flex flex-col justify-center items-center mt-12">
             <div>
