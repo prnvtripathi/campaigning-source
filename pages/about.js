@@ -11,6 +11,12 @@ import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
 import user from "@/assets/user.png"
 import vansh from "@/assets/team/vansh.jpg"
 import tanishk from "@/assets/team/tanishk.jpg"
+import pranav from "@/assets/team/pranav.jpeg"
+import tanishka from "@/assets/team/tanishka.jpg"
+import shaily from "@/assets/team/shaily.jpg"
+import vanshika from "@/assets/team/vanshika.jpg"
+import sushant from "@/assets/team/sushant.svg"
+import umang from "@/assets/team/umang.jpg"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -102,7 +108,7 @@ const team = [
         position: "Team Member"
     },
     {
-        img: user,
+        img: vanshika,
         name: "Vanshika Gupta",
         position: "Team Member"
     },
@@ -112,30 +118,31 @@ const team = [
         position: "Team Member"
     },
     {
-        img: user,
+        img: tanishka,
         name: "Tanishka Garg",
         position: "Team Member"
     },
-    // {
-    //     img: user,
-    //     name: "Umang Gupta",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Pranav Tripathi",
-    //     position: "Team Member"
-    // },
-    // {
-    //     img: user,
-    //     name: "Sushant Sharma",
-    //     position: "Team Member"
-    // },
+    
     {
-        img: user,
+        img: pranav,
+        name: "Pranav Tripathi",
+        position: "Team Member"
+    },
+    {
+        img: sushant,
+        name: "Sushant Sharma",
+        position: "Team Member"
+    },
+    {
+        img: shaily,
         name: "Shaily Bhati",
          position: "Team Member"
      },
+     {
+        img: umang,
+        name: "Umang Gupta",
+        position: "Team Member"
+    },
     // {
     //     img: user,
     //     name: "Tushar Aggarwal",
@@ -191,7 +198,7 @@ const About = () => {
                         {services.map((service, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
                             >
                                 <span className="text-4xl my-2">{service.icon}</span>
                                 <h3 className="text-xl font-bold mb-2">{service.title}</h3>
@@ -242,14 +249,14 @@ const About = () => {
                         {team.map((member, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
                             >
                                 <Image
                                     src={member.img}
                                     alt="member"
                                     className="rounded-full"
-                                    width={100}
-                                    height={100}
+                                    width={120}
+                                    height={120}
                                 />
                                 <h3 className="text-xl font-bold mb-2 text-black">{member.name}</h3>
                                 <p className="text-center font-thin text-black">{member.position}</p>
