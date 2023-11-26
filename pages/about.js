@@ -108,6 +108,11 @@ const team = [
         position: "Team Member"
     },
     {
+        img: umang,
+        name: "Umang Gupta",
+        position: "Team Member"
+    },
+    {
         img: vanshika,
         name: "Vanshika Gupta",
         position: "Team Member"
@@ -122,7 +127,7 @@ const team = [
         name: "Tanishka Garg",
         position: "Team Member"
     },
-    
+
     {
         img: pranav,
         name: "Pranav Tripathi",
@@ -136,11 +141,6 @@ const team = [
     {
         img: shaily,
         name: "Shaily Bhati",
-         position: "Team Member"
-     },
-     {
-        img: umang,
-        name: "Umang Gupta",
         position: "Team Member"
     },
     // {
@@ -249,7 +249,7 @@ const About = () => {
                         {team.map((member, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
+                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-56 text-center hover:scale-105 transition ease-in-out duration-200"
                             >
                                 <Image
                                     src={member.img}
@@ -258,7 +258,7 @@ const About = () => {
                                     width={120}
                                     height={120}
                                 />
-                                <h3 className="text-xl font-bold mb-2 text-black">{member.name}</h3>
+                                <h3 className="text-xl font-bold text-black">{member.name}</h3>
                                 <p className="text-center font-thin text-black">{member.position}</p>
                             </div>
                         ))}
