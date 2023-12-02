@@ -54,7 +54,6 @@ const Layout = ({ children }) => {
                         </Link>
                     </div>
                     <ul className={`${menuExpanded ? "navbar expanded" : "navbar"}`}>
-                        <li><Link href="/">Home</Link></li>
                         <li><Link href="/contact">Influencers</Link></li>
                         <li><Link href="/about">About Us</Link></li>
                         <li>
