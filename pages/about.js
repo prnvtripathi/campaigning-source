@@ -139,7 +139,7 @@ const team = [
         img: pranav,
         name: "Pranav Tripathi",
         position: "Team Member",
-        linkedin: "https://www.linkedin.com/in/tripathiprnav14/"
+        linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
     {
         img: sushant,
@@ -270,7 +270,7 @@ const About = () => {
                                         height={120}
                                     />
                                     <div className="absolute inset-0 flex justify-center items-center px-5 py-4 transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                                        <Link href={member.linkedin} className="text-white hover:text-blue-600 text-3xl">
+                                        <Link href={member.linkedin} target="_blank" className="text-white hover:text-blue-600 text-3xl">
                                             <FaLinkedin />
                                         </Link>
                                     </div>
