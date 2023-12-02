@@ -5,6 +5,7 @@ import { Montserrat } from "next/font/google";
 // import rjd from "@/assets/pastCustomers/rjd.png"
 import aastha from "@/assets/pastCustomers/aastha.png"
 import fabnic from "@/assets/pastCustomers/fabnic.png"
+import daankaro from "@/assets/pastCustomers/daankaro.png"
 import saviralFoods from "@/assets/pastCustomers/saviralFoods.png"
 import Image from "next/image";
 
@@ -36,7 +37,11 @@ const customers = [
     {
         id:7,
         img: saviralFoods,
-    }
+    },
+    {
+        id: 8,
+        img: daankaro,
+    },
 ]
 
 const montserrat = Montserrat({
