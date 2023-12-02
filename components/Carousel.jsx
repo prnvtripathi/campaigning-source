@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
+import Link from "next/link";
 import Image from "next/image";
 import election1 from "@/assets/election/election1.png";
 import election2 from "@/assets/election/election2.png";
@@ -160,6 +161,11 @@ const Carousel = () => {
                         ></div>
                     ))}
                 </div>
+                <Link href="/services/graphics" className="w-1/4 bg-blue-200 shadow-md shadow-blue-600 text-black text-center mt-6 transition rounded-md hover:bg-blue-600 hover:text-white hover:scale-110">
+                    <div >
+                        <p className="text-lg">Get graphics like these</p>
+                    </div>
+                </Link>
             </div>
         </div>
     );
