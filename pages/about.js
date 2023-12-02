@@ -15,8 +15,10 @@ import pranav from "@/assets/team/pranav.jpeg"
 import tanishka from "@/assets/team/tanishka.jpg"
 import shaily from "@/assets/team/shaily.jpg"
 import vanshika from "@/assets/team/vanshika.jpg"
-import sushant from "@/assets/team/sushant.svg"
+import sushant from "@/assets/team/sushant.jpeg"
 import umang from "@/assets/team/umang.jpg"
+import { FaLinkedin } from "react-icons/fa"
+import Link from "next/link"
 
 const montserrat = Montserrat({
     subsets: ["latin"],
@@ -105,43 +107,51 @@ const team = [
     {
         img: vansh,
         name: "Vansh Tyagi",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/vansh-tyagi-a04355210/"
     },
     {
         img: umang,
         name: "Umang Gupta",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/"
     },
     {
         img: vanshika,
         name: "Vanshika Gupta",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
     {
         img: tanishk,
         name: "Tanishk Attri",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/tanishk-attri-a49027220/"
     },
     {
         img: tanishka,
         name: "Tanishka Garg",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
     },
 
     {
         img: pranav,
         name: "Pranav Tripathi",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/tripathiprnav14/"
     },
     {
         img: sushant,
         name: "Sushant Sharma",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
     },
     {
         img: shaily,
         name: "Shaily Bhati",
-        position: "Team Member"
+        position: "Team Member",
+        linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
     },
     // {
     //     img: user,
@@ -251,15 +261,24 @@ const About = () => {
                                 key={index}
                                 className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-56 text-center hover:scale-105 transition ease-in-out duration-200"
                             >
-                                <Image
-                                    src={member.img}
-                                    alt="member"
-                                    className="rounded-full"
-                                    width={120}
-                                    height={120}
-                                />
+                                <div className="relative overflow-hidden transition duration-300 transform rounded-full lg:hover:-translate-y-2 hover:shadow-2xl">
+                                    <Image
+                                        src={member.img}
+                                        alt="member"
+                                        className="rounded-full"
+                                        width={120}
+                                        height={120}
+                                    />
+                                    <div className="absolute inset-0 flex justify-center items-center px-5 py-4 transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                                        <Link href={member.linkedin} className="text-white hover:text-blue-600 text-3xl">
+                                            <FaLinkedin />
+                                        </Link>
+                                    </div>
+                                </div>
+
                                 <h3 className="text-xl font-bold text-black">{member.name}</h3>
                                 <p className="text-center font-thin text-black">{member.position}</p>
+
                             </div>
                         ))}
                     </div>
