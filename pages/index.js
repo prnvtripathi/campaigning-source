@@ -16,8 +16,6 @@ const Home = () => {
         <meta name="author" content="Campaigning Source" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google-site-verification" content="wuImTDqbWJwqAK-DAqsRtO-vJP6fxbe5wDrnEFc29Lw" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5963660164973789"
-     crossorigin="anonymous"></script>
       </Head>
       <Layout>
         <SocialMedia />
