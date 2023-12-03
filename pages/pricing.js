@@ -1,10 +1,10 @@
 // Importing necessary components and libraries
 import Layout from "@/components/Layout";
 import Head from "next/head";
+import React from "react";
 
 // Data array containing pricing information for various services
 const data = [
-    [
     {
         "id": 1,
         "name": "Political and Election Promotion",
@@ -36,120 +36,110 @@ const data = [
         "price": "Starting from ₹100"
     },
     {
-        "id": 8,
+        "id": 7,
         "name": "Camera and Drone Shooting",
         "price": "Starting at ₹2500/day"
     },
     {
-        "id": 10,
+        "id": 8,
         "name": "Social Media Handling",
-        "price": "Starting from ₹5000/month"
+        "price": "Starting from ₹5,000/month"
     },
     {
-        "id": 12,
+        "id": 9,
         "name": "Twitter Trending",
-        "price": "As low as ₹15000/hashtag"
+        "price": "As low as ₹20,000/hashtag"
     },
     {
-        "id": 13,
+        "id": 10,
         "name": "Funnels and Ads Placement",
         "price": "Strategise Now"
     },
     {
-        "id": 14,
+        "id": 11,
         "name": "Bulk Messages",
-        "price": "₹0.1/message"
+        "price": "₹0.20/message"
     },
-    // {
-    //     "id": 15,
-    //     "name": "IVR and Bulk Calls",
-    //     "price": "₹0.13/product"
-    // },
     {
-        "id": 18,
+        "id": 12,
         "name": "Wikipedia Management",
         "price": "Connect to our sales team"
     },
     {
-        "id": 19,
+        "id": 13,
         "name": "Meta Advertisement",
         "price": "Connect to our sales team"
     },
     {
-        "id": 20,
+        "id": 14,
         "name": "Google Ads",
         "price": "Starting from ₹5,000/month"
     },
     {
-        "id": 21,
+        "id": 15,
         "name": "WhatsApp Broadcast",
-        "price": "Starting from ₹0.05/message"
+        "price": "Starting from ₹0.15/message"
     },
-    // {
-    //     "id": 22,
-    //     "name": "SMS Broadcast",
-    //     "price": "Starting from ₹0.1/message"
-    // },
+    {
+        "id": 16,
+        "name": "IVR",
+        "price": "Starting from ₹0.20/call"
+    },
+    {
+        "id": 17,
+        "name": "Bulk Calling",
+        "price": "Starting from ₹0.20/call"
+    },
+    {
+        "id": 18,
+        "name": "Graphic Designing",
+        "price": "Starting from ₹1,999/Month"
+    },
+    {
+        "id": 19,
+        "name": "SEO",
+        "price": "Starting from ₹6,999/month"
+    },
+    {
+        "id": 20,
+        "name": "SEM",
+        "price": "Starting from ₹6,999/month"
+    },
+    {
+        "id": 21,
+        "name": "Video Editing",
+        "price": "Starting from ₹300"
+    },
+    {
+        "id": 22,
+        "name": "Motion Graphics",
+        "price": "Starting from ₹500"
+    },
     {
         "id": 23,
-        "name": "IVR",
-        "price": "Starting from ₹2,000/month"
-    },
-    {
-        "id": 24,
-        "name": "Bulk Calling",
-        "price": "Starting from ₹0.2/call"
-    },
-    {
-        "id": 25,
-        "name": "Graphic Designing",
-        "price": "Starting from ₹1,999"
-    },
-    {
-        "id": 26,
-        "name": "SEO",
-        "price": "Starting from ₹7,999/month"
-    },
-    {
-        "id": 27,
-        "name": "SEM",
-        "price": "Starting from ₹9,999/month"
-    },
-    {
-        "id": 28,
-        "name": "Video Editing",
-        "price": "Starting from ₹1,499"
-    },
-    {
-        "id": 29,
-        "name": "Motion Graphics",
-        "price": "Starting from ₹2,499"
-    },
-    {
-        "id": 31,
         "name": "Affiliate Marketing",
         "price": "Connect to our sales team"
     },
     {
-        "id": 32,
+        "id": 24,
         "name": "Customized Printing",
         "price": "Connect to our sales team"
     },
     {
-        "id": 33,
+        "id": 25,
         "name": "Profile Management",
         "price": "Starting from ₹3,999/month"
     },
     {
-        "id": 34,
+        "id": 26,
         "name": "Email Marketing",
         "price": "Starting from ₹4,999/month"
     },
     {
-        "id": 35,
+        "id": 27,
         "name": "YouTube Monetization",
         "price": "Connect to our sales team"
-    },
+    }
 ];
 
 // Function to filter out unique services based on their names
