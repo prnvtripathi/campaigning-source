@@ -1,7 +1,8 @@
+// Importing necessary components and libraries
 import Layout from "@/components/Layout";
 import Head from "next/head";
 
-
+// Data array containing pricing information for various services
 const data = [
     {
         id: 1,
@@ -82,7 +83,7 @@ const data = [
         id: 16,
         name: "Boost your Social Media",
         price: "Connect to our sales team"
-    }
+    },
     {
         id: 17,
         name: "Press Conference",
@@ -175,6 +176,14 @@ const data = [
     },
 ];
 
+// Function to filter out unique services based on their names
+const uniqueServices = Array.from(new Set(data.map((item) => item.name)))
+    .map(name => {
+        const service = data.find(item => item.name === name);
+        return { id: service.id, name: service.name, price: service.price };
+    });
+
+// Pricing component rendering the pricing information
 const Pricing = () => {
     return (
         <>
@@ -185,7 +194,7 @@ const Pricing = () => {
                 <div className="pricing">
                     <h1 className="title text-black">Pricing</h1>
                     <div className="flex justify-center p-3 mb-3 text-black">
-                        <table class="pricing-table">
+                        <table className="pricing-table">
                             <thead>
                                 <tr>
                                     <th>Name</th>
@@ -194,11 +203,11 @@ const Pricing = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {data.map((item) => (
-                                    <tr class="pricing-card" key={item.id}>
-                                        <td class="pricing-card-title">{item.name}</td>
-                                        <td class="pricing-card-price">{item.price}</td>
-                                        <td class="pricing-card-button"><a href="tel:919811393288" className="hover:underline">Call Now</a></td>
+                                {uniqueServices.map((item) => (
+                                    <tr className="pricing-card" key={item.id}>
+                                        <td className="pricing-card-title">{item.name}</td>
+                                        <td className="pricing-card-price">{item.price}</td>
+                                        <td className="pricing-card-button"><a href="tel:919811393288" className="hover:underline">Call Now</a></td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -207,7 +216,6 @@ const Pricing = () => {
                 </div>
             </Layout>
         </>
-
     );
 }
 
