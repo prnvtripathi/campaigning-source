@@ -83,6 +83,96 @@ const data = [
         name: "Boost your Social Media",
         price: "Connect to our sales team"
     }
+    {
+        id: 17,
+        name: "Press Conference",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 18,
+        name: "Wikipedia Management",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 19,
+        name: "Meta Advertisement",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 20,
+        name: "Google Ads",
+        price: "Starting from ₹5,000/month"
+    },
+    {
+        id: 21,
+        name: "WhatsApp Broadcast",
+        price: "Starting from ₹0.05/message"
+    },
+    {
+        id: 22,
+        name: "SMS Broadcast",
+        price: "Starting from ₹0.1/message"
+    },
+    {
+        id: 23,
+        name: "IVR",
+        price: "Starting from ₹2,000/month"
+    },
+    {
+        id: 24,
+        name: "Bulk Calling",
+        price: "Starting from ₹0.2/call"
+    },
+    {
+        id: 25,
+        name: "Graphic Designing",
+        price: "Starting from ₹1,999"
+    },
+    {
+        id: 26,
+        name: "SEO",
+        price: "Starting from ₹7,999/month"
+    },
+    {
+        id: 27,
+        name: "SEM",
+        price: "Starting from ₹9,999/month"
+    },
+    {
+        id: 28,
+        name: "Video Editing",
+        price: "Starting from ₹1,499"
+    },
+    {
+        id: 29,
+        name: "Motion Graphics",
+        price: "Starting from ₹2,499"
+    },
+    {
+        id: 30,
+        name: "Event Management",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 31,
+        name: "Affiliate Marketing",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 32,
+        name: "Customized Printing",
+        price: "Connect to our sales team"
+    },
+    {
+        id: 33,
+        name: "Profile Management",
+        price: "Starting from ₹3,999/month"
+    },
+    {
+        id: 34,
+        name: "Email Marketing",
+        price: "Starting from ₹4,999/month"
+    },
 ];
 
 const Pricing = () => {
