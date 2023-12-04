@@ -105,7 +105,7 @@ const Politics = () => {
     return (
         <>
             <Head>
-                <title>Public Choice | Campaigning Source</title>
+                <title>Political Promotion | Campaigning Source</title>
             </Head>
             <Layout>
                 <div className="bg-transparent outline rounded-lg my-2 p-4 flex flex-col justify-center items-center">
