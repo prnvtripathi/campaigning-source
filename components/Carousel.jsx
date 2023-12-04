@@ -64,7 +64,7 @@ const testimonials = [
 const Testimonial = ({ testimonial }) => (
     <div className="bg-transparent p-4 rounded-xl duration-300 hover:scale-105 md:m-6 m-2 border hover:bg-gradient-to-r from-violet-200 to-pink-200">
         <div className="flex items-center">
-            <div className="flex-shrink-0">
+            <div className="flex-shrink-1">
                 <Image
                     className="scale-100"
                     src={testimonial.image}
@@ -93,14 +93,11 @@ const Carousel = () => {
             }
         };
 
-        if (typeof window !== "undefined") {
-            window.addEventListener("resize", handleResize);
-        }
+        handleResize(); // Set initial numVisible
+        window.addEventListener("resize", handleResize);
 
         return () => {
-            if (typeof window !== "undefined") {
-                window.removeEventListener("resize", handleResize);
-            }
+            window.removeEventListener("resize", handleResize);
         };
     }, []);
 
@@ -161,8 +158,8 @@ const Carousel = () => {
                         ></div>
                     ))}
                 </div>
-                <Link href="/services/graphics" className="w-1/4 bg-blue-200 shadow-md shadow-blue-600 text-black text-center mt-6 transition rounded-md hover:bg-blue-600 hover:text-white hover:scale-110">
-                    <div >
+                <Link href="/services/graphics" className="w-full md:w-1/2 lg:w-1/4 bg-blue-200 shadow-md shadow-blue-600 text-black text-center mt-6 transition rounded-md hover:bg-blue-600 hover:text-white hover:scale-110">
+                    <div>
                         <p className="text-lg">Get graphics like these</p>
                     </div>
                 </Link>
