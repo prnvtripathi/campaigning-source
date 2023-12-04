@@ -160,7 +160,7 @@ const Pricing = () => {
                 <div className="pricing">
                     <h1 className="title text-black">Pricing</h1>
                     <div className="flex justify-center p-3 mb-3 text-black">
-                        <table className="pricing-table">
+                        <table className="pricing-table table-auto">
                             <thead>
                                 <tr>
                                     <th>Name</th>
