@@ -67,7 +67,7 @@ const Layout = ({ children }) => {
                                     Services{isDropdownOpen ? <MdArrowDropUp size={28} /> : <MdArrowDropDown size={28} />}
                                 </Link>
                                 {isDropdownOpen && (
-                                    <div className="absolute top-full right-0 bg-[#fff] shadow-lg transition ease-in-out duration-200"
+                                    <div className="absolute top-full -right-24 bg-white shadow-lg rounded-md"
                                         onMouseEnter={() => setIsDropdownOpen(true)}
                                         onMouseLeave={() => setIsDropdownOpen(false)}
                                     >
