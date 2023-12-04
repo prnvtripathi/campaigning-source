@@ -6,139 +6,139 @@ import React from "react";
 // Data array containing pricing information for various services
 const data = [
     {
-        "id": 1,
-        "name": "Political and Election Promotion",
-        "price": "Connect to our sales team"
+        id: 1,
+        name: "Political and Election Promotion",
+        price: "Connect to our sales team"
     },
     {
-        "id": 2,
-        "name": "Business Development",
-        "price": "Connect to our sales team"
+        id: 2,
+        name: "Business Development",
+        price: "Connect to our sales team"
     },
     {
-        "id": 3,
-        "name": "Web Development",
-        "price": "Starting from ₹9,999"
+        id: 3,
+        name: "Web Development",
+        price: "Starting from ₹9,999"
     },
     {
-        "id": 4,
-        "name": "App Development",
-        "price": "Starting From ₹14,999"
+        id: 4,
+        name: "App Development",
+        price: "Starting From ₹14,999"
     },
     {
-        "id": 5,
-        "name": "Graphics",
-        "price": "₹1199 for 1 year"
+        id: 5,
+        name: "Graphics",
+        price: "₹1199 for 1 year"
     },
     {
-        "id": 6,
-        "name": "Videos and Reels",
-        "price": "Starting from ₹100"
+        id: 6,
+        name: "Videos and Reels",
+        price: "Starting from ₹100"
     },
     {
-        "id": 7,
-        "name": "Camera and Drone Shooting",
-        "price": "Starting at ₹2500/day"
+        id: 7,
+        name: "Camera and Drone Shooting",
+        price: "Starting at ₹2500/day"
     },
     {
-        "id": 8,
-        "name": "Social Media Handling",
-        "price": "Starting from ₹5,000/month"
+        id: 8,
+        name: "Social Media Handling",
+        price: "Starting from ₹5,000/month"
     },
     {
-        "id": 9,
-        "name": "Twitter Trending",
-        "price": "As low as ₹20,000/hashtag"
+        id: 9,
+        name: "Twitter Trending",
+        price: "As low as ₹20,000/hashtag"
     },
     {
-        "id": 10,
-        "name": "Funnels and Ads Placement",
-        "price": "Strategise Now"
+        id: 10,
+        name: "Funnels and Ads Placement",
+        price: "Strategise Now"
     },
     {
-        "id": 11,
-        "name": "Bulk Messages",
-        "price": "₹0.20/message"
+        id: 11,
+        name: "Bulk Messages",
+        price: "₹0.20/message"
     },
     {
-        "id": 12,
-        "name": "Wikipedia Management",
-        "price": "Connect to our sales team"
+        id: 12,
+        name: "Wikipedia Management",
+        price: "Connect to our sales team"
     },
     {
-        "id": 13,
-        "name": "Meta Advertisement",
-        "price": "Connect to our sales team"
+        id: 13,
+        name: "Meta Advertisement",
+        price: "Connect to our sales team"
     },
     {
-        "id": 14,
-        "name": "Google Ads",
-        "price": "Starting from ₹5,000/month"
+        id: 14,
+        name: "Google Ads",
+        price: "Starting from ₹5,000/month"
     },
     {
-        "id": 15,
-        "name": "WhatsApp Broadcast",
-        "price": "Starting from ₹0.15/message"
+        id: 15,
+        name: "WhatsApp Broadcast",
+        price: "Starting from ₹0.15/message"
     },
     {
-        "id": 16,
-        "name": "IVR",
-        "price": "Starting from ₹0.20/call"
+        id: 16,
+        name: "IVR",
+        price: "Starting from ₹0.20/call"
     },
     {
-        "id": 17,
-        "name": "Bulk Calling",
-        "price": "Starting from ₹0.20/call"
+        id: 17,
+        name: "Bulk Calling",
+        price: "Starting from ₹0.20/call"
     },
     {
-        "id": 18,
-        "name": "Graphic Designing",
-        "price": "Starting from ₹1,999/Month"
+        id: 18,
+        name: "Graphic Designing",
+        price: "Starting from ₹1,999/Month"
     },
     {
-        "id": 19,
-        "name": "SEO",
-        "price": "Starting from ₹6,999/month"
+        id: 19,
+        name: "SEO",
+        price: "Starting from ₹6,999/month"
     },
     {
-        "id": 20,
-        "name": "SEM",
-        "price": "Starting from ₹6,999/month"
+        id: 20,
+        name: "SEM",
+        price: "Starting from ₹6,999/month"
     },
     {
-        "id": 21,
-        "name": "Video Editing",
-        "price": "Starting from ₹300"
+        id: 21,
+        name: "Video Editing",
+        price: "Starting from ₹300"
     },
     {
-        "id": 22,
-        "name": "Motion Graphics",
-        "price": "Starting from ₹500"
+        id: 22,
+        name: "Motion Graphics",
+        price: "Starting from ₹500"
     },
     {
-        "id": 23,
-        "name": "Affiliate Marketing",
-        "price": "Connect to our sales team"
+        id: 23,
+        name: "Affiliate Marketing",
+        price: "Connect to our sales team"
     },
     {
-        "id": 24,
-        "name": "Customized Printing",
-        "price": "Connect to our sales team"
+        id: 24,
+        name: "Customized Printing",
+        price: "Connect to our sales team"
     },
     {
-        "id": 25,
-        "name": "Profile Management",
-        "price": "Starting from ₹3,999/month"
+        id: 25,
+        name: "Profile Management",
+        price: "Starting from ₹3,999/month"
     },
     {
-        "id": 26,
-        "name": "Email Marketing",
-        "price": "Starting from ₹4,999/month"
+        id: 26,
+        name: "Email Marketing",
+        price: "Starting from ₹4,999/month"
     },
     {
-        "id": 27,
-        "name": "YouTube Monetization",
-        "price": "Connect to our sales team"
+        id: 27,
+        name: "YouTube Monetization",
+        price: "Connect to our sales team"
     }
 ];
 
