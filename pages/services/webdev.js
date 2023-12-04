@@ -43,16 +43,16 @@ const WebDev = () => {
                 <title>Web Development | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className='flex flex-col justify-center items-center'>
-                    <h1 className='title'>Web Development</h1>
+                <div className='flex flex-col justify-center items-center px-4'>
+                    <h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-4'>Web Development</h1>
                     <div>
                         <Link href='/contact' className="btn-primary mb-3">Avail services</Link>
                     </div>
                     <div className="flex flex-wrap justify-center gap-2">
                         {data.map((item) => (
-                            <div key={item.id} className='flex flex-col justify-center items-center bg-[#F6F1F1] p-4 rounded-md my-4 w-1/3'>
-                                <h2 className='sub-title'>{item.title}</h2>
-                                <p className='text-md w-1/2 my-3'>{item.desc}</p>
+                            <div key={item.id} className='flex flex-col justify-center items-center bg-[#F6F1F1] p-4 rounded-md my-4 w-full md:w-1/2 lg:w-1/3'>
+                                <h2 className='text-lg md:text-xl lg:text-2xl font-semibold mb-2'>{item.title}</h2>
+                                <p className='text-sm md:text-md lg:text-lg w-full md:w-2/3 my-3'>{item.desc}</p>
                             </div>
                         ))}
                     </div>
