@@ -1,6 +1,3 @@
-Certainly! Below is the complete modified file:
-
-```jsx
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import { Montserrat } from "next/font/google";
@@ -170,6 +167,3 @@ const Politics = () => (
 );
 
 export default Politics;
-```
-
-This version includes all the modifications made to improve readability and consistency.
