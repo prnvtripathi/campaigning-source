@@ -1,8 +1,8 @@
 import { Montserrat } from "next/font/google";
-// import aap from "@/assets/pastCustomers/aap.png"
-// import bjp from "@/assets/pastCustomers/bjp.png"
-// import inc from "@/assets/pastCustomers/inc.png"
-// import rjd from "@/assets/pastCustomers/rjd.png"
+import aap from "@/assets/pastCustomers/aap.png"
+import bjp from "@/assets/pastCustomers/bjp.png"
+import inc from "@/assets/pastCustomers/inc.png"
+import rjd from "@/assets/pastCustomers/rjd.png"
 import aastha from "@/assets/pastCustomers/aastha.png"
 import fabnic from "@/assets/pastCustomers/fabnic.png"
 import daankaro from "@/assets/pastCustomers/daankaro.png"
@@ -10,22 +10,22 @@ import saviralFoods from "@/assets/pastCustomers/saviralFoods.png"
 import Image from "next/image";
 
 const customers = [
-    // {
-    //     id: 1,
-    //     img: aap,
-    // },
-    // {
-    //     id: 2,
-    //     img: bjp,
-    // },
-    // {
-    //     id: 3,
-    //     img: inc,
-    // },
-    // {
-    //     id: 4,
-    //     img: rjd,
-    // },
+    {
+        id: 1,
+        img: aap,
+    },
+    {
+        id: 2,
+        img: bjp,
+    },
+    {
+        id: 3,
+        img: inc,
+    },
+    {
+        id: 4,
+        img: rjd,
+    },
     {
         id: 5,
         img: aastha,
