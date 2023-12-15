@@ -87,7 +87,7 @@ const Layout = ({ children }) => {
                         <li><Link href="/contact">Internship</Link></li>
                         <li><Link href="/swags">Swags</Link></li>
                         <li><Link href="/payments">Payment</Link></li>
-                       <li><a href="https://customer-care-knowledge-management-tool.vercel.app/">CRM</a></li>
+                      <li><a href="https://customer-care-knowledge-management-tool.vercel.app/" target="_blank" rel="noopener noreferrer">CRM</a></li>
 
                       {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
 
