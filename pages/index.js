@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
@@ -9,7 +9,14 @@ import Banner from '@/components/Banner';
 import FloatingForm from '@/components/FloatingForm';
 
 const Home = () => {
-  const [isFormVisible, setFormVisibility] = useState(true);
+  const [isFormVisible, setFormVisibility] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFormVisibility(true);
+    }, 3000);
+    return () => clearTimeout(timer);
+  }, []);
 
   const closeForm = () => {
     setFormVisibility(false);
