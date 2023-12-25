@@ -11,6 +11,7 @@
   "dependencies": {
     "@auth/mongodb-adapter": "^2.0.4",
     "@emailjs/browser": "^3.11.0",
+    "@tailwindcss/forms": "^0.5.7",
     "@vercel/analytics": "^1.1.1",
     "autoprefixer": "10.4.16",
     "axios": "^1.6.1",
