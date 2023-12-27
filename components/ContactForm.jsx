@@ -32,6 +32,8 @@ export const ContactForm = () => {
                 <input type="text" name="user_name" placeholder='Your Name' className='outline-none p-2 text-black rounded-md mb-2' required />
                 <label>Email</label>
                 <input type="email" name="user_email" placeholder='Your Email' className='outline-none p-2 text-black rounded-md mb-2' required />
+                <label>Contact</label>
+                <input type="text" name="user_number" placeholder='Your Contact' className='outline-none p-2 text-black rounded-md mb-2' required />
                 <label>Message</label>
                 <textarea name="message" placeholder='What you wanna say to us?' className='outline-none p-2 text-black rounded-md mb-2 w-full' required />
                 <div className='w-1/3'><button className='btn-primary'>Send</button></div>

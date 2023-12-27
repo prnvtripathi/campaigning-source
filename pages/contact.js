@@ -68,6 +68,15 @@ const Contact = () => {
                                         required
                                     />
                                     <input
+                                        type="text"
+                                        name="user_contact"
+                                        placeholder="Your Phone"
+                                        className="input-form"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <input
                                         type="email"
                                         name="user_email"
                                         placeholder="Your Email"
@@ -75,6 +84,8 @@ const Contact = () => {
                                         required
                                     />
                                 </div>
+
+
                                 <div className="flex flex-col md:flex-row">
                                     <select
                                         name="service"
