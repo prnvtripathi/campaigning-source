@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import ivr from '@/assets/ivr.png'
 import Link from 'next/link'
 
 const IVR = () => {
@@ -21,7 +20,7 @@ const IVR = () => {
                             touch-tone keypad selection and provides appropriate responses in the form of voice,
                             fax, callback, email and perhaps other media.
                         </p>
-                        <Image src={ivr} alt="IVR" width={400} height={400} />
+                        <Image src="/ivr.png" alt="IVR" width={400} height={400} />
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-4 my-5'>

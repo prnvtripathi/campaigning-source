@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import bulkcall from '@/assets/services/bulkcall.png'
 import Link from 'next/link'
 
 const Whatsapp = () => {
@@ -19,7 +18,7 @@ const Whatsapp = () => {
                             It is a great way to send a message to a group of people.
                             Let me assist you in availing the bulk calling service we offer.
                         </p>
-                        <Image src={bulkcall} alt="Bulk SMS" width={400} height={400} className="my-2" />
+                        <Image src="/services/bulkcall.png" alt="Bulk SMS" width={400} height={400} className="my-2" />
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-4 my-5'>

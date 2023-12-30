@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import logo from "@/assets/logo.png";
 
 const Footer = () => {
     const date = new Date()
@@ -11,7 +10,7 @@ const Footer = () => {
         <footer className="bg-blue-100 text-center rounded-md text-black">
             <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-12 pt-2">
                 <Link href='/'>
-                    <Image src={logo} alt="logo" width={200} height={200} />
+                    <Image src="/logo.png" alt="logo" width={200} height={200} />
                 </Link>
                 <div className="mt-4 md:mt-0">
                     <div className="text-center flex flex-col md:flex-row gap-3 justify-evenly mb-4 md:mb-0">

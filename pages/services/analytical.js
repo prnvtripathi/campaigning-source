@@ -1,38 +1,32 @@
-"use client"
-
 import Layout from "@/components/Layout"
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 
-import analytics from "@/assets/services/analytics.jpg"
-import google from "@/assets/services/google.jpg"
-import twitter from "@/assets/services/twitter.jpg"
-import meta from "@/assets/services/meta.jpg"
 
 const data = [
     {
         id: 1,
         title: 'Twitter Analytics',
-        img: twitter,
+        img: "/services/twitter.jpg",
         link: 'https://www.tweetbinder.com/',
     },
     {
         id: 2,
         title: 'Google Analytics',
-        img: google,
+        img: "/services/google.jpg",
         link: 'https://ads.google.com/intl/en_in/start/overview-ha/?subid=in-en-ha-awa-bk-c-c00!o3~Cj0KCQjw9rSoBhCiARIsAFOipllwtJHi0Bcv1KQNiHsl1xdCONEYsVWXdIImpuhMg0_6t38SoSAB3_8aAuN_EALw_wcB~140706620052~aud-570778807830:kwd-94527731~16862088904~592470418766&&&gclid=Cj0KCQjw9rSoBhCiARIsAFOipllwtJHi0Bcv1KQNiHsl1xdCONEYsVWXdIImpuhMg0_6t38SoSAB3_8aAuN_EALw_wcB&gclsrc=aw.ds',
     },
     {
         id: 3,
         title: 'Meta Analytics',
-        img: meta,
+        img: "/services/meta.jpg",
         link: '/services/whatsapp',
     },
     {
         id: 4,
         title: 'Business Analytics',
-        img: analytics,
+        img: "/services/analytics.jpg",
         link: '/services/bulkcall',
     }
 ]

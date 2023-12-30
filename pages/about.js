@@ -2,21 +2,11 @@ import Layout from "@/components/Layout"
 import Head from "next/head"
 import Image from "next/image"
 import { Montserrat } from "next/font/google"
-import tiranga from "@/assets/about/tiranga.png"
 import { FaDoorOpen, FaPhone, FaUsers, FaWikipediaW, FaMobile, FaVideo, FaTwitter } from "react-icons/fa"
 import { GoGraph, GoFileMedia, GoBroadcast } from "react-icons/go"
 import { AiOutlineFundProjectionScreen } from "react-icons/ai"
 import { PiTelevisionSimpleLight } from "react-icons/pi"
 import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
-import user from "@/assets/user.png"
-import vansh from "@/assets/team/vansh.jpg"
-import tanishk from "@/assets/team/tanishk.jpg"
-import pranav from "@/assets/team/pranav.jpeg"
-import tanishka from "@/assets/team/tanishka.jpg"
-import shaily from "@/assets/team/shaily.jpg"
-import vanshika from "@/assets/team/vanshika.jpg"
-import sushant from "@/assets/team/sushant.jpeg"
-import umang from "@/assets/team/umang.jpg"
 import { FaLinkedin } from "react-icons/fa"
 import Link from "next/link"
 
@@ -105,50 +95,50 @@ const services = [
 
 const team = [
     {
-        img: vansh,
+        img: "/team/vansh.jpg",
         name: "Vansh Tyagi",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/vansh-tyagi-a04355210/"
     },
     {
-        img: umang,
+        img: "/team/umang.jpg",
         name: "Umang Gupta",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/"
     },
     {
-        img: vanshika,
+        img: "/team/vanshika.jpg",
         name: "Vanshika Gupta",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
     {
-        img: tanishk,
+        img: "/team/tanishk.jpg",
         name: "Tanishk Attri",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/tanishk-attri-a49027220/"
     },
     {
-        img: tanishka,
+        img: "/team/tanishka.jpg",
         name: "Tanishka Garg",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
     },
 
     {
-        img: pranav,
+        img: "/team/pranav.jpeg",
         name: "Pranav Tripathi",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
     {
-        img: sushant,
+        img: "/team/sushant.jpeg",
         name: "Sushant Sharma",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
     },
     {
-        img: shaily,
+        img: "/team/shaily.jpg",
         name: "Shaily Bhati",
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
@@ -179,8 +169,8 @@ const About = () => {
                                 of success in the industry.
                             </p>
                         </div>
-                        <div className="md:w-1/2 text-center">
-                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="mx-auto">
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
                         </div>
                     </div>
                 </div>
@@ -188,8 +178,8 @@ const About = () => {
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
                     <h2 className="title text-black text-center">History</h2>
                     <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className="md:w-1/2 text-center">
-                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="mx-auto">
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
                         </div>
                         <div className={`w-full md:w-1/2 ${montserrat.className}`}>
                             <p className="w-full text-black">
@@ -222,8 +212,8 @@ const About = () => {
                 <div className="bg-blue-200 p-3 rounded-lg my-3">
                     <h2 className="title text-black text-center">Social Proof</h2>
                     <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className="md:w-1/2 text-center">
-                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="mx-auto">
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
                         </div>
                         <div className={`w-full md:w-1/2 ${montserrat.className}`}>
                             <p className="w-full text-black">
@@ -247,8 +237,8 @@ const About = () => {
                                 promotion stands as a testament to our unwavering commitment to excellence.
                             </p>
                         </div>
-                        <div className="md:w-1/2 text-center">
-                            <Image src={tiranga} alt="indian-flag" className="rounded-md" />
+                        <div className="mx-auto">
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
                         </div>
                     </div>
                 </div>

@@ -1,9 +1,6 @@
-"use client"
-
 import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "@/assets/logo.png"
 import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
 import Background from "./Background"
@@ -45,11 +42,11 @@ const Layout = ({ children }) => {
                     <div className="brand">
                         <Link href="/">
                             <Image
-                                src={logo}
+                                src="/logo.png"
                                 alt="logo"
                                 width={225}
                                 height={225}
-                                className="p-2"
+                                className="w-48"
                             />
                         </Link>
                     </div>
@@ -87,9 +84,9 @@ const Layout = ({ children }) => {
                         <li><Link href="/contact">Internship</Link></li>
                         <li><Link href="/swags">Swags</Link></li>
                         <li><Link href="/payments">Payment</Link></li>
-                      
 
-                      {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
+
+                        {!session ? <li><Link className="signin-button" href="/signin"><VscSignIn />Sign In</Link></li> : <UserProfile />}
 
                     </ul>
                 </div>

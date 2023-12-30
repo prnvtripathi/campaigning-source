@@ -1,24 +1,15 @@
-// Import necessary modules and components
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import brochure from '@/assets/graphics/brochure.jpg';
-import brochure2 from '@/assets/graphics/brochure2.jpg';
-import invite from '@/assets/graphics/invite.jpg';
-import cards from '@/assets/graphics/cards.jpg';
-import hording from '@/assets/graphics/hording.jpg';
-import election from '@/assets/graphics/election.jpg';
-import food from '@/assets/graphics/food.jpg';
-import product from '@/assets/graphics/product.jpg';
 import Contact from '@/components/Contact';
 import Link from 'next/link';
 
 // Graphics component
 const Graphics = () => {
     const [b, setB] = useState(false);
-    let imgSrc = b ? brochure : brochure2;
-    let imgSrc2 = b ? invite : cards;
+    let imgSrc = b ? "/graphics/brochure.jpg" : "/graphics/brochure2.jpg";
+    let imgSrc2 = b ? "/graphics/invite.jpg" : "/graphics/cards.jpg";
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -41,7 +32,7 @@ const Graphics = () => {
                 </div>
 
                 <div className='outline p-3 rounded-md mb-3 flex justify-around items-center bg-blue-100 bg-opacity-90'>
-                    <Image src={imgSrc} onClick={() => setB(!b)} alt="brochure" width={500} className='rounded-md' />
+                    <Image src={imgSrc} onClick={() => setB(!b)} alt="brochure" width={500} height={400} className='rounded-md' />
                     <p className='text-xl text-gray-700'>
                         Get your business to new heights by getting our <strong>corporate brochure</strong>.<br />
                         Don't worry about the design, we will take care of it.<br />
@@ -54,10 +45,10 @@ const Graphics = () => {
                         Just tell us what you want and we will make it for you.<br />
                         Design what you want and we will make it for you.
                     </p>
-                    <Image src={imgSrc2} onClick={() => setB(!b)} alt="brochure" width={500} className='rounded-md' />
+                    <Image src={imgSrc2} onClick={() => setB(!b)} alt="brochure" width={500} height={400} className='rounded-md' />
                 </div>
                 <div className='outline p-3 rounded-md mb-3 flex justify-around items-center bg-blue-100 bg-opacity-90'>
-                    <Image src={hording} alt="hording" width={500} className='rounded-md' />
+                    <Image src="/graphics/hording.jpg" alt="hording" width={500} height={400} className='rounded-md' />
                     <p className='text-xl text-gray-700'>
                         Want to advertise on the highway? We will make the best <strong>hording</strong> for you.<br />
                         Just tell us what you want and we will make it for you.<br />
@@ -70,10 +61,10 @@ const Graphics = () => {
                         Just tell us what you want and we will make it for you.<br />
                         Design what you want and we will make it for you.
                     </p>
-                    <Image src={election} alt="election" width={500} className='rounded-md' />
+                    <Image src="/graphics/election.jpg" alt="election" width={500} height={400} className='rounded-md' />
                 </div>
                 <div className='outline p-3 rounded-md mb-3 flex justify-around items-center bg-blue-100 bg-opacity-90'>
-                    <Image src={product} onClick={() => setB(!b)} alt="product" width={500} className='rounded-md' />
+                    <Image src="/graphics/product.jpg" onClick={() => setB(!b)} alt="product" width={500} height={400} className='rounded-md' />
                     <p className='text-xl text-gray-700'>
                         Want to sell your product? We will make the best <strong>product poster</strong> for you.<br />
                         Just tell us what you want and we will make it for you.<br />
@@ -86,7 +77,7 @@ const Graphics = () => {
                         Just tell us what you want and we will make it for you.<br />
                         Design what you want and we will make it for you.
                     </p>
-                    <Image src={food} alt="food" width={500} className='rounded-md' />
+                    <Image src="/graphics/food.jpg" alt="food" width={500} height={400} className='rounded-md' />
                 </div>
                 <div>
                     <Contact />

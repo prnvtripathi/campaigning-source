@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import whatsapp from '@/assets/services/whatsapp.png'
 import Link from 'next/link'
 
 const Whatsapp = () => {
@@ -20,7 +19,7 @@ const Whatsapp = () => {
                             a message to a group of people.
                             Let me assist you in availing the whatsapp broadcast service we offer.
                         </p>
-                        <Image src={whatsapp} alt="Whatsapp Broadcast" width={400} height={400} className="my-2" />
+                        <Image src="/services/whatsapp.png" alt="Whatsapp Broadcast" width={400} height={400} className="my-2" />
                     </div>
                 </div>
                 <div className='flex flex-col justify-center items-center gap-4 my-5'>

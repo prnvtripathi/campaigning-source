@@ -2,62 +2,51 @@ import { useEffect, useState } from "react";
 import { FaArrowCircleRight, FaArrowCircleLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
-import election1 from "@/assets/election/election1.png";
-import election2 from "@/assets/election/election2.png";
-import election3 from "@/assets/election/election3.png";
-import election4 from "@/assets/election/election4.png";
-import election5 from "@/assets/election/election5.png";
-import election6 from "@/assets/election/election6.png";
-import election7 from "@/assets/election/election7.png";
-import election8 from "@/assets/election/election8.png";
-import election9 from "@/assets/election/election9.png";
-import election10 from "@/assets/election/election10.png";
-import election11 from "@/assets/election/election11.png";
 
 const testimonials = [
     {
         id: 1,
-        image: election1,
+        image: "/election/election1.png",
     },
     {
         id: 2,
-        image: election2,
+        image: "/election/election2.png",
     },
     {
         id: 3,
-        image: election3,
+        image: "/election/election3.png",
     },
     {
         id: 4,
-        image: election4,
+        image: "/election/election4.png",
     },
     {
         id: 5,
-        image: election5,
+        image: "/election/election5.png",
     },
     {
         id: 6,
-        image: election6,
+        image: "/election/election6.png",
     },
     {
         id: 7,
-        image: election7,
+        image: "/election/election7.png",
     },
     {
         id: 8,
-        image: election8,
+        image: "/election/election8.png",
     },
     {
         id: 9,
-        image: election9,
+        image: "/election/election9.png",
     },
     {
         id: 10,
-        image: election10,
+        image: "/election/election10.png",
     },
     {
         id: 11,
-        image: election11,
+        image: "/election/election11.png",
     }
 ];
 

@@ -2,48 +2,42 @@ import Layout from "@/components/Layout"
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
-import bulkcall from "@/assets/services/bulkcall.png"
-import bulksms from "@/assets/services/bulksms.png"
-import ivr from "@/assets/services/ivr.png"
-import whatsapp from "@/assets/services/whatsapp.png"
-import email from "@/assets/services/email.jpg"
-import manyMore from "@/assets/services/manyMore.png"
 
 const data = [
     {
         id: 1,
         title: 'IVR',
-        img: ivr,
+        img: "/services/ivr.png",
         link: '/services/ivr',
     },
     {
         id: 2,
         title: 'Bulk SMS',
-        img: bulksms,
+        img: "/services/bulksms.png",
         link: '/services/bulksms',
     },
     {
         id: 3,
         title: 'Whatsapp Broadcast',
-        img: whatsapp,
+        img: "/services/whatsapp.png",
         link: '/services/whatsapp',
     },
     {
         id: 4,
         title: 'Bulk Voice Calls',
-        img: bulkcall,
+        img: "/services/bulkcall.png",
         link: '/services/bulkcall',
     },
     {
         id: 5,
         title: 'Email Marketing',
-        img: email,
+        img: "/services/email.jpg",
         link: '/',
     },
     {
         id: 6,
         title: '',
-        img: manyMore,
+        img: "/services/manyMore.png",
         link: "/"
     }
 ]

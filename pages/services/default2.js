@@ -1,9 +1,6 @@
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Image from 'next/image'
-import webdev from '@/assets/services/webdev.png'
-import appdev from '@/assets/services/appdev.png'
-import default2 from '@/assets/services/default2.png'
 import Link from 'next/link'
 import Banner from '@/components/Banner'
 import { FaCss3, FaGithubSquare, FaHtml5, FaJsSquare, FaNodeJs, FaPython, FaReact } from 'react-icons/fa'
@@ -81,16 +78,16 @@ const Default2 = () => {
             <Layout>
                 <div className='px-4'>
                     <h1 className="title text-black text-2xl md:text-3xl lg:text-4xl mb-4">Software Development</h1>
-                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4'>
-                        <div className='md:col-span-3 lg:col-span-3'>
-                            <Image src={default2} alt="default2" width={720} />
+                    <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+                        <div>
+                            <Image src="/services/default2.png" alt="default2" width={720} height={240}/>
                         </div>
-                        <div className='md:col-span-2 lg:col-span-2'>
-                            <div className="flex flex-col gap-4 mb-6 p-4 rounded-md">
+                        <div>
+                            <div className="flex flex-col gap-4 p-4 rounded-md">
                                 <div className="flex flex-col justify-around items-center outline rounded-md">
                                     <h2 className='sub-title text-lg md:text-xl lg:text-2xl'>Web Development</h2>
                                     <div className='flex flex-col md:flex-row justify-around items-center'>
-                                        <Image src={webdev} alt="web development" width={180} height={180} className='mt-2 mb-3' />
+                                        <Image src="/services/webdev.png" alt="web development" width={180} height={180} className='mt-2 mb-3' />
                                         <p className='text-sm md:text-md lg:text-lg w-full my-3 text-center px-2'>
                                             We build beautiful, responsive, and feature-rich web-based applications that solve real customer problems.
                                         </p>
@@ -102,7 +99,7 @@ const Default2 = () => {
                                 <div className="flex flex-col justify-around items-center outline rounded-md">
                                     <h2 className='sub-title text-lg md:text-xl lg:text-2xl'>App Development</h2>
                                     <div className='flex flex-col md:flex-row justify-around items-center'>
-                                        <Image src={appdev} alt="app development" width={180} height={180} className='mt-2 mb-3' />
+                                        <Image src="/services/appdev.png" alt="app development" width={180} height={180} className='mt-2 mb-3' />
                                         <p className='text-sm md:text-md lg:text-lg w-full my-3 text-center px-1'>
                                             We build Android, iOS, and PWA's that work great across multiple devices, screen sizes, and resolutions.
                                         </p>

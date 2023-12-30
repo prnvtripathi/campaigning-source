@@ -1,9 +1,3 @@
-import politics from '@/assets/politics.png'
-import graph from "@/assets/graph.png"
-import website from "@/assets/website.png"
-import messaging from "@/assets/messaging.png"
-import social from "@/assets/social.png"
-
 import Image from 'next/image'
 import { Montserrat } from 'next/font/google'
 import Link from 'next/link'
@@ -20,7 +14,7 @@ const Hero = () => {
             <div className="grid grid-rows-5 gap-2 p-2 md:grid-rows-3 md:grid-cols-5 mx-auto">
                 <div className="md:row-span-2 md:col-span-2 p-1 flex flex-wrap justify-around items-center text-black bg-blue-300 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-3">Public Choice Promotion</h2></span>
-                    <Image src={politics} alt="politics" width={230} height={230} className='rounded-md' />
+                    <Image src="/politics.png" alt="politics" width={230} height={230} className='rounded-md' />
                     <Link href='/services/politics'>
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText text-base font-normal hover:bg-gray-600">
                             Let's Start
@@ -29,7 +23,7 @@ const Hero = () => {
                 </div>
                 <div className="md:col-span-3 p-1 flex flex-wrap justify-around items-center text-white bg-blue-400 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}>Business<br /> Development</span>
-                    <Image src={graph} alt="graph" width={190} height={190} />
+                    <Image src="/graph.png" alt="graph" width={190} height={190} />
                     <Link href="/services/business">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
@@ -41,7 +35,7 @@ const Hero = () => {
                 </div>
                 <div className="md:col-span-5 p-1 flex flex-wrap justify-around items-center text-white bg-blue-500 md:text-4xl font-bold rounded-lg">
                     <span className={montserrat.className}><h2 className="ml-2">Website &<br />Application Development</h2></span>
-                    <Image src={website} alt="website" width={175} height={175} />
+                    <Image src="/website.png" alt="website" width={175} height={175} />
                     <Link href="/services/default2">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
@@ -58,7 +52,7 @@ const Hero = () => {
                             <div>Video Editing</div>
                         </div>
                     </span>
-                    <Image src={social} alt="social" width={180} height={180} />
+                    <Image src="/social.png" alt="social" width={180} height={180} />
                     <Link href="/services/graphics">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText font-normal text-base hover:bg-gray-600">
                             Let's Start
@@ -70,7 +64,7 @@ const Hero = () => {
                         IVR, Bulk Voice Calls<br />
                         Broadcast SMS,<br />
                         Whatsapp Broadcast</span>
-                    <Image src={messaging} alt="messaging" width={190} height={190} />
+                    <Image src="/messaging.png" alt="messaging" width={190} height={190} />
                     <Link href="/services/default">
                         <div className="bg-bg py-2 px-3 rounded-full text-secondaryText mb-2 font-normal text-base hover:bg-gray-600">
                             Let's Start
