@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
-import SocialMedia from '@/components/SocialMedia';
+// import SocialMedia from '@/components/SocialMedia';
 import Contact from '@/components/Contact';
 import PastCustomers from '@/components/PastCustomers';
 import Banner from '@/components/Banner';
@@ -35,7 +35,7 @@ const Home = () => {
         <meta name="author" content="Vansh Tyagi" />
       </Head>
       <Layout>
-        <SocialMedia />
+        {/* <SocialMedia /> */}
         <Hero />
         <PastCustomers />
         <Banner />
