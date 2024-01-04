@@ -2,7 +2,7 @@ import { Montserrat } from "next/font/google";
 import Image from "next/image";
 
 const customers = [
-   {
+    {
         id: 1,
         img: "/pastCustomers/aastha.png",
     },
@@ -11,14 +11,14 @@ const customers = [
         img: "/pastCustomers/fabnic.png",
     },
     {
-        id:3,
+        id: 3,
         img: "/pastCustomers/saviralFoods.png",
     },
     {
         id: 4,
         img: "/pastCustomers/daankaro.png",
     },
-     {
+    {
         id: 5,
         img: "/pastCustomers/aap.png",
     },
@@ -34,6 +34,10 @@ const customers = [
         id: 8,
         img: "/pastCustomers/rjd.png",
     },
+    {
+        id: 9,
+        img: "/pastCustomers/MCIP.webp",
+    }
 ]
 
 const montserrat = Montserrat({
@@ -48,7 +52,7 @@ const PastCustomers = () => {
             <div className="flex justify-evenly items-center py-3 flex-wrap">
                 {customers.map((customer) => (
                     <div key={customer.id}>
-                        <Image src={customer.img} alt="customer" className="w-32" width={240} height={240}/>
+                        <Image src={customer.img} alt="customer" className="w-28" width={500} height={500} />
                     </div>
                 ))}
             </div>
