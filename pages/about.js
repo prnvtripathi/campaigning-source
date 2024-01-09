@@ -143,6 +143,12 @@ const team = [
         position: "Team Member",
         linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
     },
+    {
+        img: "/team/akshay.jpg",
+        name: "Akshay Kumar Sharma",
+        position: "DevRel",
+        linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager/"
+    }
     // {
     //     img: user,
     //     name: "Tushar Aggarwal",
