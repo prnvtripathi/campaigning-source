@@ -1,6 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-import { set } from "mongoose";
 
 const WhatsappButton = () => {
     const [isFloating, setIsFloating] = useState(true);
