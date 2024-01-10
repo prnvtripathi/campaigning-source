@@ -4,31 +4,26 @@
 
 html::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-    background-color: #F5F5F5;
+    background-color: #191919;
     border-radius: 2px;
 }
 
 html::-webkit-scrollbar {
     width: 8px;
-    background-color: #F5F5F5;
+    background-color: #191919;
 }
 
 html::-webkit-scrollbar-thumb {
     border-radius: 2px;
-    background-color: #242424;
+    background-color: #e3e3e3;
 }
 
 body {
     @apply text-primaryText;
-    background-color: #fff;
+    background-color: #191919;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
-}
 
 .input {
     @apply border-black border-2 rounded-md text-primaryText;
@@ -54,90 +49,6 @@ body {
     }
 }
 
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.5rem 1rem;
-}
-
-ul li a {
-    color: #242424;
-    text-decoration: none;
-    font-size: 1rem;
-    padding: 0.35rem 0.75rem;
-    transition: all 0.2s ease-in-out;
-    display: flex;
-}
-
-ul li a:hover {
-    @apply bg-blue-500 rounded-full text-white;
-}
-
-@media screen and (max-width: 945px) {
-
-    ul {
-        display: none;
-    }
-
-    .brand {
-        text-align: center;
-    }
-
-    ul.expanded {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        z-index: 999;
-        background-color: #ffffff;
-        top: 0;
-        width: 70%;
-    }
-
-    .hamburger {
-        position: absolute;
-        top: 5em;
-        right: 5%;
-        margin-left: -2em;
-        margin-top: -45px;
-        width: 2em;
-        height: 45px;
-        z-index: 5;
-    }
-
-    .hamburger div {
-        position: relative;
-        width: 3rem;
-        height: 7px;
-        border-radius: 3px;
-        background-color: #000000;
-        margin-top: 8px;
-        transition: all 0.3s ease-in-out;
-    }
-
-    #toggle:checked+.hamburger .top-bun {
-        transform: rotate(-45deg);
-        margin-top: 25px;
-    }
-
-    #toggle:checked+.hamburger .bottom-bun {
-        opacity: 0;
-        transform: rotate(45deg);
-    }
-
-    #toggle:checked+.hamburger .meat {
-        transform: rotate(45deg);
-        margin-top: -7px;
-    }
-
-    #toggle:checked+.hamburger+.nav {
-        top: 0;
-        transform: scale(1);
-    }
-}
 
 .btn-primary {
     @apply bg-bg px-4 py-2 rounded-lg text-secondaryText flex w-full mx-auto mt-4 gap-2 justify-center items-center transition duration-300 ease-in-out hover:bg-secondaryText hover:text-bg hover:scale-95
@@ -200,10 +111,6 @@ textarea {
     z-index: -1;
 }
 
-a.signin-button {
-    @apply bg-blue-300 rounded-full flex items-center gap-2 hover:scale-95;
-}
-
 table.pricing-table {
     border-collapse: collapse;
     width: 100%;
@@ -227,14 +134,4 @@ table.pricing-table th {
 
 table.pricing-table tr:nth-child(even) {
     background-color: #f2f2f2;
-}
-
-.dropdown-menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.dropdown-menu li {
-    list-style: none;
-    padding: 0 0.5rem;
 }

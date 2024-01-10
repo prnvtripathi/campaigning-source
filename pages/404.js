@@ -10,7 +10,7 @@ export default function Custom404() {
             <div className="mt-8">
                 <Link
                     className="inline-flex items-center justify-center h-10 px-5 font-medium rounded-md text-white bg-black hover:bg-gray-900"
-                    href="#"
+                    href="/"
                 >
                     Go Back Home
                 </Link>
