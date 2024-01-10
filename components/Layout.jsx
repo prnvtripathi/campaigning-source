@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import Footer from "./Footer"
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md"
-import Background from "./Background"
 import { VscSignIn } from "react-icons/vsc"
 import { useSession } from "next-auth/react"
 import UserProfile from "./UserProfile"
@@ -24,7 +23,6 @@ const Layout = ({ children }) => {
 
     return (
         <>
-            <Background />
             <div className="offers">
                 <h3>Boost your business in this festive season to new heights. 🗻</h3>
             </div>
