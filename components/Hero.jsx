@@ -1,3 +1,5 @@
+import BlurBox from "./BlurBox";
+
 export default function Component() {
     return (
         <>
@@ -14,6 +16,7 @@ export default function Component() {
                             </p>
                         </div>
                     </div>
+                    <BlurBox />
                 </div>
             </section>
             <section className="w-full py-6 md:py-12 lg:py-16 bg-slate-800">
