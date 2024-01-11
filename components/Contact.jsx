@@ -45,8 +45,8 @@ export default function Component() {
                         possible.
                     </p>
                 </div>
-                <form className="space-y-4" ref={form} onSubmit={sendEmail}>
-                    <div className="space-y-2 text-gray-700">
+                <form className="space-y-4 text-gray-100" ref={form} onSubmit={sendEmail}>
+                    <div className="space-y-2">
                         <label className="block text-sm font-medium text-gray-300" htmlFor="name">
                             Name
                         </label>
@@ -54,12 +54,12 @@ export default function Component() {
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                             name="user_name"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
+                            className="mt-1 block w-full py-2 px-3 border border-gray-800 bg-gray-700 rounded-md focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                             id="name"
                             placeholder="Enter your name"
                         />
                     </div>
-                    <div className="space-y-2 text-gray-700">
+                    <div className="space-y-2">
                         <label className="block text-sm font-medium text-gray-300" htmlFor="email">
                             Email
                         </label>
@@ -67,13 +67,13 @@ export default function Component() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             name="user_email"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
+                            className="mt-1 block w-full py-2 px-3 border border-gray-800 bg-gray-700 rounded-md focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                             id="email"
                             placeholder="Enter your email"
                             type="email"
                         />
                     </div>
-                    <div className="space-y-2 text-gray-700">
+                    <div className="space-y-2">
                         <label className="block text-sm font-medium text-gray-300" htmlFor="contact">
                             Contact
                         </label>
@@ -81,12 +81,12 @@ export default function Component() {
                             value={contact}
                             onChange={(e) => setContact(e.target.value)}
                             name="user_mobile"
-                            className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
+                            className="mt-1 block w-full py-2 px-3 border border-gray-800 bg-gray-700 rounded-md focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                             id="contact"
                             placeholder="Enter your contact number"
                         />
                     </div>
-                    <div className="space-y-2 text-gray-700">
+                    <div className="space-y-2">
                         <label className="block text-sm font-medium text-gray-300" htmlFor="message">
                             Message
                         </label>
@@ -94,7 +94,7 @@ export default function Component() {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             name="message"
-                            className="min-h-[100px] mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
+                            className="min-h-[100px] mt-1 block w-full py-2 px-3 border border-gray-800 bg-gray-700 rounded-md focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                             id="message"
                             placeholder="Enter your message"
                         />
