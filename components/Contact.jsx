@@ -36,7 +36,7 @@ export default function Component() {
     };
 
     return (
-        <div className="flex flex-col md:flex-row gap-8 p-16">
+        <div className="flex flex-col-reverse md:flex-row gap-8 p-16">
             <div className="w-full md:w-1/2 space-y-8">
                 <div className="space-y-2">
                     <h2 className="text-3xl font-bold">Contact Us</h2>
@@ -107,7 +107,7 @@ export default function Component() {
             <div className="w-full md:w-1/2">
                 <img
                     alt="Contact Us"
-                    className="w-5/6 h-full mx-auto"
+                    className="md:w-5/6 h-full mx-auto"
                     src="/contact.png"
                     style={{
                         aspectRatio: "500/500",
