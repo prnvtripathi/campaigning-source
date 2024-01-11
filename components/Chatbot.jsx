@@ -24,10 +24,10 @@ const WhatsappButton = () => {
                 onClick={handleWhatsappClick}
             >
                 {isFloating && (
-                    <div class="relative inline-block">
-                        <p class="absolute flex items-center justify-center w-48 py-3 text-white bg-bg rounded-lg shadow-lg -left-[9.5rem] -top-20">
-                            <span class="truncate ">Wanna chat?</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 absolute rotate-45 right-4 bottom-0.5 -mb-3 transform text-bg fill-current" stroke="currentColor" viewBox="0 0 24 24" >
+                    <div className="relative inline-block">
+                        <p className="absolute flex items-center justify-center w-48 py-3 text-white bg-bg rounded-lg shadow-lg -left-[9.5rem] -top-20">
+                            <span className="truncate ">Wanna chat?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 absolute rotate-45 right-4 bottom-0.5 -mb-3 transform text-bg fill-current" stroke="currentColor" viewBox="0 0 24 24" >
                                 <path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path>
                             </svg>
                         </p>
