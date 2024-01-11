@@ -126,7 +126,9 @@ const Navbar = () => {
                                     <li>Sign In</li>
                                 </Link>
                             ) : (
-                                <UserProfile />
+                                <div className="pt-1 pb-3 px-1.5 ml-7">
+                                    <UserProfile />
+                                </div>
                             )}
                         </ul>
                     </div>
