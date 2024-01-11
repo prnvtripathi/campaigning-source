@@ -7,7 +7,7 @@ const Footer = () => {
     const year = date.getFullYear()
 
     return (
-        <footer className="bg-blue-100 text-center rounded-md text-black">
+        <footer className=" bg-gradient-to-r from-cyan-400 to-sky-300 text-center rounded-md text-black py-6">
             <div className="flex flex-col md:flex-row justify-center md:justify-between items-center px-12 pt-2">
                 <Link href='/'>
                     <Image src="/logo.png" alt="logo" width={200} height={200} />
