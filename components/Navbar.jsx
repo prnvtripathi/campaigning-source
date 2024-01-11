@@ -43,10 +43,10 @@ const Navbar = () => {
     };
 
     const inactiveLink =
-        "text-white hover:text-yellow-700 hover:border-yellow-800 hover:border rounded-full py-1 px-2 font-normal transition-all";
+        "text-white hover:text-primaryText py-1 px-2 transition-all";
     const activeLink =
         inactiveLink +
-        " border text-yellow-700 border-yellow-800 rounded-full py-1 px-2 font-normal hover:border-green-500";
+        " border border-primaryText rounded-full py-1 px-2 font-normal";
 
     return (
         <>
