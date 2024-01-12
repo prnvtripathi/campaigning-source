@@ -97,56 +97,55 @@ const team = [
     {
         img: "/team/vansh.jpg",
         name: "Vansh Tyagi",
-        position: "Team Member",
+        position: "CEO",
         linkedin: "https://www.linkedin.com/in/vansh-tyagi-a04355210/"
     },
     {
         img: "/team/umang.jpg",
         name: "Umang Gupta",
-        position: "Team Member",
+        position: "CMO",
         linkedin: "https://www.linkedin.com/"
     },
     {
         img: "/team/vanshika.jpg",
         name: "Vanshika Gupta",
-        position: "Team Member",
+        position: "CFO",
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
     {
-        img: "/team/tanishk.jpg",
-        name: "Tanishk Attri",
-        position: "Team Member",
-        linkedin: "https://www.linkedin.com/in/tanishk-attri-a49027220/"
-    },
-    {
-        img: "/team/tanishka.jpg",
-        name: "Tanishka Garg",
-        position: "Team Member",
-        linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
-    },
-
-    {
         img: "/team/pranav.jpeg",
         name: "Pranav Tripathi",
-        position: "Team Member",
+        position: "CTO",
         linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
     {
         img: "/team/sushant.jpeg",
         name: "Sushant Sharma",
-        position: "Team Member",
+        position: "Chief Operation Manager",
         linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
+    },
+    {
+        img: "/team/tanishk.jpg",
+        name: "Tanishk Attri",
+        position: "Cheif Startup Developer",
+        linkedin: "https://www.linkedin.com/in/tanishk-attri-a49027220/"
+    },
+    {
+        img: "/team/tanishka.jpg",
+        name: "Tanishka Garg",
+        position: "Customer Compliance Manager",
+        linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
     },
     {
         img: "/team/shaily.jpg",
         name: "Shaily Bhati",
-        position: "Team Member",
+        position: "Customer Success Manager",
         linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
     },
     {
         img: "/team/akshay.jpg",
         name: "Akshay Kumar Sharma",
-        position: "DevRel",
+        position: "Public Relations Manager",
         linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager/"
     }
     // {
@@ -176,7 +175,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
                         </div>
                     </div>
                 </div>
@@ -185,7 +184,7 @@ const About = () => {
                     <h2 className="title text-black text-center">History</h2>
                     <div className="flex flex-col items-center md:flex-row justify-center">
                         <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
                         </div>
                         <div className={`w-full md:w-1/2 ${montserrat.className}`}>
                             <p className="w-full text-black">
@@ -219,7 +218,7 @@ const About = () => {
                     <h2 className="title text-black text-center">Social Proof</h2>
                     <div className="flex flex-col items-center md:flex-row justify-center">
                         <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
                         </div>
                         <div className={`w-full md:w-1/2 ${montserrat.className}`}>
                             <p className="w-full text-black">
@@ -244,7 +243,7 @@ const About = () => {
                             </p>
                         </div>
                         <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200}/>
+                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
                         </div>
                     </div>
                 </div>
