@@ -1,11 +1,10 @@
-import Background from '@/components/Background';
 import Head from 'next/head';
-import { useState } from 'react';
-import { FaSignInAlt } from 'react-icons/fa';
+import { useEffect, useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import axios from 'axios';
 import { useRouter } from 'next/router';
-import { signIn } from 'next-auth/react';
+import { useSession, signIn } from 'next-auth/react';
+import Image from 'next/image';
 
 const SignUp = () => {
     const initialFormData = {
@@ -24,6 +23,7 @@ const SignUp = () => {
         password: '',
     };
 
+    const { data: session } = useSession();
     const [formData, setFormData] = useState(initialFormData);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
@@ -110,201 +110,255 @@ const SignUp = () => {
         }
     };
 
+    useEffect(() => {
+        if (session)
+            Router.push('/')
+    }, [session])
     return (
         <>
             <Head>
                 <title>Sign Up | Campaigning Source</title>
             </Head>
-            <Background />
-            <div className='w-screen h-screen flex justify-center items-center'>
-                <div className='w-[90%] md:w-[70%]'>
-                    <h2 className='text-black text-3xl text-center font-bold mb-2'>Sign Up</h2>
-                    <div className='flex flex-col md:flex-row justify-around items-center p-3 bg-blue-200 bg-opacity-90 rounded-lg'>
-                        <form onSubmit={handleSubmit} className='flex flex-col items-center text-center'>
-                            <div className='flex flex-col md:flex-row justify-center items-center'>
-                                <input
-                                    type="text"
-                                    id="firstName"
-                                    name="firstName"
-                                    value={firstName}
-                                    onChange={handleInputChange}
-                                    placeholder="First Name"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                                <input
-                                    type="text"
-                                    id="lastName"
-                                    name="lastName"
-                                    value={lastName}
-                                    onChange={handleInputChange}
-                                    placeholder="Last Name"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                            </div>
-                            <div className='flex flex-col md:flex-row justify-center items-center'>
-                                <input
-                                    type="text"
-                                    id="contactNumber"
-                                    name="contactNumber"
-                                    value={contactNumber}
-                                    onChange={handleInputChange}
-                                    placeholder="Contact Number"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                                <select
-                                    id="designation"
-                                    name="designation"
-                                    value={designation}
-                                    onChange={handleInputChange}
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100 w-[80%] md:w-[43%]"
-                                    required
+            <main className="min-h-screen flex flex-col md:flex-row justify-center gap-6 py-6 px-4 md:px-6">
+                <div className="md:p-8">
+                    <div className="mx-auto space-y-6 bg-gray-700 p-8 rounded-lg">
+                        <div className="space-y-2 text-center">
+                            <h1 className="text-3xl font-bold">Sign Up</h1>
+                            <p className="text-gray-500">Enter your information to create an account</p>
+                        </div>
+                        <form className='text-gray-700' onSubmit={handleSubmit}>
+                            <div className="space-y-4">
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div className="space-y-2">
+                                        <label className="block text-sm font-medium text-primaryText" htmlFor="first-name">
+                                            First name
+                                        </label>
+                                        <input
+                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                            id="first-name"
+                                            placeholder="John"
+                                            required
+                                            name='firstName'
+                                            value={firstName}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="block text-sm font-medium text-primaryText" htmlFor="last-name">
+                                            Last name
+                                        </label>
+                                        <input
+                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                            id="last-name"
+                                            placeholder="Doe"
+                                            required
+                                            name='lastName'
+                                            value={lastName}
+                                            onChange={handleInputChange}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="block text-sm font-medium text-primaryText" htmlFor="contact-number">
+                                        Contact Number
+                                    </label>
+                                    <input
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        id="contact-number"
+                                        placeholder="1234567890"
+                                        required
+                                        name='contactNumber'
+                                        value={contactNumber}
+                                        onChange={handleInputChange}
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="block text-sm font-medium text-primaryText" htmlFor="email">
+                                        Email
+                                    </label>
+                                    <input
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        id="email"
+                                        placeholder="john@example.com"
+                                        type="email"
+                                        required
+                                        name='email'
+                                        value={email}
+                                        onChange={handleInputChange}
+                                    />
+                                </div>
+                                <div className='space-y-2'>
+                                    <label className="block text-sm font-medium text-primaryText" htmlFor="first-name">
+                                        Designation
+                                    </label>
+                                    <select
+                                        id="designation"
+                                        name="designation"
+                                        value={designation}
+                                        onChange={handleInputChange}
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md text-gray-700"
+                                        required
+                                    >
+                                        <option value="">Select Designation</option>
+                                        <option value="Influencer">Influencer</option>
+                                        <option value="Political Worker">Political Worker</option>
+                                        <option value="Business/ Corporate Worker">Business/ Corporate Worker</option>
+                                        <option value="Freelancer">Freelancer</option>
+                                        <option value="Student">Student</option>
+                                    </select>
+                                    {
+                                        designation === 'Influencer' || designation === 'Freelancer' ? (
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="socialProfile"
+                                                    name="socialProfile"
+                                                    value={socialProfile}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Social Profile Username"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                            </div>
+                                        ) : null
+                                    }
+                                    {
+                                        designation === 'Political Worker' ? (
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="state"
+                                                    name="state"
+                                                    value={state}
+                                                    onChange={handleInputChange}
+                                                    placeholder="State"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                                <input
+                                                    type="text"
+                                                    id="region"
+                                                    name="region"
+                                                    value={region}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Region"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                            </div>
+                                        ) : null
+                                    }
+                                    {
+                                        designation === 'Business/ Corporate Worker' ? (
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="companyName"
+                                                    name="companyName"
+                                                    value={companyName}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Company Name"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                            </div>
+                                        ) : null
+                                    }
+                                    {
+                                        designation === 'Student' ? (
+                                            <div>
+                                                <input
+                                                    type="text"
+                                                    id="college"
+                                                    name="college"
+                                                    value={college}
+                                                    onChange={handleInputChange}
+                                                    placeholder="College"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                                <input
+                                                    type="text"
+                                                    id="course"
+                                                    name="course"
+                                                    value={course}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Course"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                />
+                                            </div>
+                                        ) : null
+                                    }
+                                    {
+                                        designation === 'Freelancer' ? (
+                                            <div>
+                                                <textarea
+                                                    id="services"
+                                                    name="services"
+                                                    value={services}
+                                                    onChange={handleInputChange}
+                                                    placeholder="Services You Provide"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    required
+                                                ></textarea>
+                                            </div>
+                                        ) : null
+                                    }
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="block text-sm font-medium text-primaryText" htmlFor="password">
+                                        Password
+                                    </label>
+                                    <input
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        id="password"
+                                        required
+                                        type="password"
+                                        placeholder='********'
+                                        name='password'
+                                        value={password}
+                                        onChange={handleInputChange}
+                                    />
+                                </div>
+                                <button
+                                    className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    type="submit"
                                 >
-                                    <option value="">Select Designation</option>
-                                    <option value="Influencer">Influencer</option>
-                                    <option value="Political Worker">Political Worker</option>
-                                    <option value="Business/ Corporate Worker">Business/ Corporate Worker</option>
-                                    <option value="Freelancer">Freelancer</option>
-                                    <option value="Student">Student</option>
-                                </select>
-                            </div>
-                            {designation === 'Influencer' || designation === 'Freelancer' ? (
-                                <div>
-                                    <input
-                                        type="text"
-                                        id="socialProfile"
-                                        name="socialProfile"
-                                        value={socialProfile}
-                                        onChange={handleInputChange}
-                                        placeholder="Social Profile Username"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                </div>
-                            ) : null}
-                            {designation === 'Political Worker' ? (
-                                <div>
-                                    <input
-                                        type="text"
-                                        id="state"
-                                        name="state"
-                                        value={state}
-                                        onChange={handleInputChange}
-                                        placeholder="State"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                    <input
-                                        type="text"
-                                        id="region"
-                                        name="region"
-                                        value={region}
-                                        onChange={handleInputChange}
-                                        placeholder="Region"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                </div>
-                            ) : null}
-                            {designation === 'Business/ Corporate Worker' ? (
-                                <div>
-                                    <input
-                                        type="text"
-                                        id="companyName"
-                                        name="companyName"
-                                        value={companyName}
-                                        onChange={handleInputChange}
-                                        placeholder="Company Name"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                </div>
-                            ) : null}
-                            {designation === 'Student' ? (
-                                <div>
-                                    <input
-                                        type="text"
-                                        id="college"
-                                        name="college"
-                                        value={college}
-                                        onChange={handleInputChange}
-                                        placeholder="College"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                    <input
-                                        type="text"
-                                        id="course"
-                                        name="course"
-                                        value={course}
-                                        onChange={handleInputChange}
-                                        placeholder="Course"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    />
-                                </div>
-                            ) : null}
-                            {designation === 'Freelancer' ? (
-                                <div>
-                                    <textarea
-                                        id="services"
-                                        name="services"
-                                        value={services}
-                                        onChange={handleInputChange}
-                                        placeholder="Services You Provide"
-                                        className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                        required
-                                    ></textarea>
-                                </div>
-                            ) : null}
-                            <div className='flex flex-col md:flex-row justify-center items-center'>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    value={email}
-                                    onChange={handleInputChange}
-                                    placeholder="Email ID"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                                <input
-                                    type="password"
-                                    id="password"
-                                    name="password"
-                                    value={password}
-                                    onChange={handleInputChange}
-                                    placeholder="Password"
-                                    className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <button className='btn-primary' type="submit"><FaSignInAlt />Register</button>
+                                    Sign Up
+                                </button>
                             </div>
                         </form>
-                        <div className='flex flex-col items-center justify-center gap-3'>
-                            <p className='text-black mt-4'>or Signin Using</p>
+                        <div>
+                            {errorMessage && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{errorMessage}</div>}
+                        </div>
+                        <div className="my-8 border-t border-gray-200" />
+                        <div className="space-y-4">
                             <button
-                                className='bg-white text-black flex items-center gap-2 text-lg px-2 py-1 rounded-full hover:scale-110 transition'
+                                className="w-full inline-flex justify-center gap-2 items-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText"
+                                type="button"
                                 onClick={() => signIn('google')}
                             >
-                                <FcGoogle />Google
+                                <FcGoogle className="text-xl" />
+                                Sign up with Google
                             </button>
-                            <p className='text-black'>
-                                Already have an account? <a className='text-blue-500 underline' href="/signin">Login</a>
-                            </p>
                         </div>
                     </div>
-                    <div>
-                        {errorMessage && <p className='bg-red-600 text-white p-3 rounded-md w-1/2 md:w-1/4 text-center mt-2'>{errorMessage}</p>}
-                    </div>
                 </div>
-            </div>
+                <div className="sm:w-1/2 flex flex-col items-center justify-center">
+                    <Image
+                        alt="sign up"
+                        className="object-cover h-full w-full"
+                        src="/signup.svg"
+                        width={500}
+                        height={500}
+                    />
+                    <a className="text-xs text-gray-600 m-0" href="https://storyset.com/people">People illustrations by Storyset</a>
+                </div>
+            </main>
         </>
-    );
+
+    )
 };
 
 export default SignUp;
