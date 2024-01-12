@@ -33,11 +33,11 @@ const FloatingForm = ({ closeForm }) => {
     };
     return (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-            <div className="mx-auto max-w-lg bg-white rounded-lg p-8 shadow-lg">
+            <div className="mx-auto max-w-lg bg-gray-700 rounded-lg p-8 shadow-lg">
                 <button className="absolute text-xl" onClick={closeForm}>
                     <IoMdClose className="text-gray-400" />
                 </button>
-                <h1 className="text-center text-2xl font-bold text-indigo-600 sm:text-3xl">Get started today</h1>
+                <h1 className="text-center text-2xl font-bold text-primaryText sm:text-3xl">Get started today</h1>
                 <p className="mx-auto mt-4 max-w-md text-center text-gray-500">
                     Dive into the world of Campaigning Source and start building your next project today.
                 </p>
@@ -130,7 +130,7 @@ const FloatingForm = ({ closeForm }) => {
                     {/* Submit Button */}
                     <button
                         type="submit"
-                        className="block w-full rounded-lg bg-blue-600 px-5 py-3 text-sm font-medium text-white hover:bg-blue-700"
+                        className="block w-full rounded-lg bg-primaryText px-5 py-3 text-sm font-medium text-white hover:bg-indigo-500"
                     >
                         Dive in
                     </button>
