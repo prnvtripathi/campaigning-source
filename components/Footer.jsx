@@ -37,7 +37,7 @@ const Footer = () => {
     //     <p className="py-4 select-none">© {year} Campaigning Source</p>
     // </footer>
 
-    <footer className="bg-transparent bg-gradient-to-t from-blue-500/10 to-slate-950/10">
+    <footer className="bg-transparent bg-gradient-to-t from-blue-500/10 to-transparent">
       <div className="mx-auto relative max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <Link

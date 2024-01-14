@@ -135,7 +135,7 @@ const SignUp = () => {
                                             First name
                                         </label>
                                         <input
-                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText  rounded-md"
                                             id="first-name"
                                             placeholder="John"
                                             required
@@ -149,7 +149,7 @@ const SignUp = () => {
                                             Last name
                                         </label>
                                         <input
-                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                            className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText  rounded-md"
                                             id="last-name"
                                             placeholder="Doe"
                                             required
@@ -164,7 +164,7 @@ const SignUp = () => {
                                         Contact Number
                                     </label>
                                     <input
-                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                         id="contact-number"
                                         placeholder="1234567890"
                                         required
@@ -178,7 +178,7 @@ const SignUp = () => {
                                         Email
                                     </label>
                                     <input
-                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                         id="email"
                                         placeholder="john@example.com"
                                         type="email"
@@ -197,7 +197,7 @@ const SignUp = () => {
                                         name="designation"
                                         value={designation}
                                         onChange={handleInputChange}
-                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md text-gray-700"
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 bg-gray-600 placeholder-gray-500 text-primaryText rounded-md"
                                         required
                                     >
                                         <option value="">Select Designation</option>
@@ -217,7 +217,7 @@ const SignUp = () => {
                                                     value={socialProfile}
                                                     onChange={handleInputChange}
                                                     placeholder="Social Profile Username"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                                     required
                                                 />
                                             </div>
@@ -233,7 +233,7 @@ const SignUp = () => {
                                                     value={state}
                                                     onChange={handleInputChange}
                                                     placeholder="State"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                                     required
                                                 />
                                                 <input
@@ -243,7 +243,7 @@ const SignUp = () => {
                                                     value={region}
                                                     onChange={handleInputChange}
                                                     placeholder="Region"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                                     required
                                                 />
                                             </div>
@@ -259,7 +259,7 @@ const SignUp = () => {
                                                     value={companyName}
                                                     onChange={handleInputChange}
                                                     placeholder="Company Name"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                                     required
                                                 />
                                             </div>
@@ -275,7 +275,7 @@ const SignUp = () => {
                                                     value={college}
                                                     onChange={handleInputChange}
                                                     placeholder="College"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-md"
                                                     required
                                                 />
                                                 <input
@@ -285,7 +285,7 @@ const SignUp = () => {
                                                     value={course}
                                                     onChange={handleInputChange}
                                                     placeholder="Course"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText  rounded-md"
                                                     required
                                                 />
                                             </div>
@@ -300,7 +300,7 @@ const SignUp = () => {
                                                     value={services}
                                                     onChange={handleInputChange}
                                                     placeholder="Services You Provide"
-                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText  rounded-md"
                                                     required
                                                 ></textarea>
                                             </div>
@@ -312,7 +312,7 @@ const SignUp = () => {
                                         Password
                                     </label>
                                     <input
-                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                        className="mt-1 focus:ring-primaryText focus:outline-0 block w-full shadow-sm sm:text-sm bg-transparent border-gray-300 placeholder-gray-500 text-primaryText  rounded-md"
                                         id="password"
                                         required
                                         type="password"
@@ -323,7 +323,7 @@ const SignUp = () => {
                                     />
                                 </div>
                                 <button
-                                    className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                    className="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-blue-500 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                     type="submit"
                                 >
                                     Sign Up
@@ -335,7 +335,7 @@ const SignUp = () => {
                         </div>
                         <div>
                             <p className="text-center text-sm text-gray-300">
-                                Don't have an account?{" "}
+                                Already have an account?{" "}
                                 <Link
                                     className="font-medium text-primaryText hover:text-indigo-500"
                                     href="/signin"
@@ -349,12 +349,12 @@ const SignUp = () => {
                         </div>
                         <div className="space-y-4">
                             <button
-                                className="w-full inline-flex justify-center gap-2 items-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText"
+                                className="w-full flex justify-center py-2 px-4 border border-gray-100/30 shadow-sm text-sm font-medium rounded-md text-gray-100 bg-transparent hover:bg-gray-100/10 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                 type="button"
                                 onClick={() => signIn('google')}
                             >
-                                <FcGoogle className="text-xl" />
-                                Sign up with Google
+                                <FcGoogle className="text-xl mr-2" />
+                                 Sign up with Google
                             </button>
                         </div>
                     </div>

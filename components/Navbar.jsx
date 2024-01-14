@@ -93,7 +93,7 @@ const Navbar = () => {
                             {!session ? (
                                 <li>
                                     <Link
-                                        className="bg-sky-500 text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText"
+                                        className="bg-sky-500 transition text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText"
                                         href="/signin"
                                     >
                                         <VscSignIn className="inline-block mr-1" />

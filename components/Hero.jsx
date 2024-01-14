@@ -10,12 +10,12 @@ const satisfy = Satisfy({
 export default function Component() {
     return (
         <>
-        <div className="w-1/4 absolute blur-3xl top-48">
+        {/* <div className="w-1/4 absolute blur-3xl top-48">
             <Image src="/blob1.png" alt=" " width={500} height={500} />
         </div>
         <div className="w-1/5 absolute blur-2xl right-16 bottom-0">
             <Image src="/blob2.png" alt=" " width={500} height={500} />
-        </div>
+        </div> */}
             <section className="w-full h-[41rem] py-12 md:py-24 lg:py-32 bg-bg flex justify-center items-center">
                 <div className="px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-4 text-center">
