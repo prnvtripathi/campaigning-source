@@ -33,6 +33,7 @@ const Home = () => {
         <meta name="language" content="English" />
         <meta name="revisit-after" content="1 days" />
         <meta name="author" content="Vansh Tyagi" />
+        <title>Campaigning Source</title>
       </Head>
       <Layout>
         {/* <SocialMedia /> */}

@@ -50,7 +50,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="sticky bg-bg backdrop-blur-lg bg-opacity-40 top-0 w-full left-0 z-40 text-white">
+            <nav className="sticky bg-bg backdrop-blur-lg bg-opacity-40 top-0 w-full left-0 z-40 text-white" id="Navbar">
                 <div className="container max-w-full px-4 md:px-8">
                     <div className="flex items-center justify-between py-1 h-14 sm:h-20">
                         <Link href="/" className="transform scale-75 ">

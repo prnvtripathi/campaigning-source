@@ -68,7 +68,7 @@ const Signin = () => {
                                             </label>
                                             <input
                                                 autoComplete="email"
-                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
+                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-t-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
                                                 id="email-address"
                                                 name="email"
                                                 placeholder="Email address"
@@ -84,7 +84,7 @@ const Signin = () => {
                                             </label>
                                             <input
                                                 autoComplete="current-password"
-                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
+                                                className="appearance-none rounded-none relative block w-full px-3 py-2 bg-transparent border border-gray-300 placeholder-gray-500 text-primaryText rounded-b-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
                                                 id="password"
                                                 name="password"
                                                 placeholder="Password"
@@ -97,13 +97,14 @@ const Signin = () => {
                                     </div>
                                     <div>
                                         <button
-                                            className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primaryText hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            className="group relative w-full transition flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primaryText hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                             type="submit"
                                         >
                                             Sign In
                                         </button>
                                     </div>
                                 </form>
+                                
                                 <div>
                                     {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
                                 </div>
@@ -111,7 +112,7 @@ const Signin = () => {
                                     <p className="text-center text-sm text-gray-300">
                                         Don't have an account?{" "}
                                         <Link
-                                            className="font-medium text-primaryText hover:text-indigo-500"
+                                            className="font-medium text-primaryText transition hover:text-indigo-500"
                                             href="/signup"
                                         >
                                             Sign up
@@ -123,11 +124,11 @@ const Signin = () => {
                                 </div>
                                 <div className="flex justify-center">
                                     <button
-                                        className="w-full flex justify-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        className="w-full flex justify-center py-2 px-4 border border-gray-100/30 shadow-sm text-sm font-medium rounded-md text-gray-100 bg-transparent hover:bg-gray-100/10 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                         onClick={() => signIn("google")}
                                     >
                                         <FcGoogle className="text-xl" />
-                                        <span className="ml-4">Sign in with Google</span>
+                                        <span className="ml-4 ">Sign in with Google</span>
                                     </button>
                                 </div>
                             </div>
