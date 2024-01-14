@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 import { useSession, signIn } from 'next-auth/react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SignUp = () => {
     const initialFormData = {
@@ -332,7 +333,20 @@ const SignUp = () => {
                         <div>
                             {errorMessage && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{errorMessage}</div>}
                         </div>
-                        <div className="my-8 border-t border-gray-200" />
+                        <div>
+                            <p className="text-center text-sm text-gray-300">
+                                Don't have an account?{" "}
+                                <Link
+                                    className="font-medium text-primaryText hover:text-indigo-500"
+                                    href="/signin"
+                                >
+                                    Sign in
+                                </Link>
+                            </p>
+                            <p className="text-center text-sm text-gray-300 mt-4">
+                                OR
+                            </p>
+                        </div>
                         <div className="space-y-4">
                             <button
                                 className="w-full inline-flex justify-center gap-2 items-center py-2 px-4 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText"
