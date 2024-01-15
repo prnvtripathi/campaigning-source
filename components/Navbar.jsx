@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
@@ -46,7 +46,7 @@ const Navbar = () => {
         "text-white hover:text-primaryText py-1 px-2 transition-all";
     const activeLink =
         inactiveLink +
-        " border border-primaryText rounded-full py-1 px-2 font-normal";
+        " bg-gradient-to-r from-primaryText to-fuchsia-500 bg-[length:100%_2px] bg-no-repeat bg-bottom py-1 px-2 font-normal";
 
     return (
         <>
