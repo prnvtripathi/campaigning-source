@@ -39,6 +39,7 @@ const Home = () => {
         {/* <SocialMedia /> */}
         <Hero />
         <Services />
+        <hr className="mt-2 mx-10 border-primaryText" />
         <PastCustomers />
         <Banner />
         <Contact />

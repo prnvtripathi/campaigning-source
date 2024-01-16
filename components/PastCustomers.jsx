@@ -52,18 +52,32 @@ const montserrat = Montserrat({
 
 const PastCustomers = () => {
     return (
-        <div className="text-center bg-bg rounded-md py-2 my-3 md:w-11/12 mx-auto">
-            <hr className="mt-2 border-primaryText"/>
-            <h1 className="text-4xl font-bold py-3"><span className={montserrat.className}>Our Collaborations</span></h1>
-            <Marquee className="flex" gradient={true} gradientColor="#242424" gradientWidth={30} speed={50}>
-                {customers.map((customer) => (
-                    <div key={customer.id} className="saturate-50">
-                        <Image src={customer.img} alt="customer" className="w-32 mr-3" width={500} height={500} />
-                    </div>
-                ))}
-            </Marquee>
-            <hr className="mt-2 border-primaryText"/>
-        </div>
+        // <div className="text-center bg-bg rounded-md py-2 my-3 md:w-11/12 mx-auto">
+        //     <hr className="mt-2 border-primaryText"/>
+        //     <h1 className="text-4xl font-bold py-3"><span className={montserrat.className}>Our Collaborations</span></h1>
+        //     <Marquee className="flex" gradient={true} gradientColor="#242424" gradientWidth={30} speed={50}>
+        //         {customers.map((customer) => (
+        //             <div key={customer.id} className="saturate-50">
+        //                 <Image src={customer.img} alt="customer" className="w-32 mr-3" width={500} height={500} />
+        //             </div>
+        //         ))}
+        //     </Marquee>
+        //     <hr className="mt-2 border-primaryText"/>
+        // </div>
+        <div className="text-center bg-bg rounded-md py-12 md:py-24 my-3 md:w-11/12 mx-auto">
+    <h1 className="md:text-5xl font-bold py-3">Our Collaborations</h1>
+
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-3 py-10">
+        {customers.map((customer) => (
+            <div key={customer.id} className="saturate-0 opacity-50">
+                <Image src={customer.img} alt="customer" width={500} height={500} className="h-40 w-40" />
+            </div>
+        ))}
+    </div>
+
+    {/* <hr className="mt-2 border-primaryText" /> */}
+</div>
+
     );
 }
 

@@ -109,7 +109,7 @@ const FloatingForm = ({ closeForm }) => {
               <input
                 type="text"
                 className="w-full rounded-lg placeholder-slate-200/50 bg-gray-600 border-gray-200/50 focus:border-sky-400 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Your job title"
+                placeholder="Job Title"
                 name="job"
                 required
               />
@@ -143,7 +143,7 @@ const FloatingForm = ({ closeForm }) => {
               <input
                 type="text"
                 className="w-full rounded-lg placeholder-slate-200/50 bg-gray-600 border-gray-200/50 focus:border-sky-400 p-4 pe-12 text-sm shadow-sm"
-                placeholder="Your Whatsapp contact"
+                placeholder="WhatsApp Contact Number"
                 name="whatsapp"
                 required
               />
