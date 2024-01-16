@@ -184,7 +184,7 @@ const About = () => {
                     </section>
                     <section className="w-full max-w-4xl space-y-6">
                         <h2 className="text-3xl font-bold text-center">Our Values</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <div className="flex flex-col items-center space-y-4">
                                 <IoCheckmark className="h-12 w-12 text-green-500" />
                                 <h3 className="text-xl font-bold text-gray-300">Integrity</h3>

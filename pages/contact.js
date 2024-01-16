@@ -9,6 +9,7 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
   const form = useRef();
@@ -44,6 +45,10 @@ const Contact = () => {
       );
   };
 
+  const handleWhatsappClick = () => {
+    window.open('https://wa.link/3ik1jc', '_blank');
+  };
+
   return (
     <>
       <Head>
@@ -67,9 +72,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  {/* <label className="block text-sm font-medium text-primaryText" htmlFor="phone">
-                                        Phone
-                                    </label> */}
                   <input
                     required
                     className="block w-full bg-gray-600 px-3 py-3 placeholder-slate-200/50   text-primaryText rounded-md border border-gray-200/50 focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
@@ -78,9 +80,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  {/* <label className="block text-sm font-medium text-primaryText" htmlFor="email">
-                                        Email
-                                    </label> */}
                   <input
                     required
                     className="block w-full bg-gray-600 px-3 py-3 placeholder-slate-200/50  text-primaryText rounded-md border border-gray-200/50 focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
@@ -91,9 +90,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  {/* <label className="block text-sm font-medium text-primaryText" htmlFor="service">
-                                        Service
-                                    </label> */}
                   <select
                     className="block w-full bg-gray-600 px-3 py-3 border placeholder-slate-200/50 border-gray-200/50 rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                     id="service"
@@ -119,9 +115,6 @@ const Contact = () => {
                   </select>
                 </div>
                 <div className="space-y-2">
-                  {/* <label className="block text-sm font-medium text-primaryText" htmlFor="organization">
-                                        Organization/Company
-                                    </label> */}
                   <input
                     required
                     name="purpose"
@@ -131,9 +124,6 @@ const Contact = () => {
                   />
                 </div>
                 <div className="space-y-2">
-                  {/* <label className="block text-sm font-medium text-primaryText" htmlFor="message">
-                                        Message
-                                    </label> */}
                   <textarea
                     required
                     className="min-h-[100px] bg-gray-600 block w-full px-3 py-3 placeholder-slate-200/50  text-primaryText rounded-md border border-gray-200/50 focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
@@ -159,6 +149,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="w-11/12 max-w-6xl p-8 mt-12  space-y-4 text-center bg-gray-700 rounded-lg shadow-md flex flex-col md:flex-row justify-around items-center">
+            <h3 className="text-3xl font-bold">Chat through Whatsapp!</h3>
+            <div onClick={handleWhatsappClick}>
+              <FaWhatsapp className="text-6xl text-green-500 hover:text-green-600" />
+            </div>
+          </div>
+          <div className="w-11/12 max-w-6xl p-8 mt-12  space-y-4 text-center bg-gray-700 rounded-lg shadow-md flex flex-col md:flex-row justify-around items-center">
             <div className="flex flex-col items-center justify-center gap-2">
               <h3 className="text-3xl font-bold">Follow Us</h3>
               <div className="flex justify-center space-x-4 text-2xl">
@@ -168,10 +164,10 @@ const Contact = () => {
                 <Link className="text-blue-400 hover:text-blue-600" href="#">
                   <FaTwitter />
                 </Link>
-                <Link className="text-pink-600 hover:text-pink-800" href="#">
+                <Link className="text-pink-600 hover:text-pink-800" href="https://instagram.com/campaigningsource/">
                   <FaInstagram />
                 </Link>
-                <Link className="text-blue-700 hover:text-blue-900" href="#">
+                <Link className="text-blue-700 hover:text-blue-900" href="https://www.linkedin.com/company/100733755/">
                   <FaLinkedinIn />
                 </Link>
               </div>
