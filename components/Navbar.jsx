@@ -21,13 +21,13 @@ const navItems = [
     },
     {
         id: 2,
-        name: "Pricing",
-        path: "/pricing",
+        name: "Services",
+        path: "/services",
     },
     {
         id: 3,
-        name: "Swags",
-        path: "/swags",
+        name: "Pricing",
+        path: "/pricing",
     },
 ];
 
