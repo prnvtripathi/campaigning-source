@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
-// import SocialMedia from '@/components/SocialMedia';
+import Services from '@/components/Services';
 import Contact from '@/components/Contact';
 import PastCustomers from '@/components/PastCustomers';
 import Banner from '@/components/Banner';
@@ -33,10 +33,13 @@ const Home = () => {
         <meta name="language" content="English" />
         <meta name="revisit-after" content="1 days" />
         <meta name="author" content="Vansh Tyagi" />
+        <title>Campaigning Source</title>
       </Head>
       <Layout>
         {/* <SocialMedia /> */}
         <Hero />
+        <Services />
+        <hr className="mt-2 mx-10 border-primaryText" />
         <PastCustomers />
         <Banner />
         <Contact />
