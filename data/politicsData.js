@@ -17,7 +17,7 @@ const politicsData = [
     {
         id: 1,
         logo: <FaVoteYea />,
-        link: "/services/politics",
+        link: "/services/graphics",
         title: "Graphics",
         content:
             "We can provide you with graphics for your political campaign. We can design your logo, flyers, banners, and many more.",
@@ -25,7 +25,7 @@ const politicsData = [
     {
         id: 2,
         logo: <FaSms />,
-        link: "/services/default",
+        link: "/services/call",
         title: "Bulk SMS/Calls",
         content:
             "We can provide you with bulk SMS and calls for your political campaign. We can send SMS and calls to your voters.",
@@ -41,7 +41,7 @@ const politicsData = [
     {
         id: 4,
         logo: <RiAdvertisementFill />,
-        link: "/services/politics",
+        link: "/services/meta",
         title: "Advertisements",
         content:
             "We can provide you with advertisements for your political campaign. We can advertise your political campaign on social media.",
@@ -49,7 +49,7 @@ const politicsData = [
     {
         id: 5,
         logo: <FaVideo />,
-        link: "/services/politics",
+        link: "/services/video",
         title: "Video/Reels",
         content:
             "We can provide you with video/reels for your political campaign. We can make video/reels for your political campaign.",
@@ -57,7 +57,7 @@ const politicsData = [
     {
         id: 6,
         logo: <MdVerified />,
-        link: "/services/politics",
+        link: "/services/twitter",
         title: "Blue Tick Verification",
         content:
             "We can provide you with blue tick verification for your political campaign. We can verify your social media accounts.",
@@ -73,7 +73,7 @@ const politicsData = [
     {
         id: 8,
         logo: <FaFire />,
-        link: "/services/politics",
+        link: "/services/video",
         title: "Roast Videos",
         content:
             "We can provide you with roast videos for your political campaign. We can make roast videos for your political campaign.",
@@ -81,7 +81,7 @@ const politicsData = [
     {
         id: 9,
         logo: <FaFlag />,
-        link: "/services/politics",
+        link: "/services/printing",
         title: "Flag Printing",
         content:
             "We can provide you with flag printing for your political campaign. We can print flags for your political campaign.",

@@ -21,6 +21,7 @@ html::-webkit-scrollbar-thumb {
 body {
     @apply text-primaryText;
     background-color: #191919;
+    user-select: none;
 }
 
 .offers {

@@ -9,14 +9,14 @@ const businessData = [
     {
         id: 1,
         logo: <MdWeb />,
-        link: '/services/webdev',
+        link: '/services/web',
         title: 'Website Development',
         content: 'We can provide you with website development for your business development. We can develop your website for your business campaign.'
     },
     {
         id: 2,
         logo: <FaMobile />,
-        link: '/services/appdev',
+        link: '/services/app',
         title: 'App Development',
         content: 'We can provide you with app development for your business development. We can develop your app for your business campaign.'
     },
@@ -44,14 +44,14 @@ const businessData = [
     {
         id: 6,
         logo: <MdSms />,
-        link: '/services/bulksms',
+        link: '/services/sms',
         title: 'Broadcast Messages',
         content: 'We can provide you with broadcast messages for your business management. We can send broadcast messages to your customers.'
     },
     {
         id: 7,
         logo: <FaUsers />,
-        link: '/services/bulkcall',
+        link: '/services/call',
         title: 'Bulk Calls',
         content: 'We can provide you with bulk calls for your business management. We can bulk calls to your customers.'
     },
@@ -65,7 +65,7 @@ const businessData = [
     {
         id: 9,
         logo: <GiClapperboard />,
-        link: '/services/business',
+        link: '/services/video',
         title: 'Videos',
         content: 'We can provide you with videos for your business management. We can make videos for your business.'
     },
@@ -86,7 +86,7 @@ const businessData = [
     {
         id: 12,
         logo: <GiMagnifyingGlass />,
-        link: '/services/business',
+        link: '/services/seo',
         title: 'SEM & SEO',
         content: 'We can provide you with SEM & SEO for your business management. We can manage your SEM & SEO.'
     }
