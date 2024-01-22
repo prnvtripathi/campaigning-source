@@ -91,7 +91,7 @@ const Contact = () => {
                 </div>
                 <div className="space-y-2">
                   <select
-                    className="block w-full bg-gray-600 px-3 py-3 border placeholder-slate-200/50 border-gray-200/50 rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
+                    className="block w-full bg-gray-600 text-slate-200/50 px-3 py-3 border placeholder-slate-200/50 border-gray-200/50 rounded-md shadow-sm focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
                     id="service"
                     name="service"
                     required
