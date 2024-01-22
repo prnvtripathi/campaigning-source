@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
         setCookieVisible(false);
     };
     return (
-        <>
+        <div className="overflow-x-hidden">
             <Navbar />
             <Searchbar />
             {children}
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
             {/* <Chatbot /> */}
             {isCookieVisible && <Cookies closeDialog={closeDialog} />}
 
-        </>
+        </div>
     )
 }
 

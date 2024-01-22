@@ -39,7 +39,7 @@ export default function Component() {
         <div className="flex flex-col-reverse md:flex-row gap-8 p-16">
             <div className="w-full md:w-1/2 space-y-8">
                 <div className="space-y-2">
-                    <h2 className="text-3xl font-bold">Contact Us</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold">Contact Us</h2>
                     <p className="text-gray-300 dark:text-gray-300">
                         We would love to hear from you. Please fill out the form below and we'll get back to you as soon as
                         possible.
@@ -99,7 +99,7 @@ export default function Component() {
                             placeholder="Enter your message"
                         />
                     </div>
-                    <button className="w-full py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText">
+                    <button className="w-full transition py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText">
                         Send message
                     </button>
                 </form>

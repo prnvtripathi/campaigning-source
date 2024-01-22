@@ -1,5 +1,6 @@
 import { Montserrat, Satisfy } from "next/font/google"
 import Link from "next/link"
+import MagneticEffect from "./MagneticEffect"
 
 const montserrat = Montserrat({
     subsets: ['latin'],
@@ -22,12 +23,13 @@ export default function Banner() {
                         </h1>
                         <p className="mx-auto max-w-[700px] text-lg md:text-xl">We provide innovative solutions for your business growth.</p>
                     </div>
+                    <MagneticEffect>
                     <Link
                         className="inline-flex h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
                         href="/contact"
                     >
                         Learn More
-                    </Link>
+                    </Link></MagneticEffect>
                 </div>
             </div>
         </section>

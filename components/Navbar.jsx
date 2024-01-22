@@ -7,6 +7,7 @@ import Image from "next/image";
 import { VscSignIn } from 'react-icons/vsc'
 import { IoMdClose } from "react-icons/io";
 import { FaBars } from "react-icons/fa6";
+import MagneticEffect from "./MagneticEffect";
 
 const navItems = [
     {
@@ -92,13 +93,13 @@ const Navbar = () => {
 
                             {!session ? (
                                 <li>
-                                    <Link
+                                   <MagneticEffect> <Link
                                         className="bg-sky-500 transition text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText"
                                         href="/signin"
                                     >
                                         <VscSignIn className="inline-block mr-1" />
                                         Sign In
-                                    </Link>
+                                    </Link></MagneticEffect>
                                 </li>
                             ) : (
                                 <UserProfile />
@@ -118,7 +119,7 @@ const Navbar = () => {
                                 </Link>
                             ))}
 
-                            {!session ? (
+                          <MagneticEffect>  {!session ? (
                                 <Link
                                     className="bg-sky-500 text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText w-1/4 ml-8 my-2"
                                     href="/signin"
@@ -129,7 +130,7 @@ const Navbar = () => {
                                 <div className="pt-1 pb-3 px-1.5 ml-7">
                                     <UserProfile />
                                 </div>
-                            )}
+                            )}</MagneticEffect>
                         </ul>
                     </div>
                 </div>

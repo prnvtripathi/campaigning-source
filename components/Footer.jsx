@@ -7,6 +7,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import MagneticEffect from "./MagneticEffect";
 
 const Footer = () => {
   const date = new Date();
@@ -16,13 +17,13 @@ const Footer = () => {
     <footer className="bg-transparent bg-gradient-to-t from-blue-500/20 to-transparent">
       <div className="mx-auto relative max-w-screen-xl px-4 py-10 md:px-10">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-          <Link
+          <MagneticEffect><Link
             href="#"
             className="inline-block rounded-full bg-primaryText p-2 text-white shadow transition hover:bg-indigo-500 sm:p-3 lg:p-4"
           >
             <span className="sr-only">Back to top</span>
             <FaChevronUp />
-          </Link>
+          </Link></MagneticEffect>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <div className="lg:flex lg:justify-between">
