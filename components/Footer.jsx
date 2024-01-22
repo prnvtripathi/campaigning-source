@@ -17,13 +17,15 @@ const Footer = () => {
     <footer className="bg-transparent bg-gradient-to-t from-blue-500/20 to-transparent">
       <div className="mx-auto relative max-w-screen-xl px-4 py-10 md:px-10">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
-          <MagneticEffect><Link
-            href="#"
-            className="inline-block rounded-full bg-primaryText p-2 text-white shadow transition hover:bg-indigo-500 sm:p-3 lg:p-4"
-          >
-            <span className="sr-only">Back to top</span>
-            <FaChevronUp />
-          </Link></MagneticEffect>
+          <MagneticEffect>
+            <Link
+              href="#"
+              className="inline-block rounded-full bg-primaryText p-2 text-white shadow transition hover:bg-indigo-500 sm:p-3 lg:p-4"
+            >
+              <span className="sr-only">Back to top</span>
+              <FaChevronUp />
+            </Link>
+          </MagneticEffect>
         </div>
         <div className="flex flex-col md:flex-row justify-between items-center mb-4">
           <div className="lg:flex lg:justify-between">
@@ -41,8 +43,8 @@ const Footer = () => {
             <div className="lg:text-right">
               <p className="mx-auto mt-6 max-w-md text-center md:text-left leading-relaxed text-gray-300">
                 Your one-stop solution for political promotion and business
-                development. We help you navigate the political landscape and grow
-                your business.
+                development. We help you navigate the political landscape and
+                grow your business.
               </p>
             </div>
           </div>
@@ -93,53 +95,62 @@ const Footer = () => {
           <div>
             <ul className="flex justify-center lg:justify-end gap-6 md:gap-8">
               <li>
-                <a
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-gray-400 transition hover:text-blue-500"
-                >
-                  <span className="sr-only">Facebook</span>
-                  <FaFacebook className="h-4-w-4" />
-                </a>
+                <MagneticEffect>
+                  {" "}
+                  <a
+                    href="/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-gray-400 transition hover:text-blue-500"
+                  >
+                    <span className="sr-only">Facebook</span>
+                    <FaFacebook className="h-4-w-4" />
+                  </a>
+                </MagneticEffect>
               </li>
               <li>
-                <a
-                  href="https://www.instagram.com/campaigningsource/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-gray-400 transition hover:text-purple-500"
-                >
-                  <span className="sr-only">Instagram</span>
-                  <FaInstagram className="h-4-w-4" />
-                </a>
+                {" "}
+                <MagneticEffect>
+                  <a
+                    href="https://www.instagram.com/campaigningsource/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-gray-400 transition hover:text-purple-500"
+                  >
+                    <span className="sr-only">Instagram</span>
+                    <FaInstagram className="h-4-w-4" />
+                  </a>
+                </MagneticEffect>
               </li>
               <li>
-                <Link
-                  href="/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-gray-400 transition hover:text-gray-50"
-                >
-                  <span className="sr-only">Twitter</span>
-                  <FaXTwitter className="h-4-w-4" />
-                </Link>
+                <MagneticEffect>
+                  <Link
+                    href="/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-gray-400 transition hover:text-gray-50"
+                  >
+                    <span className="sr-only">Twitter</span>
+                    <FaXTwitter className="h-4-w-4" />
+                  </Link>
+                </MagneticEffect>
               </li>
               <li>
-                <Link
-                  href="https://www.linkedin.com/company/100733755/"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="text-gray-400 transition hover:text-blue-600"
-                >
-                  <span className="sr-only">LinkedIn</span>
-                  <FaLinkedin className="h-4-w-4" />
-                </Link>
+                <MagneticEffect>
+                  <Link
+                    href="https://www.linkedin.com/company/100733755/"
+                    rel="noreferrer"
+                    target="_blank"
+                    className="text-gray-400 transition hover:text-blue-600"
+                  >
+                    <span className="sr-only">LinkedIn</span>
+                    <FaLinkedin className="h-4-w-4" />
+                  </Link>
+                </MagneticEffect>
               </li>
             </ul>
           </div>
         </div>
-
       </div>
     </footer>
   );

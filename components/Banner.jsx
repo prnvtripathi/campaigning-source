@@ -14,7 +14,7 @@ const satisfy = Satisfy({
 
 export default function Banner() {
     return (
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-green-400 to-blue-500">
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-slate-800 to-gray-600">
             <div className="px-4 md:px-6">
                 <div className="flex flex-col items-center space-y-4 text-center text-white">
                     <div className="space-y-2">

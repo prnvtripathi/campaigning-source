@@ -100,7 +100,7 @@ export default function Component() {
                         />
                     </div>
                     <button className="w-full transition py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-primaryText hover:bg-sky-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primaryText">
-                        Send message
+                        Send Message
                     </button>
                 </form>
             </div>
