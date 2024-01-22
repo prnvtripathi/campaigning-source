@@ -75,7 +75,7 @@ const services = [
     },
     {
         icon: <FaMobile />,
-        title: "Appication and Software Development",
+        title: "Application and Software Development",
         description: "Innovate with custom applications and software solutions tailored to your unique needs. Our experts are well-versed in the latest technologies."
     },
     {
