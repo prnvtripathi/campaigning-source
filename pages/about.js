@@ -10,6 +10,8 @@ import { MdOutlineArticle, MdWeb, MdOutlineEventSeat } from "react-icons/md"
 import { FaLinkedin } from "react-icons/fa"
 import Link from "next/link"
 
+import { IoCheckmark } from "react-icons/io5";
+
 const montserrat = Montserrat({
     subsets: ["latin"],
     weights: [400, 500, 600, 700],
@@ -162,126 +164,147 @@ const About = () => {
                 <title>About | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h1 className="title text-black text-center">About Us</h1>
-                    <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
-                            <p className="w-full text-black">
-                                Welcome to <strong>Campaigning Source</strong>, your ultimate destination for comprehensive
-                                business development and election promotion solutions. Our mission is to propel businesses
-                                to unprecedented heights and guide politicians to claim the chair of leadership. With a rich
-                                history of transforming aspirations into achievements, Campaigning Source stands as a beacon
-                                of success in the industry.
+                <main className="flex flex-col items-center w-11/12 mx-auto max-w-6xl rounded-lg my-7 bg-gray-700 px-4 py-8 space-y-8 md:px-6 lg:py-16">
+                    <section className="w-full max-w-4xl space-y-6">
+                        <h1 className="text-4xl font-bold text-center">About Us</h1>
+                        <div className="flex flex-col md:flex-row justify-center items-center gap-8">
+                            <p className="w-full md:w-1/2 text-lg text-center text-gray-400">
+                                We are a dedicated team of professionals committed to helping political candidates and businesses succeed.
+                                Our mission is to provide top-notch political promotion and business management services that drive growth
+                                and success.
                             </p>
-                        </div>
-                        <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black text-center">History</h2>
-                    <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
-                        </div>
-                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
-                            <p className="w-full text-black">
-                                <strong>Campaigning Source</strong> embarked on its journey with a singular vision: to bridge the
-                                gap between potential and success. Over time, we've evolved into a powerhouse of expertise, catering
-                                not only to business growth but also to effective election campaigns. Our experience is a testament
-                                to our adaptability and proficiency in driving results in these interconnected domains.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="outline p-3 rounded-lg text-black">
-                    <h2 className="title text-black text-center">Our Services</h2>
-                    <div className="flex flex-wrap justify-center items-center gap-2">
-                        {services.map((service, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-auto md:h-72 text-center hover:scale-105 transition ease-in-out duration-200"
-                            >
-                                <span className="text-4xl my-2">{service.icon}</span>
-                                <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                                <p className="text-center font-thin">{service.description}</p>
+                            <div className="flex justify-center">
+                                <img
+                                    alt="About us"
+                                    className="w-72"
+                                    src="/about-us.svg"
+                                />
                             </div>
-                        ))}
-                    </div>
-                </div>
-
-
-                <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black text-center">Social Proof</h2>
-                    <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
                         </div>
-                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
-                            <p className="w-full text-black">
-                                <strong>Campaigning Source's</strong> legacy is built on a foundation of successful collaborations
-                                and delighted clients. From small enterprises witnessing exponential growth to political leaders
-                                securing resounding victories, our impact speaks volumes. Our proven expertise in business development
-                                and election promotion stands as a testament to our unwavering commitment to excellence.
-                            </p>
+                    </section>
+                    <section className="w-full max-w-4xl space-y-6">
+                        <h2 className="text-3xl font-bold text-center">Our Values</h2>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <div className="flex flex-col items-center space-y-4">
+                                <IoCheckmark className="h-12 w-12 text-green-500" />
+                                <h3 className="text-xl font-bold text-gray-300">Integrity</h3>
+                                <p className="text-center text-gray-400">
+                                    We believe in doing the right thing, always. We uphold the highest standards of integrity in all of our
+                                    actions.
+                                </p>
+                            </div>
+                            <div className="flex flex-col items-center space-y-4">
+                                <IoCheckmark className="h-12 w-12 text-green-500" />
+                                <h3 className="text-xl font-bold text-gray-300">Excellence</h3>
+                                <p className="text-center text-gray-400">
+                                    We strive for excellence in everything we do. We take pride in our work and aim to deliver the best
+                                    results possible.
+                                </p>
+                            </div>
+                            <div className="flex flex-col items-center space-y-4">
+                                <IoCheckmark className="h-12 w-12 text-green-500" />
+                                <h3 className="text-xl font-bold text-gray-300">Innovation</h3>
+                                <p className="text-center text-gray-400">
+                                    We are committed to innovation. We constantly seek new and better ways to serve our clients.
+                                </p>
+                            </div>
+                            <div className="flex flex-col items-center space-y-4">
+                                <IoCheckmark className="h-12 w-12 text-green-500" />
+                                <h3 className="text-xl font-bold text-gray-300">Collaboration</h3>
+                                <p className="text-center text-gray-400">
+                                    We believe in the power of collaboration. We work together, across boundaries, to meet the needs of our
+                                    clients and to help our company win.
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className="bg-blue-200 p-3 rounded-lg my-3">
-                    <h2 className="title text-black text-center">Join us in crafting success.</h2>
-                    <div className="flex flex-col items-center md:flex-row justify-center">
-                        <div className={`w-full md:w-1/2 ${montserrat.className}`}>
-                            <p className="w-full text-black">
-                                <strong>Campaigning Source's</strong> legacy is built on a foundation of successful collaborations and
-                                delighted clients. From small enterprises witnessing exponential growth to political leaders securing
-                                resounding victories, our impact speaks volumes. Our proven expertise in business development and election
-                                promotion stands as a testament to our unwavering commitment to excellence.
-                            </p>
-                        </div>
-                        <div className="mx-auto">
-                            <Image src="/about/tiranga.png" alt="indian-flag" className="rounded-md" width={500} height={200} />
-                        </div>
-                    </div>
-                </div>
-
-                <div className="outline p-3 rounded-lg mb-3">
-                    <h2 className="title text-black text-center">Our Team</h2>
-                    <div className="flex flex-wrap justify-center items-center gap-2">
-                        {team.map((member, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col items-center justify-around bg-gradient-to-r from-blue-200 to-cyan-200 p-3 rounded-lg m-1 w-full md:w-1/4 h-56 text-center hover:scale-105 transition ease-in-out duration-200"
-                            >
-                                <div className="relative overflow-hidden transition duration-300 transform rounded-full lg:hover:-translate-y-2 hover:shadow-2xl">
-                                    <Image
-                                        src={member.img}
-                                        alt="member"
-                                        className="rounded-full"
-                                        width={120}
-                                        height={120}
-                                    />
-                                    <div className="absolute inset-0 flex justify-center items-center px-5 py-4 transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                                        <Link href={member.linkedin} target="_blank" className="text-white hover:text-blue-600 text-3xl">
-                                            <FaLinkedin />
-                                        </Link>
+                    </section>
+                    <section className="w-full max-w-4xl space-y-6">
+                        <h2 className="text-3xl font-bold text-center">Our Team</h2>
+                        <div className="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                            {team.map((member, index) => (
+                                <div
+                                    key={index}
+                                    className="flex flex-col items-center justify-around p-3 rounded-lg m-1 w-full h-56 text-center hover:scale-105 transition ease-in-out duration-200"
+                                >
+                                    <div className="relative overflow-hidden transition duration-300 transform rounded-full lg:hover:-translate-y-2 hover:shadow-2xl">
+                                        <Image
+                                            src={member.img}
+                                            alt="member"
+                                            className="rounded-full"
+                                            width={120}
+                                            height={120}
+                                        />
+                                        <div className="absolute inset-0 flex justify-center items-center px-5 py-4 transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                                            <Link href={member.linkedin} target="_blank" className="text-white hover:text-blue-600 text-3xl">
+                                                <FaLinkedin />
+                                            </Link>
+                                        </div>
                                     </div>
+                                    <h3 className="text-xl font-bold text-gray-300">{member.name}</h3>
+                                    <p className="text-center font-thin text-gray-300">{member.position}</p>
                                 </div>
-
-                                <h3 className="text-xl font-bold text-black">{member.name}</h3>
-                                <p className="text-center font-thin text-black">{member.position}</p>
-
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
+                            ))}
+                        </div>
+                    </section>
+                    <section className="w-full max-w-4xl space-y-6">
+                        <h2 className="text-3xl font-bold text-center">Our Services</h2>
+                        <div className="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+                            {services.map((service, index) => (
+                                <div className="flex flex-col items-center space-y-4 mx-auto text-center bg-gray-600 p-5 rounded-lg" key={index}>
+                                    <span className="text-4xl">{service.icon}</span>
+                                    <h3 className="text-xl font-bold text-gray-300">{service.title}</h3>
+                                    <p className="text-center text-sm text-gray-400">
+                                        {service.description}
+                                    </p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+                </main>
             </Layout>
         </>
     );
 };
+
+function BriefcaseIcon(props) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+        </svg>
+    )
+}
+
+
+function CheckIcon(props) {
+    return (
+        <svg
+            {...props}
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        >
+            <polyline points="20 6 9 17 4 12" />
+        </svg>
+    )
+}
+
 
 export default About;
