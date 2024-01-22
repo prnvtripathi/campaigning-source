@@ -14,7 +14,7 @@ const WhatsappButton = () => {
 
 
     const handleWhatsappClick = () => {
-        window.open('https://wa.link/3ik1jc', '_blank');
+        window.open('https://wa.link/jkjb8s', '_blank');
     };
 
     return (
