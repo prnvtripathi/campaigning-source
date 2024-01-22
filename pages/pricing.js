@@ -157,23 +157,23 @@ const Pricing = () => {
                 <title>Pricing | Campaigning Source</title>
             </Head>
             <Layout>
-                <div className="pricing">
-                    <h1 className="title text-black">Pricing</h1>
-                    <div className="flex justify-center p-3 mb-3 text-black">
-                        <table className="pricing-table table-auto">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Pricing</th>
-                                    <th>Actions</th>
+                <div className="w-11/12 mx-auto">
+                    <h2 className="text-3xl font-bold text-center">Pricing</h2>
+                    <div className="flex justify-center p-3 mb-3">
+                        <table className="table-auto w-full">
+                            <thead className="text-gray-800">
+                                <tr className="bg-primaryText font-bold text-left">
+                                    <th className="border-x-2 border-gray-900 px-2 py-1">Name</th>
+                                    <th className="border-x-2 border-gray-900 px-2 py-1">Pricing</th>
+                                    <th className="border-x-2 border-gray-900 px-2 py-1">Actions</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className="text-gray-300">
                                 {uniqueServices.map((item) => (
-                                    <tr className="pricing-card" key={item.id}>
-                                        <td className="pricing-card-title">{item.name}</td>
-                                        <td className="pricing-card-price">{item.price}</td>
-                                        <td className="pricing-card-button"><a href="tel:919811393288" className="hover:underline">Call Now</a></td>
+                                    <tr className="even:bg-blue-900 odd:bg-gray-900 border-b-2 border-x-2 border-gray-500" key={item.id}>
+                                        <td className="px-2 py-1">{item.name}</td>
+                                        <td className="px-2 py-1">{item.price}</td>
+                                        <td className="px-2 py-1"><a href="tel:919811393288" className="hover:underline">Call Now</a></td>
                                     </tr>
                                 ))}
                             </tbody>

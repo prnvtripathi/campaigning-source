@@ -2,7 +2,7 @@ import WordSphere from "./WordSphere";
 
 export default function Services() {
     return (
-        <section className="w-full py-12 md:py-24 md:px-8">
+        <section className="w-full py-12 md:py-24 md:px-8 select-none">
             <div className="px-4 md:px-6">
                 <div className="flex flex-col-reverse md:flex-row gap-6 md:gap-12">
                     <div className="space-y-4">

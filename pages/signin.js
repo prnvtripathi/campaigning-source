@@ -1,11 +1,10 @@
-"use client"
-
 import { useSession, signIn } from "next-auth/react"
 import { FcGoogle } from "react-icons/fc"
 import { useRouter } from "next/router"
 import Head from "next/head"
 import { useState } from "react"
-import Background from "@/components/Background"
+import Link from "next/link"
+import Image from "next/image"
 
 const Signin = () => {
     const router = useRouter()
@@ -47,66 +46,108 @@ const Signin = () => {
         }
     }
 
-    return <>
-        <Head>
-            <title>Sign Up | Campaigning Source</title>
-        </Head>
-        <Background />
-        <div className="w-screen h-screen flex justify-center items-center">
-            <div className="w-[70%]">
-                <h2 className="text-black text-3xl text-center font-bold mb-2">Login</h2>
-                <div className="flex flex-col md:flex-row bg-blue-200 justify-around items-center mx-auto p-6">
-                    <form onSubmit={handleSubmit}>
-                        <div className='flex flex-col justify-center items-center'>
-                            <input
-                                type="email"
-                                id="email"
-                                name="email"
-                                value={email}
-                                onChange={handleInputChange}
-                                placeholder="Email ID"
-                                className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                            // required
-                            />
-                            <input
-                                type="password"
-                                id="password"
-                                name="password"
-                                value={password}
-                                onChange={handleInputChange}
-                                placeholder="Password"
-                                className="outline-none rounded-md px-2 py-1 m-2 text-black bg-gray-100"
-                            // required
-                            />
+    return (
+        <>
+            <Head>
+                <title>Sign In | Campaigning Source</title>
+            </Head>
+            <main className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+                <div className="flex flex-col md:flex-row w-full max-w-7xl gap-6">
+                    <div className="sm:w-1/2 flex justify-start items-center">
+                        <div className="max-w-md w-full space-y-8 p-6 bg-gray-700 rounded-lg shadow-md">
+                            <div className="space-y-2 text-center">
+                                <h1 className="text-3xl font-bold">Sign In</h1>
+                                <p className="text-gray-500">Enter your information and get into your account</p>
+                            </div>
+                            <div className="mt-8 space-y-6">
+                                <form className="space-y-6" onSubmit={handleSubmit}>
+                                    <div className="rounded-md shadow-sm -space-y-px">
+                                        <div>
+                                            <label className="sr-only" htmlFor="email-address">
+                                                Email address
+                                            </label>
+                                            <input
+                                                autoComplete="email"
+                                                className="appearance-none rounded-none relative block w-full px-3 py-2 border bg-transparent border-gray-300 placeholder-gray-500 text-primaryText rounded-t-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
+                                                id="email-address"
+                                                name="email"
+                                                placeholder="Email address"
+                                                required
+                                                type="email"
+                                                value={email}
+                                                onChange={handleInputChange}
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="sr-only" htmlFor="password">
+                                                Password
+                                            </label>
+                                            <input
+                                                autoComplete="current-password"
+                                                className="appearance-none rounded-none relative block w-full px-3 py-2 bg-transparent border border-gray-300 placeholder-gray-500 text-primaryText rounded-b-md focus:outline-none focus:ring-primaryText focus:border-primaryText focus:z-10 sm:text-sm"
+                                                id="password"
+                                                name="password"
+                                                placeholder="Password"
+                                                required
+                                                type="password"
+                                                value={password}
+                                                onChange={handleInputChange}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button
+                                            className="group relative w-full transition flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-primaryText hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            type="submit"
+                                        >
+                                            Sign In
+                                        </button>
+                                    </div>
+                                </form>
+                                
+                                <div>
+                                    {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
+                                </div>
+                                <div>
+                                    <p className="text-center text-sm text-gray-300">
+                                        Don't have an account?{" "}
+                                        <Link
+                                            className="font-medium text-primaryText transition hover:text-indigo-500"
+                                            href="/signup"
+                                        >
+                                            Sign up
+                                        </Link>
+                                    </p>
+                                    <p className="text-center text-sm text-gray-300 mt-4">
+                                        OR
+                                    </p>
+                                </div>
+                                <div className="flex justify-center">
+                                    <button
+                                        className="w-full flex justify-center py-2 px-4 border border-gray-100/30 shadow-sm text-sm font-medium rounded-md text-gray-100 bg-transparent hover:bg-gray-100/10 transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        onClick={() => signIn("google")}
+                                    >
+                                        <FcGoogle className="text-xl" />
+                                        <span className="ml-4 ">Sign in with Google</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                        <div className='flex justify-center items-center'>
-                            <button
-                                type="submit"
-                                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                            >
-                                Sign In
-                            </button>
-                        </div>
-                    </form>
-                    <div className="flex flex-col gap-3 items-center justify-center">
-                        <h2 className="text-xl">or</h2>
-                        <button
-                            className="bg-white p-2 text-black flex items-center gap-2 rounded-full transition hover:scale-105"
-                            onClick={() => signIn('google')}
-                        >
-                            <FcGoogle />Signin using Google
-                        </button>
+                    </div>
+                    <div className="sm:w-1/2 flex flex-col items-center justify-center">
+                        <Image
+                            alt="signin"
+                            className="w-full h-full object-cover"
+                            src="/login.svg"
+                            width={500}
+                            height={500}
+                        />
+                        <a className="text-xs text-gray-600 m-0" href="https://storyset.com/people">People illustrations by Storyset</a>
                     </div>
                 </div>
-                <div>
-                    <p className="text-center text-black">Don't have an account? <a href="/signup" className="text-blue-500 underline">Sign Up</a></p>
-                </div>
-                <div>
-                    {error && <div className="bg-red-600 text-white p-3 rounded-md w-1/6 text-center mx-auto my-3">{error}</div>}
-                </div>
-            </div>
-        </div>
-    </>
+            </main>
+        </>
+    )
 }
 
 

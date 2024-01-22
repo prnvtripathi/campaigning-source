@@ -65,18 +65,16 @@ const PastCustomers = () => {
         //     <hr className="mt-2 border-primaryText"/>
         // </div>
         <div className="text-center bg-bg rounded-md py-12 md:py-24 my-3 md:w-11/12 mx-auto">
-    <h1 className="md:text-5xl font-bold tracking-wider">Our Collaborations</h1>
+            <h1 className="md:text-5xl font-bold py-3">Our Collaborations</h1>
 
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-3 py-10">
-        {customers.map((customer) => (
-            <div key={customer.id} className="saturate-0 opacity-50">
-                <Image src={customer.img} alt="customer" width={500} height={500} className="h-32 w-32 my-6 mx-auto select-none" />
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 py-10">
+                {customers.map((customer) => (
+                    <div key={customer.id} className="flex items-center justify-center p-2 saturate-0">
+                        <Image src={customer.img} alt="customer" width={500} height={500} className="w-32" />
+                    </div>
+                ))}
             </div>
-        ))}
-    </div>
-
-    {/* <hr className="mt-2 border-primaryText" /> */}
-</div>
+        </div>
 
     );
 }
