@@ -4,9 +4,11 @@ import Hero from '@/components/Hero';
 import Layout from '@/components/Layout';
 import Services from '@/components/Services';
 import Contact from '@/components/Contact';
-import PastCustomers from '@/components/PastCustomers';
+import Tabs from '@/components/Tabs';
 import Banner from '@/components/Banner';
 import FloatingForm from '@/components/FloatingForm';
+import HomeAbout from '@/components/HomeAbout';
+import HomeServices from '@/components/HomeService';
 
 const Home = () => {
   const [isFormVisible, setFormVisibility] = useState(false);
@@ -38,10 +40,11 @@ const Home = () => {
       <Layout>
         {/* <SocialMedia /> */}
         <Hero />
+        <HomeAbout />
         <Services />
-        <hr className="mt-2 mx-10 border-primaryText" />
-        <PastCustomers />
         <Banner />
+        <HomeServices />
+        <Tabs />
         <Contact />
         {isFormVisible && <FloatingForm closeForm={closeForm} />}
       </Layout>
