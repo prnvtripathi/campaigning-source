@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
             <Searchbar />
             {children}
             <Footer />
-            {/* <Chatbot /> */}
+            <Chatbot />
             {isCookieVisible && <Cookies closeDialog={closeDialog} />}
         </div>
     );
