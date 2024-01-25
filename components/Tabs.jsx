@@ -16,7 +16,7 @@ const Tabs = () => {
             </h2>
 
             <div className="w-2/3 mx-auto mt-6 mb-3">
-                <div className="flex text-center mb-2 space-x-8 justify-evenly">
+                <div className="flex flex-col md:flex-row items-center mb-2 justify-center md:justify-evenly">
                     <div
                         className={`border-transparent pt-2 pb-1 px-1 border-b-2 font-medium text-xl ${activeTab === 'Customers' ? ' hover:border-blue-400 text-primaryText ' : 'text-gray-400 hover:text-gray-500 hover:border-gray-400'
                             }`}

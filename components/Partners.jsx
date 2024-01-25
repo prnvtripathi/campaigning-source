@@ -22,7 +22,7 @@ const images = [
         src: '/pastCustomers/partners/f6s.png',
     },
     {
-        id: 5,
+        id: 12,
         src: '/pastCustomers/partners/iitD.png',
     },
     {
