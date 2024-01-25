@@ -120,12 +120,12 @@ const team = [
         position: "CTO",
         linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
-    {
-        img: "/team/sushant.jpeg",
-        name: "Sushant Sharma",
-        position: "Chief Operation Manager",
-        linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
-    },
+    // {
+    //     img: "/team/sushant.jpeg",
+    //     name: "Sushant Sharma",
+    //     position: "Chief Operation Manager",
+    //     linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
+    // },
     {
         img: "/team/tanishk.jpg",
         name: "Tanishk Attri",
