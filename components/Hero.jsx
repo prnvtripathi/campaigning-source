@@ -37,7 +37,7 @@ export default function Component() {
           transition={{ duration: 0.5, type: "inertia", velocity: 50 }}
           className="w-full md:w-1/2 mx-auto p-2">
           <div className="w-full h-full mx-auto">
-            <Image src="/hero.webp" width={1000} height={1000} alt="hero image" className="opacity-70 mx-auto" />
+            <Image src="/hero.svg" width={1000} height={1000} alt="hero image" className="opacity-90 mx-auto" />
           </div>
         </motion.div>
       </section>
