@@ -7,14 +7,14 @@ const HomePageServices = [
     {
         id: 1,
         logo: <GoFileMedia />,
-        link: '/services/business',
+        link: '/services/twitter',
         title: 'Social Media Marketing',
         content: 'We can provide you with social media marketing for your business development. We can promote your business on social media.'
     },
     {
         id: 2,
         logo: <RiAdvertisementFill />,
-        link: '/services/business',
+        link: '/services/meta',
         title: 'Advertisements',
         content: 'We can provide you with advertisements for your business promotions. We can advertise your business on social media.'
     },
@@ -35,7 +35,7 @@ const HomePageServices = [
     {
         id: 5,
         logo: <MdWeb />,
-        link: '/services/web',
+        link: '/services/website',
         title: 'Website Development',
         content: 'We can provide you with website development for your business development. We can develop your website for your business campaign.'
     },

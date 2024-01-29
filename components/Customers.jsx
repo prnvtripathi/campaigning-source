@@ -41,6 +41,10 @@ const customers = [
     {
         id: 10,
         img: "/pastCustomers/shopify.png",
+    },
+    {
+        id: 11,
+        img: "/pastCustomers/sonic.jpg",
     }
 ]
 
