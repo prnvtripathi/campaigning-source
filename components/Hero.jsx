@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Satisfy } from "next/font/google";
 import Link from "next/link";
 import Image from "next/image";
+import Tooltip from "./Tooltip";
 
 const satisfy = Satisfy({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function Component() {
           </div>
         </motion.div>
       </section>
+      <Tooltip />
     </>
   );
 }

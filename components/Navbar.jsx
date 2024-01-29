@@ -24,6 +24,14 @@ const navItems = [
         id: 2,
         name: "Services",
         path: "/services",
+        subItems: [
+            { id: 21, name: "Political Promotion", path: "/services/politics" },
+            { id: 22, name: "Business Development", path: "/services/business" },
+            { id: 23, name: "Social Media Marketing", path: "/services/social" },
+            { id: 24, name: "Web Development", path: "/services/website" },
+            { id: 25, name: "Graphic Design", path: "/services/graphics" },
+            // Add more services as needed
+        ],
     },
     {
         id: 3,
@@ -44,7 +52,7 @@ const Navbar = () => {
     };
 
     const inactiveLink =
-        "text-white hover:text-primaryText py-1 px-2 transition-all";
+        "text-white hover:text-primaryText py-1 px-2 transition-all group relative";
     const activeLink =
         inactiveLink +
         " bg-gradient-to-r from-primaryText to-fuchsia-500 bg-[length:100%_2px] bg-no-repeat bg-bottom py-1 px-2 font-normal";
@@ -80,26 +88,39 @@ const Navbar = () => {
                         {/* desktop menu items */}
                         <ul className="md:flex md:items-center md:gap-8 mx-2 md:ml-4 hidden">
                             {navItems.map((item) => (
-                                <Link href={item.path} key={item.id}>
-                                    <li
-                                        className={
-                                            pathname.includes(item.path) ? activeLink : inactiveLink
-                                        }
-                                    >
-                                        <p href={item.path}>{item.name}</p>
-                                    </li>
-                                </Link>
+                                <li
+                                    key={item.id}
+                                    className={pathname.includes(item.path) ? activeLink : inactiveLink}
+                                >
+                                    <Link href={item.path}>
+                                        {item.name}
+                                    </Link>
+                                    {/* Check if the item has subItems and render the dropdown menu */}
+                                    {item.subItems && (
+                                        <ul className="hidden z-20 backdrop-blur-md group-hover:flex flex-wrap justify-between items-center gap-2 absolute -left-44 top-8 w-[26rem] bg-black/40 rounded-lg py-3 px-7">
+                                            {item.subItems.map((subItem) => (
+                                                <li key={subItem.id}>
+                                                    <Link href={subItem.path} className="text-white hover:text-primaryText text-left">
+                                                        {subItem.name}
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    )}
+                                </li>
                             ))}
 
                             {!session ? (
                                 <li>
-                                   <MagneticEffect> <Link
-                                        className="bg-sky-500 transition text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText"
-                                        href="/signin"
-                                    >
-                                        <VscSignIn className="inline-block mr-1" />
-                                        Sign In
-                                    </Link></MagneticEffect>
+                                    <MagneticEffect>
+                                        <Link
+                                            className="bg-sky-500 transition text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText"
+                                            href="/signin"
+                                        >
+                                            <VscSignIn className="inline-block mr-1" />
+                                            Sign In
+                                        </Link>
+                                    </MagneticEffect>
                                 </li>
                             ) : (
                                 <UserProfile />
@@ -119,7 +140,7 @@ const Navbar = () => {
                                 </Link>
                             ))}
 
-                          <MagneticEffect>  {!session ? (
+                            <MagneticEffect>  {!session ? (
                                 <Link
                                     className="bg-sky-500 text-white rounded-md py-1 px-1.5 flex items-center justify-center hover:bg-primaryText w-1/4 ml-8 my-2"
                                     href="/signin"

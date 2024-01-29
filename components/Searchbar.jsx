@@ -21,8 +21,8 @@ export default function Searchbar() {
         const handleKeyDown = (e) => {
             // Check if either left Alt key or right Alt key is pressed simultaneously with "s"
             if (
-                (e.key.toLowerCase() === "s" && e.altKey) ||
-                (e.key.toLowerCase() === "s" && e.getModifierState("AltGraph"))
+                (e.key.toLowerCase() === "x" && e.altKey) ||
+                (e.key.toLowerCase() === "x" && e.getModifierState("AltGraph"))
             ) {
                 setIsVisible(true);
             }
@@ -61,7 +61,7 @@ export default function Searchbar() {
                             <input
                                 ref={inputRef}
                                 className="w-full p-2 pl-10 border border-gray-800 bg-gray-700 rounded-md focus:outline-none focus:ring-primaryText focus:border-primaryText sm:text-sm"
-                                placeholder="Search services..."
+                                placeholder="Search any service you want...."
                                 type="text"
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
