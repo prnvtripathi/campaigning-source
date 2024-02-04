@@ -11,14 +11,14 @@ const businessData = [
         logo: <MdWeb />,
         link: '/services/web',
         title: 'Website Development',
-        content: 'We can provide you with website development for your business development. We can develop your website for your business campaign.'
+        content: 'We delve into in-depth research to understand your requirements, ensuring a customized online presence that aligns with your business.'
     },
     {
         id: 2,
         logo: <FaMobile />,
         link: '/services/app',
         title: 'App Development',
-        content: 'We can provide you with app development for your business development. We can develop your app for your business campaign.'
+        content: 'Got an idea for a mobile app? We can help you with that. We can develop mobile apps for your business or startup.'
     },
     {
         id: 3,
