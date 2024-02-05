@@ -220,7 +220,7 @@ const About = () => {
                     </section>
                     <section className="w-full max-w-4xl space-y-6">
                         <h2 className="text-3xl font-bold text-center">Dive Deeper</h2>
-                        <iframe className="mx-auto rounded-lg" width="560" height="315" src="https://www.youtube-nocookie.com/embed/GAd8CUfLuIs?si=4CtGI_sd0ZP3-nA2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe className="mx-auto rounded-lg" width="560" height="315" src="https://www.youtube-nocookie.com/embed/GAd8CUfLuIs?si=4CtGI_sd0ZP3-nA2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </section>
                     <section className="w-full max-w-4xl space-y-6">
                         <h2 className="text-3xl font-bold text-center">Our Team</h2>
