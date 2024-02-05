@@ -219,6 +219,10 @@ const About = () => {
                         </div>
                     </section>
                     <section className="w-full max-w-4xl space-y-6">
+                        <h2 className="text-3xl font-bold text-center">Dive Deeper</h2>
+                        <iframe className="mx-auto rounded-lg" width="560" height="315" src="https://www.youtube-nocookie.com/embed/GAd8CUfLuIs?si=4CtGI_sd0ZP3-nA2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </section>
+                    <section className="w-full max-w-4xl space-y-6">
                         <h2 className="text-3xl font-bold text-center">Our Team</h2>
                         <div className="grid gird-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
                             {team.map((member, index) => (
@@ -265,46 +269,5 @@ const About = () => {
         </>
     );
 };
-
-function BriefcaseIcon(props) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <rect width="20" height="14" x="2" y="7" rx="2" ry="2" />
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
-        </svg>
-    )
-}
-
-
-function CheckIcon(props) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <polyline points="20 6 9 17 4 12" />
-        </svg>
-    )
-}
-
 
 export default About;
