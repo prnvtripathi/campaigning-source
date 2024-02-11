@@ -46,6 +46,10 @@ const customers = [
         id: 11,
         img: "/pastCustomers/sonic.jpg",
     }
+    {
+        id: 11,
+        img: "/pastCustomers/Organic.jpg",
+    }
 ]
 
 export default function Customers() {
