@@ -45,7 +45,27 @@ const customers = [
     {
         id: 11,
         img: "/pastCustomers/sonic.jpg",
-    }
+    },
+    {
+        id: 12,
+        img: "/pastCustomers/bharatbus.svg",
+    },
+    {
+        id: 13,
+        img: "/pastCustomers/burger.png",
+    },
+    {
+        id: 14,
+        img: "/pastCustomers/earthstore.png",
+    },
+    {
+        id: 15,
+        img: "/pastCustomers/education.png",
+    },
+    {
+        id: 16,
+        img: "/pastCustomers/evisa.svg",
+    },
 ]
 
 export default function Customers() {
