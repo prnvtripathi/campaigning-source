@@ -66,6 +66,10 @@ const customers = [
         id: 16,
         img: "/pastCustomers/evisa.svg",
     },
+    {
+        id: 17,
+        img: "/pastCustomers/organic.svg",
+    },
 ]
 
 export default function Customers() {
