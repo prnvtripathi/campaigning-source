@@ -8,7 +8,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
   return (
     <SessionProvider session={session}>
       <NextNProgress color="#29D" height={3} />
-      <ClarityScript />
+      {/* <ClarityScript /> */}
       <Component {...pageProps} />
       <Analytics />
     </SessionProvider>
