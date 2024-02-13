@@ -27,7 +27,7 @@ const navItems = [
         subItems: [
             { id: 21, name: "Political Promotion", path: "/services/politics" },
             { id: 22, name: "Business Development", path: "/services/business" },
-            { id: 23, name: "Social Media Marketing", path: "/services/social" },
+            { id: 23, name: "Social Media Marketing", path: "/services/profile" },
             { id: 24, name: "Web Development", path: "/services/website" },
             { id: 25, name: "Graphic Design", path: "/services/graphics" },
             // Add more services as needed
