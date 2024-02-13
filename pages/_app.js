@@ -1,3 +1,4 @@
+import ClarityScript from '@/components/ClarityScript';
 import '@/styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SessionProvider } from "next-auth/react"
@@ -7,6 +8,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
   return (
     <SessionProvider session={session}>
       <NextNProgress color="#29D" height={3} />
+      <ClarityScript />
       <Component {...pageProps} />
       <Analytics />
     </SessionProvider>
