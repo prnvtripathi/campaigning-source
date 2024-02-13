@@ -36,7 +36,8 @@ const customers = [
     },
     {
         id: 9,
-        img: "/pastCustomers/MCIP.webp",
+        img: "/pastCustomers/crm.png",
+        className: "mix-blend-multiply"
     },
     {
         id: 10,
@@ -69,6 +70,10 @@ const customers = [
     {
         id: 17,
         img: "/pastCustomers/organic.svg",
+    },
+    {
+        id: 18,
+        img: "/pastCustomers/iapple.png",
     },
 ]
 
