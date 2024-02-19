@@ -3,7 +3,8 @@ import Head from "next/head";
 import data from "@/data/pricingData";
 import { React, useState } from "react";
 import { IoMdSearch } from "react-icons/io";
-import Link from "next/link";
+import { CgScrollV } from "react-icons/cg";
+import { motion } from "framer-motion";
 
 const Pricing = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -72,10 +73,19 @@ const Pricing = () => {
                 {filteredPricingData.map((item, index) => (
                   <div
                     key={index}
-                    className={`${
-                      selectedCardIndex === index ? "" : "hidden"
-                    } flex gap-12 flex-col  items-center`}
+                    className={`${selectedCardIndex === index ? "" : "hidden"
+                      } flex gap-12 flex-col  items-center`}
                   >
+                    <div className="text-center flex flex-col items-center text-gray-500">
+                      <motion.div
+                        initial={{ y: 0, opacity: 0.5 }}
+                        animate={{ y: 10, opacity: 1 }}
+                        transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
+                      >
+                        <CgScrollV className="text-4xl mb-2" />
+                      </motion.div>
+                      <h3 className="text-base font-semibold">Scroll Down</h3>
+                    </div>
                     <div className="relative w-full py-14 rounded-lg mx-auto h-fit text-center">
                       <h3 className="text-4xl font-semibold">
                         Pricing For {item.title}
