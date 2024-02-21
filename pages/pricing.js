@@ -1,18 +1,21 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import data from "@/data/pricingData";
-import { React, useState } from "react";
+import { React, useState, useRef } from "react";
 import { IoMdSearch } from "react-icons/io";
-import { CgScrollV } from "react-icons/cg";
-import { motion } from "framer-motion";
 
 const Pricing = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCardIndex, setSelectedCardIndex] = useState(null);
+  const pricingTableRef = useRef(null);
 
   const filteredPricingData = data.filter((item) =>
     item.title.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  const scrollToPricingTable = () => {
+    pricingTableRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <>
@@ -49,10 +52,12 @@ const Pricing = () => {
                     {filteredPricingData?.map((item, index) => (
                       <div
                         key={item.id}
-                        className={`p-4 border rounded-lg shadow-md text-gray-600 hover:text-gray-400 hover:border-primaryText md:hover:scale-[0.98] transition-all md:h-32 ${
-                          selectedCardIndex === index ? "border-primaryText" : ""
-                        }`}
-                        onClick={() => setSelectedCardIndex(index)}
+                        className={`p-4 border rounded-lg shadow-md text-gray-600 hover:text-gray-400 hover:border-primaryText md:hover:scale-[0.98] transition-all md:h-32 ${selectedCardIndex === index ? "border-primaryText" : ""
+                          }`}
+                        onClick={() => {
+                          setSelectedCardIndex(index)
+                          scrollToPricingTable()
+                        }}
                       >
                         <h3 className="flex items-center font-semibold text-xl text-primaryText">
                           {item.title}
@@ -68,27 +73,17 @@ const Pricing = () => {
             </div>
 
             {/* PRICING TABLE */}
-            <div className="">
-              <div className="space-y-16">
+            <div className="" ref={pricingTableRef}>
+              <div className="mt-10">
                 {filteredPricingData.map((item, index) => (
                   <div
                     key={index}
                     className={`${selectedCardIndex === index ? "" : "hidden"
                       } flex gap-12 flex-col  items-center`}
                   >
-                    <div className="text-center flex flex-col items-center text-gray-500">
-                      <motion.div
-                        initial={{ y: 0, opacity: 0.5 }}
-                        animate={{ y: 10, opacity: 1 }}
-                        transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
-                      >
-                        <CgScrollV className="text-4xl mb-2" />
-                      </motion.div>
-                      <h3 className="text-base font-semibold">Scroll Down</h3>
-                    </div>
-                    <div className="relative w-full py-14 rounded-lg mx-auto h-fit text-center">
+                    <div className="relative w-full py-12 rounded-lg mx-auto h-fit text-center">
                       <h3 className="text-4xl font-semibold">
-                        Pricing For {item.title}
+                        Pricing for {item.title}
                       </h3>
                       <p className="text-gray-500 text-lg py-2">{item.description}</p>
                     </div>
