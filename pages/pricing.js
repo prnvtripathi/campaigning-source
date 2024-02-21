@@ -95,7 +95,7 @@ const Pricing = () => {
                             <th className="px-2 py-3  border-e-2">
                               Description
                             </th>
-                            <th className="px-2 py-3">Price</th>
+                            <th className="px-2 py-3">Price<sup>*</sup></th>
                           </tr>
                         </thead>
                         <tbody className="text-gray-100 text-lg">
@@ -117,8 +117,7 @@ const Pricing = () => {
                     </div>
                     <div className="text-center my-4">
                       <p className="text-gray-500">
-                        <span className="text-primaryText">Note:</span> All the
-                        prices are exclusive of GST.
+                        <span className="text-primaryText">*</span> All prices are exclusive of GST.
                       </p>
                     </div>
                   </div>
