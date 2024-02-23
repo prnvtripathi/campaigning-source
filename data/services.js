@@ -120,6 +120,7 @@ const services = [
         desc: "Transform your brand with Campaigning Source - where a single graphic has the power to pitch your business and elevate you to brand status. Our commitment to quality ensures that every graphic we create becomes a visual masterpiece, speaking volumes about your brand.",
         why: "We don't just design graphics; we craft brand narratives. Campaigning Source turns Graphics & Motion Graphics into a branding experience, where a single image becomes the key to unlocking your brand's potential. Choose Campaigning Source for visuals that pitch your business and convert it into a powerhouse brand. A Brand Building Powerful Brands - where every graphic is a step towards brand excellence.",
         image: "/service/graphics.svg",
+        example: 1
     },
     {
         id: 17,

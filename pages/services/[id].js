@@ -4,6 +4,7 @@ import Layout from "@/components/Layout"
 import services from "@/data/services"
 import { useState } from "react"
 import Banner from "@/components/Banner"
+import GraphicsCarousel from "@/components/GraphicsCarousel"
 
 export default function ServicePage({ service }) {
 
@@ -55,6 +56,15 @@ export default function ServicePage({ service }) {
                             </div>
                         </div>
                     </section>
+
+                    {service.example ? (
+                        <section className="bg-gray-800 mb-12">
+                            <h2 className="text-3xl font-bold tracking-wide md:text-5xl text-center py-3">Examples</h2>
+                            <div className="py-2">
+                            <GraphicsCarousel />
+                            </div>
+                        </section>
+                    ) : null}
                     {service.why ?
                         (
                             <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
