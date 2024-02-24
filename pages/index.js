@@ -36,6 +36,7 @@ const Home = () => {
         <meta name="revisit-after" content="1 days" />
         <meta name="author" content="Vansh Tyagi" />
         <title>Campaigning Source</title>
+    <meta name="google-site-verification" content="wuImTDqbWJwqAK-DAqsRtO-vJP6fxbe5wDrnEFc29Lw" />
       </Head>
       <Layout>
         {/* <SocialMedia /> */}
