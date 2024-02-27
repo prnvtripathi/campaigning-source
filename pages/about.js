@@ -109,7 +109,7 @@ const team = [
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
      {
-        img: "/team/Harsh.jpg",
+        img: "/team/harsh.jpg",
         name: "Mr. Harsh",
         position: "Managing Director",
         linkedin: "https://www.linkedin.com/"
