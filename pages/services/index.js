@@ -1,21 +1,16 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import { IoMdSearch } from "react-icons/io";
-import politicsData from "@/data/politicsData";
-import businessData from "@/data/businessData";
+import services from "@/data/services";
 import Link from "next/link";
 import { useState } from "react";
 
 const Services = () => {
     const [searchQuery, setSearchQuery] = useState("")
 
-    const filteredPoliticsData = politicsData.filter((data) =>
-        data.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
-
-    const filteredBusinessData = businessData.filter((data) =>
-        data.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const filteredServices = services.filter(service => {
+        return service.title.toLowerCase().includes(searchQuery.toLowerCase())
+    })
 
     return (
         <>
@@ -43,36 +38,18 @@ const Services = () => {
                         </div>
                     </div>
                     <div className="flex flex-col gap-6">
-                        {filteredPoliticsData.length > 0 && (
+                        {filteredServices.length > 0 && (
                             <div className="space-y-4">
-                                <h2 className="text-2xl font-bold tracking-wide md:text-3xl lg:text-4xl">Political Promotion</h2>
+                                <h2 className="text-2xl font-bold tracking-wide md:text-3xl lg:text-4xl">Services We Offer</h2>
                                 <div className="grid gap-4 md:grid-cols-4 lg:gap-6">
-                                    {filteredPoliticsData?.map((item) => (
+                                    {filteredServices?.map((item) => (
                                         <Link href={item.link} key={item.id}>
-                                            <div className="p-4 border rounded-lg text-gray-600 hover:text-gray-400 md:hover:scale-[0.98] transition-all md:h-32">
-                                                <h3 className="flex items-center font-semibold text-lg text-primaryText">
-                                                    <span className="mr-2 text-gray-200">{item.logo}</span>
+                                            <div className="p-4 border rounded-lg text-gray-400 md:hover:scale-[0.98] min-h-48 transition-all flex flex-col justify-center">
+                                                <h3 className="flex items-center font-bold text-xl text-primaryText">
+                                                    <span className="mr-2 text-gray-200 text-2xl">{item.logo}</span>
                                                     {item.title}
                                                 </h3>
-                                                <p className="text-sm">{item.content}</p>
-                                            </div>
-                                        </Link>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
-                        {filteredBusinessData.length > 0 && (
-                            <div className="space-y-4">
-                                <h2 className="text-2xl font-bold tracking-wide md:text-3xl lg:text-4xl">Business Development</h2>
-                                <div className="grid gap-4 md:grid-cols-4 lg:gap-6">
-                                    {filteredBusinessData?.map((item) => (
-                                        <Link href={item.link} key={item.id}>
-                                            <div className="p-4 border rounded-lg text-gray-600 hover:text-gray-400 md:hover:scale-[0.98] transition-all md:h-32">
-                                                <h3 className="flex items-center font-semibold text-lg text-primaryText">
-                                                    <span className="mr-2 text-gray-200">{item.logo}</span>
-                                                    {item.title}
-                                                </h3>
-                                                <p className="text-sm">{item.content}</p>
+                                                <p className="text-gray-500 text-wrap">{item.desc.length > 160 ? `${item.desc.slice(0, 160)}...` : item.desc}</p>
                                             </div>
                                         </Link>
                                     ))}

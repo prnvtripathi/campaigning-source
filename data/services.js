@@ -1,7 +1,17 @@
+import { FaTwitter, FaMobile, FaRegFileVideo, FaRegNewspaper, FaWhatsapp, FaWikipediaW, FaRobot, FaYoutube, FaGoogle, FaHandshake, FaWordpressSimple, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { MdWeb, MdCall, MdOutlineBrandingWatermark, MdSms, MdOutlineElectricBolt, MdEmail } from "react-icons/md";
+import { IoIosFunnel } from "react-icons/io";
+import { IoChatboxEllipsesOutline } from "react-icons/io5";
+import { GiMagnifyingGlass } from "react-icons/gi";
+import { RiCustomerService2Fill } from "react-icons/ri";
+import { PiTelevisionSimple } from "react-icons/pi";
+
 const services = [
     {
         id: 1,
+        link: "/services/twitter",
         key: "twitter",
+        logo: <FaTwitter />,
         title: "Twitter Trending",
         desc: "Twitter Trending is a service that helps your hashtag become very popular on Twitter nationwide. We focus on getting your hashtag to the number 1 spot, making sure lots of people see and interact with your brand or message.",
         what: {
@@ -23,7 +33,9 @@ const services = [
     },
     {
         id: 2,
+        link: "/services/website",
         key: "website",
+        logo: <MdWeb />,
         title: "Website Creation",
         desc: "Website Creation is a comprehensive service designed to establish your online presence with a professional and tailored website. We specialize in crafting websites that not only meet but exceed your expectations, ensuring a standout digital representation for your brand or business.",
         what: {
@@ -47,7 +59,9 @@ const services = [
     },
     {
         id: 3,
+        link: "/services/funnels",
         key: "funnels",
+        logo: <IoIosFunnel />,
         title: "Sales Funnels",
         desc: "Sales Funnels is a specialized service aimed at optimizing your customer journey from initial interest to final purchase. We create strategic and efficient sales funnels that guide potential customers through a seamless process, maximizing conversions and driving business growth.",
         what: {
@@ -67,11 +81,13 @@ const services = [
             "Lead Nurturing": "Implement automated email campaigns to nurture leads, build relationships, and drive long-term customer loyalty.",
             "Continuous Improvement": "A/B testing allows for constant refinement, ensuring your sales funnel remains effective and adaptive."
         },
-        image: "/service/salesfunnels.svg",
+        image: "/service/funnel.svg",
     },
     {
         id: 4,
+        link: "/services/app",
         key: "app",
+        logo: <FaMobile />,
         title: "Mobile Application Development",
         desc: "Mobile Application Development is a comprehensive service focused on bringing your app idea to life. We specialize in designing, developing, and launching mobile applications across various platforms, providing a seamless and engaging experience for your users.",
         what: {
@@ -91,11 +107,13 @@ const services = [
             "Reliability and Quality": "Rigorous testing guarantees a reliable and bug-free application for your users.",
             "Expert Guidance": "Receive assistance throughout the app submission process, ensuring successful placement on app stores."
         },
-        image: "/service/mobileapp.svg",
+        image: "/service/app.svg",
     },
     {
         id: 5,
+        link: "/services/chatbot",
         key: "chatbot",
+        logo: <IoChatboxEllipsesOutline />,
         title: "Chatbot Development",
         desc: "Chatbot Development is a specialized service dedicated to creating intelligent and interactive chatbots for your business. We focus on crafting chatbots that enhance customer engagement, streamline communication, and provide valuable assistance to users.",
         what: {
@@ -119,7 +137,9 @@ const services = [
     },
     {
         id: 6,
+        link: "/services/ivr",
         key: "ivr",
+        logo: <MdCall />,
         title: "IVR",
         desc: "IVR, or Interactive Voice Response, is a comprehensive service designed to automate and enhance customer interactions over the phone. We specialize in creating customized IVR systems that streamline communication, provide efficient routing, and improve overall customer satisfaction.",
         what: {
@@ -143,7 +163,9 @@ const services = [
     },
     {
         id: 7,
-        key: "videoediting",
+        link: "/services/video",
+        key: "video",
+        logo: <FaRegFileVideo />,
         title: "Video Editing",
         desc: "Video Editing is a specialized service dedicated to transforming raw footage into captivating visual content. Our team of skilled editors excels in crafting seamless, polished videos that tell compelling stories, elevate brand presence, and leave a lasting impression.",
         what: {
@@ -163,11 +185,13 @@ const services = [
             "Optimized for Platforms": "Tailor-made content structures ensure optimal engagement on diverse platforms.",
             "Time and Resource Savings": "Let our experts handle the editing, allowing you to focus on content creation and strategy."
         },
-        image: "/service/videoediting.svg",
+        image: "/service/video.svg",
     },
     {
         id: 8,
+        link: "/services/seo",
         key: "seo",
+        logo: <GiMagnifyingGlass />,
         title: "SEO",
         desc: "SEO is a specialized service focused on optimizing your online presence to increase visibility and drive organic traffic. Our seasoned SEO experts employ proven strategies to enhance your website's search engine rankings, ensuring your brand stands out in the digital landscape.",
         what: {
@@ -191,7 +215,9 @@ const services = [
     },
     {
         id: 9,
-        key: "pressrelease",
+        link: "/services/press",
+        key: "press",
+        logo: <FaRegNewspaper />,
         title: "Press Release",
         desc: "Press Release is a specialized service dedicated to crafting compelling and impactful press releases that effectively communicate your message to the media and the public. Our team of skilled writers ensures your news receives the attention it deserves.",
         what: {
@@ -214,11 +240,13 @@ const services = [
             "Targeted Traffic Acquisition": "Drive high-quality, targeted traffic to your website through strategically placed press releases.",
             "Sales and Leads Uplift": "Increase sales and leads by reaching a wider and more engaged audience through impactful press coverage."
         },
-        image: "/service/pressrelease.svg",
+        image: "/service/press.svg",
     },
     {
         id: 10,
-        key: "brandingexcellence",
+        link: "/services/branding",
+        key: "branding",
+        logo: <MdOutlineBrandingWatermark />,
         title: "Branding Excellence",
         desc: "Branding Excellence is a comprehensive service focused on creating and enhancing the identity of your brand. Our expert team collaborates with you to develop a distinct brand persona that resonates with your target audience, fosters trust, and leaves a lasting impression.",
         what: {
@@ -238,11 +266,13 @@ const services = [
             "Versatile Marketing Materials": "Receive professionally designed collateral that effectively communicates your brand values.",
             "Digital Visibility": "Enhance your online presence with a visually appealing and user-friendly website and optimized social media branding."
         },
-        image: "/service/brandingexcellence.svg",
+        image: "/service/branding.svg",
     },
     {
         id: 11,
+        link: "/services/bulkcall",
         key: "bulkcall",
+        logo: <MdCall />,
         title: "Bulk Call",
         desc: "Bulk Call is a specialized service designed to streamline your voice communication strategies. Whether you need to broadcast important announcements, conduct surveys, or engage with your audience, our service enables you to efficiently reach a large number of recipients with ease.",
         what: {
@@ -262,11 +292,13 @@ const services = [
             "Compliance and Respect": "Ensure compliance with regulations and respect recipient preferences by managing do-not-call lists.",
             "Enhanced Communication Reach": "Achieve a broader communication reach, keeping your audience informed and engaged."
         },
-        image: "/service/bulkcall.svg",
+        image: "/service/call.svg",
     },
     {
         id: 12,
+        link: "/services/bulksms",
         key: "bulksms",
+        logo: <MdSms />,
         title: "Bulk SMS",
         desc: "Bulk SMS is a specialized service designed to facilitate seamless and efficient text messaging campaigns. Whether you need to send promotional offers, important updates, or engage with your audience, our service empowers you to reach a large number of recipients instantly through SMS.",
         what: {
@@ -286,11 +318,13 @@ const services = [
             "Interactive Communication": "Encourage two-way communication by allowing recipients to respond to SMS messages.",
             "Comprehensive Reporting": "Gain insights into campaign performance through detailed analytics and reporting."
         },
-        image: "/service/bulksms.svg",
+        image: "/service/sms.svg",
     },
     {
         id: 13,
-        key: "whatsappbroadcast",
+        link: "/services/whatsapp",
+        key: "whatsapp",
+        logo: <FaWhatsapp />,
         title: "WhatsApp Broadcast",
         desc: "WhatsApp Broadcast is a specialized service designed to leverage the power of WhatsApp for mass communication. Whether you're promoting products, sharing updates, or engaging with your audience, our service enables you to efficiently broadcast messages to a large number of WhatsApp users.",
         what: {
@@ -310,11 +344,13 @@ const services = [
             "Scheduled Delivery": "Plan campaigns ahead and schedule messages for optimal delivery times.",
             "Comprehensive Reporting": "Gain insights into campaign performance through detailed analytics and reporting."
         },
-        image: "/service/whatsappbroadcast.svg",
+        image: "/service/whatsapp.svg",
     },
     {
         id: 14,
-        key: "electionpromotion",
+        link: "/services/election",
+        key: "election",
+        logo: <MdOutlineElectricBolt />,
         title: "Election Promotion",
         desc: "Election Promotion Solutions is a specialized service tailored to meet the unique needs of political campaigns. We provide comprehensive and strategic promotion services to help candidates effectively reach and engage with voters, leveraging a mix of traditional and digital platforms.",
         what: {
@@ -334,11 +370,13 @@ const services = [
             "Data-Driven Decision Making": "Leverage data analytics to refine targeting strategies and optimize the campaign's impact.",
             "Professional Content Creation": "Create compelling and impactful content to effectively convey the candidate's message."
         },
-        image: "/service/electionpromotion.svg",
+        image: "/service/politics.svg",
     },
     {
         id: 15,
-        key: "tvadvertising",
+        link: "/services/tv",
+        key: "tv",
+        logo: <PiTelevisionSimple />,
         title: "TV Advertising",
         desc: "TV Advertising is a specialized service aimed at creating impactful and engaging television commercials that effectively convey your brand message and reach a broad audience. Our team of creative professionals excels in crafting visually stunning and compelling TV ads to elevate your brand presence.",
         what: {
@@ -358,11 +396,13 @@ const services = [
             "Performance Tracking": "Utilize analytics to measure the effectiveness of TV ads, allowing for data-driven improvements.",
             "Professional Production": "Benefit from a team of experienced professionals dedicated to delivering high-quality TV ads."
         },
-        image: "/service/tvadvertising.svg",
+        image: "/service/ads.svg",
     },
     {
         id: 16,
-        key: "wikipediacreation",
+        link: "/services/wikipedia",
+        key: "wikipedia",
+        logo: <FaWikipediaW />,
         title: "Wikipedia Creation Services",
         desc: "Wikipedia Creation Services is a specialized offering dedicated to establishing a credible and comprehensive presence for individuals, businesses, or organizations on Wikipedia. Our team of experienced Wikipedia editors and writers ensures the creation of well-researched, neutral, and notable Wikipedia pages that adhere to Wikipedia's guidelines.",
         what: {
@@ -382,11 +422,13 @@ const services = [
             "Expert Content Creation": "Rely on a team of skilled Wikipedia editors and writers dedicated to creating notable and impactful Wikipedia pages.",
             "Ongoing Maintenance": "Receive ongoing monitoring and updates to keep your Wikipedia page current and accurate."
         },
-        image: "/service/wikipediacreation.svg",
+        image: "/service/wikipedia.svg",
     },
     {
         id: 17,
-        key: "ai-poweredsolutions",
+        link: "/services/ai",
+        key: "ai",
+        logo: <FaRobot />,
         title: "AI-Powered Solutions",
         desc: "AI-Powered Solutions is a specialized service offering cutting-edge artificial intelligence (AI) systems designed to enhance efficiency, productivity, and innovation across various industries. Our team of AI experts leverages advanced algorithms and machine learning techniques to develop tailored solutions that address specific business challenges.",
         what: {
@@ -407,11 +449,13 @@ const services = [
             "Adaptability and Learning": "Develop AI systems that continuously adapt and learn, improving their capabilities over time.",
             "Competitive Edge": "Gain a competitive advantage by integrating AI solutions that streamline processes and enhance overall performance."
         },
-        image: "/service/ai-poweredsolutions.svg",
+        image: "/service/ai.svg",
     },
     {
         id: 18,
-        key: "youtubemonetization",
+        link: "/services/youtube",
+        key: "youtube",
+        logo: <FaYoutube />,
         title: "YouTube Monetization",
         desc: "YouTube Monetization is a specialized service designed to assist content creators in maximizing their earnings on the YouTube platform. Our team of experts provides strategic guidance, optimization techniques, and personalized support to help creators monetize their content effectively and generate revenue.",
         what: {
@@ -432,11 +476,13 @@ const services = [
             "Strategic Content Planning": "Develop content strategies that align with monetization goals and audience preferences.",
             "Personalized Support": "Receive personalized assistance and guidance for tailored YouTube monetization success."
         },
-        image: "/service/youtubemonetization.svg",
+        image: "/service/youtube.svg",
     },
     {
         id: 19,
-        key: "googleads",
+        link: "/services/google",
+        key: "google",
+        logo: <FaGoogle />,
         title: "Google Ads",
         desc: "Google Ads is a specialized service tailored to businesses and individuals aiming to maximize their online visibility, drive targeted traffic, and achieve measurable results through Google Ads. Our team of certified Google Ads experts crafts strategic campaigns, optimizes ad performance, and provides data-driven insights for continuous improvement.",
         what: {
@@ -457,11 +503,13 @@ const services = [
             "Strategic Ad Placement": "Utilize advanced targeting options for precise ad placement, reaching the right audience at the right time.",
             "Continuous Optimization": "Implement ongoing optimization strategies based on performance data to improve campaign effectiveness."
         },
-        image: "/service/googleads.svg",
+        image: "/service/ads.svg",
     },
     {
         id: 20,
-        key: "socialmediamanagement",
+        link: "/services/social",
+        key: "social",
+        logo: <FaHandshake />,
         title: "Social Media Management",
         desc: "Social Media Management is a comprehensive service dedicated to enhancing your brand's online presence, engagement, and community building across various social media platforms. Our team of skilled social media managers develops and executes strategic plans to elevate your brand's visibility and foster meaningful connections with your audience.",
         what: {
@@ -482,11 +530,13 @@ const services = [
             "Data-Driven Decisions": "Receive detailed analytics and reports to make informed decisions and optimize social media strategies.",
             "Brand Reputation Enhancement": "Manage and enhance your brand's online reputation through proactive community engagement and crisis response."
         },
-        image: "/service/socialmediamanagement.svg",
+        image: "/service/social.svg",
     },
     {
         id: 21,
-        key: "wordpresswebsite",
+        link: "/services/wordpress",
+        key: "wordpress",
+        logo: <FaWordpressSimple />,
         title: "WordPress Website",
         desc: "WordPress Website is a specialized service focused on designing, developing, and optimizing websites using the versatile and user-friendly WordPress platform. Our team of skilled web developers and designers create customized and responsive WordPress websites tailored to meet the unique needs and goals of businesses, bloggers, and organizations.",
         what: {
@@ -507,11 +557,13 @@ const services = [
             "Content Management Ease": "Easily manage and update your website content with the user-friendly WordPress CMS.",
             "SEO-Friendly Structure": "Optimize your website for search engines, enhancing visibility and attracting organic traffic."
         },
-        image: "/service/wordpresswebsite.svg",
+        image: "/service/website.svg",
     },
     {
         id: 22,
-        key: "facebookads",
+        link: "/services/facebook",
+        key: "facebook",
+        logo: <FaFacebookF />,
         title: "Facebook Ads",
         desc: "Facebook Ads is a specialized service designed to elevate your brand's online presence, drive targeted traffic, and achieve measurable results through strategic advertising on the Facebook platform. Our team of certified Facebook Ads experts crafts tailored campaigns, optimizes ad performance, and provides data-driven insights for continuous improvement.",
         what: {
@@ -532,11 +584,13 @@ const services = [
             "Strategic Ad Placement": "Utilize advanced targeting options for precise ad placement, reaching the right audience at the right time.",
             "Continuous Optimization": "Implement ongoing optimization strategies based on performance data to improve campaign effectiveness."
         },
-        image: "/service/facebookads.svg",
+        image: "/service/ads.svg",
     },
     {
         id: 23,
-        key: "instagramads",
+        link: "/services/instagram",
+        key: "instagram",
+        logo: <FaInstagram />,
         title: "Instagram Ads",
         desc: "Instagram Ads is a specialized service focused on enhancing your brand's visibility, engagement, and conversions through strategic advertising on the Instagram platform. Our team of certified Instagram Ads experts creates and optimizes campaigns, ensuring visually compelling content and targeting the right audience for impactful results.",
         what: {
@@ -557,11 +611,13 @@ const services = [
             "Detailed Performance Analytics": "Receive detailed analytics and reports to track the effectiveness of your Instagram Ads campaigns.",
             "Expert Visual and Strategic Team": "Our team comprises certified Instagram Ads specialists and visual content experts dedicated to maximizing the impact of your campaigns."
         },
-        image: "/service/instagramads.svg",
+        image: "/service/ads.svg",
     },
     {
         id: 24,
-        key: "emailmarketing",
+        link: "/services/email",
+        key: "email",
+        logo: <MdEmail />,
         title: "Email Marketing",
         desc: "Email Marketing is a specialized service designed to optimize your brand's communication strategy, drive engagement, and foster customer relationships through effective email campaigns. Our expert team crafts targeted, visually appealing, and conversion-focused email marketing campaigns tailored to meet your business goals.",
         what: {
@@ -582,11 +638,13 @@ const services = [
             "Brand Consistency": "Maintain brand consistency through professionally designed and branded email templates.",
             "Detailed Reporting": "Receive detailed reports on campaign performance, allowing for informed decision-making."
         },
-        image: "/service/emailmarketing.svg",
+        image: "/service/email.svg",
     },
     {
         id: 25,
+        link: "/services/crm",
         key: "crm",
+        logo: <RiCustomerService2Fill />,
         title: "CRM",
         desc: "CRM offers comprehensive Customer Relationship Management (CRM) services to streamline your business processes, enhance customer interactions, and drive growth. Our expert team leverages cutting-edge CRM technologies to deliver tailored solutions that align with your unique business needs and goals.",
         what: {

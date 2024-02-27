@@ -39,14 +39,14 @@ export default function ServicePage({ service }) {
                                                 </span>
                                             )}
                                         </p>
-                                        {/* <div className="my-4">
+                                        <div className="my-4">
                                             <Link
-                                                className="inline-flex h-9 items-center justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow transition-colors hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
-                                                href="/contact"
+                                                className="inline-flex h-9 items-center justify-center rounded-md outline outline-1 outline-gray-50 px-3 py-1 text-lg mt-2 font-bold text-gray-300 hover:text-gray-800 shadow transition-all hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50"
+                                                href="/pricing"
                                             >
-                                                Contact Sales
+                                                Pricing
                                             </Link>
-                                        </div> */}
+                                        </div>
                                     </div>
                                 </div>
                                 <img
@@ -153,7 +153,6 @@ export async function getServerSideProps(context) {
     const { params } = context;
     const { id } = params;
 
-    // Find the service or return a 404 if not found
     const service = services.find((service) => service.key === id);
 
     if (!service) {
@@ -162,9 +161,15 @@ export async function getServerSideProps(context) {
         };
     }
 
+    // Convert logo to a JSON-serializable data type (string)
+    const serviceWithSerializableLogo = {
+        ...service,
+        logo: service.logo.toString() // Convert symbol to string
+    };
+
     return {
         props: {
-            service,
+            service: serviceWithSerializableLogo,
         },
     };
 }
