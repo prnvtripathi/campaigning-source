@@ -99,20 +99,26 @@ const team = [
     {
         img: "/team/vansh.jpg",
         name: "Vansh Tyagi",
-        position: "CEO",
+        position: "Founder & CEO",
         linkedin: "https://www.linkedin.com/in/vansh-tyagi-a04355210/"
-    },
-    {
-        img: "/team/umang.jpg",
-        name: "Umang Gupta",
-        position: "CMO",
-        linkedin: "https://www.linkedin.com/"
     },
     {
         img: "/team/vanshika.jpg",
         name: "Vanshika Gupta",
         position: "CFO",
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
+    },
+     {
+        img: "/team/Harsh.jpg",
+        name: "Mr. Harsh",
+        position: "Managing Director",
+        linkedin: "https://www.linkedin.com/"
+    },
+    {
+        img: "/team/umang.jpg",
+        name: "Umang Gupta",
+        position: "CMO",
+        linkedin: "https://www.linkedin.com/"
     },
     {
         img: "/team/pranav.jpeg",
@@ -149,12 +155,6 @@ const team = [
         name: "Akshay Kumar Sharma",
         position: "Public Relations Manager",
         linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager/"
-    },
-    {
-        img: "/team/harsh.jpg",
-        name: "Harsh Tyagi",
-        position: "Public Relations Manager",
-        linkedin: "https://www.linkedin.com/"
     },
 ]
 
