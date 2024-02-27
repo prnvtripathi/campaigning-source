@@ -120,12 +120,12 @@ const team = [
         position: "CTO",
         linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
-    // {
-    //     img: "/team/sushant.jpeg",
-    //     name: "Sushant Sharma",
-    //     position: "Chief Operation Manager",
-    //     linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
-    // },
+    {
+        img: "/team/sushant.jpeg",
+        name: "Sushant Sharma",
+        position: "Chief Operation Manager",
+        linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
+    },
     {
         img: "/team/tanishk.jpg",
         name: "Tanishk Attri",
@@ -149,12 +149,13 @@ const team = [
         name: "Akshay Kumar Sharma",
         position: "Public Relations Manager",
         linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager/"
-    }
-    // {
-    //     img: user,
-    //     name: "Tushar Aggarwal",
-    //     position: "Team Member"
-    // },
+    },
+    {
+        img: "/team/harsh.jpg",
+        name: "Harsh Tyagi",
+        position: "Public Relations Manager",
+        linkedin: "https://www.linkedin.com/"
+    },
 ]
 
 const About = () => {
@@ -167,7 +168,7 @@ const About = () => {
                 <main className="flex flex-col items-center w-11/12 mx-auto max-w-6xl rounded-lg my-7 bg-gray-700 px-4 py-8 space-y-8 md:px-6 lg:py-16">
                     <section className="w-full max-w-4xl space-y-6">
                         <h1 className="text-4xl font-bold text-center">About Us</h1>
-                        <iframe className="mx-auto rounded-lg" width="100%" height="360" src="https://www.youtube-nocookie.com/embed/GAd8CUfLuIs?si=4CtGI_sd0ZP3-nA2&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                        <iframe className="mx-auto rounded-lg" width="100%" height="360" src="https://www.youtube-nocookie.com/embed/GAd8CUfLuIs?si=4CtGI_sd0ZP3-nA2&amp;controls=0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </section>
                     <section className="w-full max-w-4xl space-y-6">
                         <h2 className="text-3xl font-bold text-center">Dive Deeper</h2>

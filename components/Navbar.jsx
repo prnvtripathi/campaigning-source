@@ -24,14 +24,6 @@ const navItems = [
         id: 2,
         name: "Services",
         path: "/services",
-        subItems: [
-            { id: 21, name: "Political Promotion", path: "/services/politics" },
-            { id: 22, name: "Business Development", path: "/services/business" },
-            { id: 23, name: "Social Media Marketing", path: "/services/profile" },
-            { id: 24, name: "Web Development", path: "/services/website" },
-            { id: 25, name: "Graphic Design", path: "/services/graphics" },
-            // Add more services as needed
-        ],
     },
     {
         id: 3,
@@ -95,7 +87,7 @@ const Navbar = () => {
                                     <Link href={item.path}>
                                         {item.name}
                                     </Link>
-                                    {/* Check if the item has subItems and render the dropdown menu */}
+                                    {/* Check if the item has subItems and render the dropdown menu
                                     {item.subItems && (
                                         <ul className="hidden z-20 backdrop-blur-md group-hover:flex flex-wrap justify-between items-center gap-2 absolute -left-44 top-8 w-[26rem] bg-black/40 rounded-lg py-3 px-7">
                                             {item.subItems.map((subItem) => (
@@ -106,7 +98,7 @@ const Navbar = () => {
                                                 </li>
                                             ))}
                                         </ul>
-                                    )}
+                                    )} */}
                                 </li>
                             ))}
 
