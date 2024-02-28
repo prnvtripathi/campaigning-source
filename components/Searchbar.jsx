@@ -1,20 +1,15 @@
 import { useState, useEffect, useRef } from "react";
 import { IoMdSearch } from "react-icons/io";
 import Link from "next/link";
-import politicsData from "@/data/politicsData";
-import businessData from "@/data/businessData";
+import services from "@/data/services";
 
 export default function Searchbar() {
     const [search, setSearch] = useState("");
     const [isVisible, setIsVisible] = useState(false);
     const inputRef = useRef(null);
 
-    const filteredPoliticsData = politicsData.filter((data) =>
-        data.title.toLowerCase().includes(search.toLowerCase())
-    );
-
-    const filteredBusinessData = businessData.filter((data) =>
-        data.title.toLowerCase().includes(search.toLowerCase())
+    const filteredServices = services.filter((service) =>
+        service.title.toLowerCase().includes(search.toLowerCase())
     );
 
     useEffect(() => {
@@ -69,35 +64,16 @@ export default function Searchbar() {
                             <IoMdSearch className="absolute top-2.5 left-3 h-5 w-5 text-gray-500" />
                         </form>
                         <div className="flex flex-row justify-around">
-                            {search && filteredPoliticsData.length > 0 && (
+                            {search && filteredServices.length > 0 && (
                                 <div className="space-y-4">
                                     <h2 className="text-2xl font-bold tracking-wide md:text-3xl lg:text-4xl">
-                                        Political Promotion
+                                        Our Services
                                     </h2>
-                                    <div className="flex flex-col">
-                                        {filteredPoliticsData?.map((item) => (
+                                    <div className="grid md:grid-cols-3 gap-x-48">
+                                        {filteredServices?.map((item) => (
                                             <Link href={item.link} key={item.id}>
                                                 <div className="p-1">
-                                                    <h3 className="flex items-center text-gray-300 font-semibold text-lg">
-                                                        <span className="mr-2 text-primaryText/70">{item.logo}</span>
-                                                        {item.title}
-                                                    </h3>
-                                                </div>
-                                            </Link>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-                            {search && filteredBusinessData.length > 0 && (
-                                <div className="space-y-4">
-                                    <h2 className="text-2xl font-bold tracking-wide md:text-3xl lg:text-4xl">
-                                        Business Development
-                                    </h2>
-                                    <div className="flex flex-col">
-                                        {filteredBusinessData?.map((item) => (
-                                            <Link href={item.link} key={item.id}>
-                                                <div className="p-1">
-                                                    <h3 className="flex items-center text-gray-300 font-semibold text-lg">
+                                                    <h3 className="flex items-center text-gray-300 font-semibold text-lg hover:text-primaryText transition">
                                                         <span className="mr-2 text-primaryText/70">{item.logo}</span>
                                                         {item.title}
                                                     </h3>
