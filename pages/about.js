@@ -104,7 +104,7 @@ const team = [
     },
     {
         img: "/team/vanshika.jpg",
-        name: "Miss. Vanshika Gupta",
+        name: "Ms. Vanshika Gupta",
         position: "CFO",
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
@@ -140,13 +140,13 @@ const team = [
     },
     {
         img: "/team/tanishka.jpg",
-        name: "Miss. Tanishka Garg",
+        name: "Ms. Tanishka Garg",
         position: "Customer Compliance Manager",
         linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
     },
     {
         img: "/team/shaily.jpg",
-        name: "Miss. Shaily Bhati",
+        name: "Ms. Shaily Bhati",
         position: "Customer Success Manager",
         linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
     },
