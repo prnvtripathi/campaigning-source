@@ -98,63 +98,63 @@ const services = [
 const team = [
     {
         img: "/team/vansh.jpg",
-        name: "Vansh Tyagi",
-        position: "CEO",
+        name: "Mr. Vansh Tyagi",
+        position: "Founder & CEO",
         linkedin: "https://www.linkedin.com/in/vansh-tyagi-a04355210/"
     },
     {
+        img: "/team/vanshika.jpg",
+        name: "Miss. Vanshika Gupta",
+        position: "CFO",
+        linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
+    },
+     {
+        img: "/team/harsh.jpg",
+        name: "Mr. Harsh Mudgal",
+        position: "Managing Director",
+        linkedin: "https://www.linkedin.com/"
+    },
+    {
         img: "/team/umang.jpg",
-        name: "Umang Gupta",
+        name: "Mr. Umang Gupta",
         position: "CMO",
         linkedin: "https://www.linkedin.com/"
     },
     {
-        img: "/team/vanshika.jpg",
-        name: "Vanshika Gupta",
-        position: "CFO",
-        linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
-    },
-    {
         img: "/team/pranav.jpeg",
-        name: "Pranav Tripathi",
+        name: "Mr. Pranav Tripathi",
         position: "CTO",
         linkedin: "https://www.linkedin.com/in/tripathipranav14/"
     },
     {
         img: "/team/sushant.jpeg",
-        name: "Sushant Sharma",
+        name: "Mr. Sushant Sharma",
         position: "Chief Operation Manager",
         linkedin: "https://www.linkedin.com/in/sushant2021cs101/"
     },
     {
         img: "/team/tanishk.jpg",
-        name: "Tanishk Attri",
+        name: "Mr. Tanishk Attri",
         position: "Cheif Startup Developer",
         linkedin: "https://www.linkedin.com/in/tanishk-attri-a49027220/"
     },
     {
         img: "/team/tanishka.jpg",
-        name: "Tanishka Garg",
+        name: "Miss. Tanishka Garg",
         position: "Customer Compliance Manager",
         linkedin: "https://www.linkedin.com/in/tanishka-garg-21885622a"
     },
     {
         img: "/team/shaily.jpg",
-        name: "Shaily Bhati",
+        name: "Miss. Shaily Bhati",
         position: "Customer Success Manager",
         linkedin: "https://www.linkedin.com/in/shaily-bhati-8b875524b"
     },
     {
         img: "/team/akshay.jpg",
-        name: "Akshay Kumar Sharma",
+        name: "Mr. Akshay Kumar Sharma",
         position: "Public Relations Manager",
         linkedin: "https://www.linkedin.com/in/akshay-kumar-sharma-devvoyager/"
-    },
-    {
-        img: "/team/harsh.jpg",
-        name: "Harsh Tyagi",
-        position: "Public Relations Manager",
-        linkedin: "https://www.linkedin.com/"
     },
 ]
 
