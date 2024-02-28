@@ -108,7 +108,7 @@ const team = [
         position: "CFO",
         linkedin: "https://www.linkedin.com/in/vanshika-gupta23052003/"
     },
-     {
+    {
         img: "/team/harsh.jpg",
         name: "Mr. Harsh Mudgal",
         position: "Managing Director",
