@@ -110,7 +110,7 @@ const team = [
     },
     {
         img: "/team/harsh.jpg",
-        name: "Mr. Harsh Mudgal",
+        name: "Mr. Harsh",
         position: "Managing Director",
         linkedin: "https://www.linkedin.com/"
     },
