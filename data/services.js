@@ -1,4 +1,4 @@
-import { FaTwitter, FaMobile, FaRegFileVideo, FaRegNewspaper, FaWhatsapp, FaWikipediaW, FaRobot, FaYoutube, FaGoogle, FaHandshake, FaWordpressSimple, FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaTwitter, FaMobile, FaRegFileVideo, FaRegNewspaper, FaWhatsapp, FaWikipediaW, FaRobot, FaYoutube, FaGoogle, FaHandshake, FaWordpressSimple, FaFacebookF, FaInstagram, FaPaintBrush, FaMicrophone } from "react-icons/fa";
 import { MdWeb, MdCall, MdOutlineBrandingWatermark, MdSms, MdOutlineElectricBolt, MdEmail } from "react-icons/md";
 import { IoIosFunnel } from "react-icons/io";
 import { IoChatboxEllipsesOutline } from "react-icons/io5";
@@ -666,6 +666,56 @@ const services = [
             "Customer Retention": "Boost customer satisfaction and retention through personalized services and timely engagements."
         },
         image: "/service/crm.svg",
+    },
+    {
+        id: 25,
+        link: "/services/graphics",
+        key: "graphics",
+        logo: <FaPaintBrush />,
+        title: "Graphics Development",
+        desc: "Graphics Development is a specialized service designed to elevate your visual content to new heights, ensuring maximum impact and engagement. Our team of skilled graphic designers is dedicated to enhancing your brand's visual identity and creating compelling graphics that resonate with your audience.",
+        what: {
+            "Stunning Visuals": "We promise to deliver eye-catching and professionally designed graphics that align with your brand and captivate your audience.",
+            "Diverse Graphic Assets": "From social media posts and banners to infographics and promotional materials, we provide a wide range of graphic assets tailored to your specific needs.",
+            "Quick Turnaround": "Experience a fast turnaround time, receiving your customized graphics promptly to meet your campaign timelines.",
+            "High-Quality Resolution": "Our graphics are crafted with precision and delivered in high-resolution formats, ensuring optimal clarity and quality across various platforms.",
+            "Customized Design Packages": "We offer personalized design packages to cater to the unique requirements of your graphics development campaign.",
+        },
+        where: "Our Graphics Development Boost service is available globally, allowing your brand to stand out with visually appealing content across international audiences.",
+        pricing: "Our pricing is flexible and depends on the scope of your graphics development project. Reach out to us for a tailored quote based on your specific requirements.",
+        benefits: {
+            "Visual Excellence": "Elevate your brand with visually stunning graphics that leave a lasting impression.",
+            "Versatility": "Access a diverse range of graphic assets suitable for different platforms and purposes.",
+            "Efficient Delivery": "Receive your customized graphics promptly, ensuring you stay on track with your campaign schedule.",
+            "Professional Quality": "Enjoy high-resolution graphics that showcase your brand in the best light possible.",
+            "Global Impact": "Extend the reach of your brand internationally with captivating visuals that transcend language barriers.",
+        },
+        image: "/service/graphics.svg",
+    },
+    {
+        id: 25,
+        link: "/services/politics",
+        key: "politics",
+        logo: <FaMicrophone />,
+        title: "Political Promotion",
+        desc: "Our Political Promotion is a dynamic service tailored to elevate your political campaign, ensuring maximum visibility and engagement. We understand the significance of effective communication in the political landscape, and our team is dedicated to crafting compelling campaigns that resonate with voters.",
+        what: {
+            "Strategic Campaign Planning": "We develop a comprehensive and strategic plan to effectively promote your political campaign, highlighting key messages and initiatives",
+            "Persuasive Content Creation": "Our team specializes in creating persuasive content, including speeches, social media posts, and promotional materials, to effectively convey your political agenda.",
+            "Targeted Outreach": "Utilizing data-driven insights, we conduct targeted outreach to specific demographics, ensuring your message reaches the right audience.",
+            "Rapid Response Team": "n the fast-paced world of politics, our rapid response team is ready to address emerging issues and opportunities, ensuring your campaign stays agile and responsive.",
+            "Social Media Dominance": "Leverage the power of social media with our expertly crafted campaigns to engage voters, build support, and create a buzz around your political initiatives.",
+        },
+        where: "Our Political Promotion service is available nationally, empowering political campaigns to make a significant impact on a broad scale.",
+        pricing: "Our pricing is adaptable to the unique requirements of your political campaign. Contact us for a personalized quote based on the scope and goals of your promotion.",
+        benefits: {
+            "Strategic Messaging": "Craft a compelling narrative that resonates with voters and effectively communicates your political agenda.",
+            "Targeted Engagement": "Reach specific demographics with precision, ensuring your message connects with the right audience.",
+            "Agile Campaigning": "Stay ahead of the curve with our rapid response team, addressing emerging issues and opportunities promptly.",
+            "Social Media Influence": "Harness the power of social media to build a strong online presence, engage voters, and drive support for your political campaign.",
+            "National Impact": "Extend your campaign's reach nationally, making a significant impact on voters across the country.",
+        },
+        image: "/service/politics.svg",
     }
 ];
 
