@@ -668,7 +668,7 @@ const services = [
         image: "/service/crm.svg",
     },
     {
-        id: 25,
+        id: 26,
         link: "/services/graphics",
         key: "graphics",
         logo: <FaPaintBrush />,
@@ -693,7 +693,7 @@ const services = [
         image: "/service/graphics.svg",
     },
     {
-        id: 25,
+        id: 27,
         link: "/services/politics",
         key: "politics",
         logo: <FaMicrophone />,
