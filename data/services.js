@@ -672,6 +672,7 @@ const services = [
         link: "/services/graphics",
         key: "graphics",
         logo: <FaPaintBrush />,
+        example: 1,
         title: "Graphics Development",
         desc: "Graphics Development is a specialized service designed to elevate your visual content to new heights, ensuring maximum impact and engagement. Our team of skilled graphic designers is dedicated to enhancing your brand's visual identity and creating compelling graphics that resonate with your audience.",
         what: {
