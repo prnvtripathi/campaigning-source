@@ -9,6 +9,7 @@ import Banner from '@/components/Banner';
 import FloatingForm from '@/components/FloatingForm';
 import HomeAbout from '@/components/HomeAbout';
 import HomeServices from '@/components/HomeService';
+import AdBanner from '@/components/AdBanner';
 
 const Home = () => {
   const [isFormVisible, setFormVisibility] = useState(false);
@@ -38,6 +39,7 @@ const Home = () => {
         <title>Campaigning Source</title>
     <meta name="google-site-verification" content="wuImTDqbWJwqAK-DAqsRtO-vJP6fxbe5wDrnEFc29Lw" />
       </Head>
+      <AdBanner />
       <Layout>
         {/* <SocialMedia /> */}
         <Hero />
