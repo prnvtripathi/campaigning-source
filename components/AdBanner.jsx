@@ -6,7 +6,7 @@ export default function AdBanner() {
             <p className='font-semibold font-sans'>
                 ✨ Want to turn your idea into a startup? we'll help you here. {" "}
                 <Link href="/company" className='underline text-black'>
-                    coming soon
+                    click here!
                 </Link>
                 ✨
             </p>
