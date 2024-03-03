@@ -69,7 +69,7 @@ function SubmitIdea() {
             transition={{ duration: 0.5, type: "inertia", velocity: 50 }}
             className="flex items-center justify-center text-center md:text-left w-full px-8 py-6 md:h-[41rem] md:w-1/2">
             <div className="max-w-2xl mb-28">
-              <h2 className="text-3xl font-semibold text-gray-300 tracking-widest md:text-5xl">Want your Business or Idea<br /><span className={`text-primaryText font-bold md:text-7xl ${satisfy.className}`}>Registered</span></h2>
+              <h2 className="text-3xl font-semibold text-gray-300 tracking-widest md:text-5xl">Want your Business<br /><span className={`text-primaryText font-bold md:text-7xl ${satisfy.className}`}>Registered</span></h2>
 
               <p className="mt-4 text-sm text-gray-500 md:text-base">Make your dreams true with Campaigning Source, do any kind of registrations for your company with us.</p>
 
