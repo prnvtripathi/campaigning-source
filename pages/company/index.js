@@ -67,7 +67,7 @@ function SubmitIdea() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, type: "inertia", velocity: 50 }}
-            className="flex items-center justify-center text-center md:text-left w-full px-8 py-6 md:h-[41rem] md:w-1/2">
+            className="flex items-center justify-center text-center md:text-left w-full px-8 py-6 md:h-[32rem] md:w-1/2">
             <div className="max-w-2xl mb-28">
               <h2 className="text-3xl font-semibold text-gray-300 tracking-widest md:text-5xl">Want your idea to be a<br /><span className={`text-primaryText font-bold md:text-7xl ${satisfy.className}`}>Startup</span></h2>
 
@@ -90,7 +90,7 @@ function SubmitIdea() {
           <h2 className="text-3xl font-semibold text-primaryText tracking-widest md:text-5xl mb-4">Services we offer</h2>
           <div className="grid sm:grid-cols-2 md:grid-cols-5 gap-3">
             {data.map((item, index) => (
-              <Link key={index} href={item.link} className="flex items-center justify-center px-4 py-12 bg-gray-800 outline outline-1 rounded-lg hover:scale-95 transition-all">
+              <Link key={index} href={item.link} className="flex items-center justify-center px-4 py-12 outline outline-1 rounded-lg hover:scale-95 transition-all">
                 <h3 className="text-lg font-semibold text-primaryText">{item.title}</h3>
               </Link>
             ))}

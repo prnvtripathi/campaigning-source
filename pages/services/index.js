@@ -4,6 +4,7 @@ import { IoMdSearch } from "react-icons/io";
 import services from "@/data/services";
 import Link from "next/link";
 import { useState } from "react";
+import { FaRegBuilding } from "react-icons/fa6";
 
 const Services = () => {
     const [searchQuery, setSearchQuery] = useState("")
@@ -53,6 +54,15 @@ const Services = () => {
                                             </div>
                                         </Link>
                                     ))}
+                                    <Link href={'/company'}>
+                                        <div className="p-4 border rounded-lg text-gray-400 md:hover:scale-[0.98] min-h-48 transition-all flex flex-col justify-center">
+                                            <h3 className="flex items-center font-bold text-xl text-primaryText">
+                                                <span className="mr-2 text-gray-200 text-2xl"><FaRegBuilding /></span>
+                                                Company Registration
+                                            </h3>
+                                            <p className="text-gray-500 text-wrap">Want to register your company, LLP, OPC (One Person Company) or want to register your Intelluctual Property, we can do that for you.</p>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
                         )}
