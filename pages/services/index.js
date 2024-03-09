@@ -9,9 +9,11 @@ import { FaRegBuilding } from "react-icons/fa6";
 const Services = () => {
     const [searchQuery, setSearchQuery] = useState("")
 
-    const filteredServices = services.filter(service => {
-        return service.title.toLowerCase().includes(searchQuery.toLowerCase())
-    })
+    const filteredServices = services
+        .filter(service => {
+            return service.title.toLowerCase().includes(searchQuery.toLowerCase())
+        })
+        .sort((a, b) => a.title.localeCompare(b.title));
 
     return (
         <>
