@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { Satisfy } from "next/font/google"
 import Link from "next/link"
+import Contact from "@/components/Contact"
 
 const satisfy = Satisfy({
   subsets: ['latin'],
@@ -96,6 +97,8 @@ function SubmitIdea() {
             ))}
           </div>
         </section>
+
+        <Contact />
       </Layout>
 
     </>
