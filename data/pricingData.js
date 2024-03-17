@@ -164,7 +164,119 @@ const data = [
                 price: "15000/m"
             },
         ]
-    }
+    },
+    {
+        title: "Spiritual TV Ads",
+        description: "Advertise your content on spiritual television.",
+        plans: [
+            {
+                title: "Bhakti TV",
+                description: "₹40 per sec",
+                price: "2000 minimum"
+            },
+            {
+                title: "Aastha TV",
+                description: "₹253 per sec",
+                price: "12650 minimum"
+            },
+            {
+                title: "Sanskar TV",
+                description: "₹115 per sec",
+                price: "5750 minimum"
+            },
+            {
+                title: "Aastha Bhajan TV",
+                description: "₹65 per sec",
+                price: "3250 minimum"
+            },
+            {
+                title: "Shraddha MH 1",
+                description: "₹31 per sec",
+                price: "1555 minimum"
+            },
+            {
+                title: "Paras TV",
+                description: "₹36 per sec",
+                price: "1800 minimum"
+            },
+            {
+                title: "Disha TV",
+                description: "₹22 per sec",
+                price: "1100 minimum"
+            },
+            {
+                title: "Darsan 24",
+                description: "₹40 per sec",
+                price: "2000 minimum"
+            },
+            {
+                title: "Sony TV (Mere Sai)",
+                description: "₹6300 per sec",
+                price: "315000 minimum"
+            },
+            {
+                title: "Divya TV",
+                description: "TBD",
+                price: "TBD"
+            }
+        ]
+    },
+    {
+        title: "News TV Ads",
+        description: "Advertise your content on national television media.",
+        plans: [
+            {
+                title: "Aaj Tak",
+                description: "₹600 per sec",
+                price: "29975 minimum"
+            },
+            {
+                title: "Zee News",
+                description: "₹506 per sec",
+                price: "25300 minimum"
+            },
+            {
+                title: "Republic Bharat",
+                description: "₹455 per sec",
+                price: "22750 minimum"
+            },
+            {
+                title: "ABP News",
+                description: "₹443 per sec",
+                price: "22150 minimum"
+            },
+            {
+                title: "ABP Ganga",
+                description: "TBD",
+                price: "TBD"
+            },
+            {
+                title: "India TV",
+                description: "₹538 per sec",
+                price: "26900 minimum"
+            },
+            {
+                title: "Sandesh News",
+                description: "₹23 per sec",
+                price: "1150 minimum"
+            },
+            {
+                title: "India 24x7",
+                description: "₹112 per sec",
+                price: "5600 minimum"
+            },
+            {
+                title: "TV9 Bharatvarsh",
+                description: "₹350 per sec",
+                price: "17500 minimum"
+            },
+            {
+                title: "News Nation",
+                description: "₹113 per sec",
+                price: "5650 minimum"
+            }
+        ]
+    },
 ];
 
 export default data;

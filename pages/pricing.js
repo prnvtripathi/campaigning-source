@@ -115,13 +115,16 @@ const Pricing = () => {
                         </tbody>
                       </table>
                     </div>
-                    <div className="text-center my-4">
-                      <p className="text-gray-500">
-                        <span className="text-primaryText">*</span> All prices are exclusive of GST.
-                      </p>
-                    </div>
                   </div>
                 ))}
+              </div>
+              <div className="my-4 text-xs">
+                <p className="text-gray-500">
+                  <span className="text-primaryText">*</span> All prices are exclusive of GST.
+                </p>
+                <p className="text-gray-500">
+                  <span className="text-primaryText">*</span> Pricing of TV ads are dynamic in nature and can be different from the above .
+                </p>
               </div>
             </div>
           </div>
