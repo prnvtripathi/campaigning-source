@@ -13,11 +13,9 @@ export default function PrivateLimited() {
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>PVT LTD</h2>
                         <p className='text-gray-400 max-w-2xl'>
-                            The provided script discusses the benefits of private limited (Pvt Ltd) company registration in
-                            India, the steps involved in the registration process, the characteristics of private limited
-                            companies, and compliance requirements post-registration. It also includes a comparative list of
-                            different types of business structures in India, documents required for online company
-                            registration, and the importance of a company registration certificate.
+                            A private limited company is a business entity offering limited owner liability. It is apt for a small number of shareholders and allows up to 200 members along with flexibility in shares and shareholdings.
+
+                            One of the most highly recommended methods for starting a business in India is to establish a private limited company, which provides its shareholders with limited liability while imposing certain ownership restrictions. When it is LLP, the partners will manage it. On the other hand, a private limited company registration allows for directors and shareholders to be separate entities.
                         </p>
                     </div>
                     <Image src='/service/documents.svg' alt='Patent' width={600} height={600} />
