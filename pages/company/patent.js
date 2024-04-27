@@ -432,7 +432,7 @@ export default function Patent() {
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
                 <section className='w-11/12 mx-auto flex flex-col md:flex-row items-center justify-around'>
-                    <div className='grid md:grid-cols-2 gap-6'>
+                    <div className='grid md:grid-cols-1 gap-6'>
                         <div className='outline outline-1 p-6 md:p-12 rounded-xl'>
                             <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl'>Drafting a Patent Application</h2>
                             <p className='text-gray-400 mt-4'>
@@ -454,24 +454,7 @@ export default function Patent() {
                             </ul>
                         </div>
                         <div className='outline outline-1 p-6 md:p-12 rounded-xl'>
-                            <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl'>Steps: Patent Registration Process</h2>
-                            <p className='text-gray-400 mt-4'>
-                                The process of patent registration in India involves the following steps:
-                            </p>
-                            <ol className='text-gray-400 flex flex-col gap-3 mt-4 list-decimal'>
-                                <li>File the patent registration application with all the needed documents
-                                </li>
-                                <li> After the application is filed, it is published in the official journal, which is
-                                    available to the public</li>
-                                <li>Submit a request for the patent application's evaluation. The patent office
-                                    will review the application after receiving the request for examination and issue a
-                                    report on the invention's patentability
-                                </li>
-                                <li>
-                                    If the patent office is satisfied with the patentability of the invention, it will
-                                    grant the patent to the applicant
-                                </li>
-                            </ol>
+                            <img src='/regis/patent.png' alt='Patent'  className='mx-auto'/>
                         </div>
                         <div className='outline outline-1 p-6 md:p-12 rounded-xl'>
                             <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl'>Will Patent Registration in India Protect My Invention Outside India

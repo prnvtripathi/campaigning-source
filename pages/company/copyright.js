@@ -180,11 +180,11 @@ export default function Copyright() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row items-start justify-between '>
+                <section className='w-11/12 mx-auto text-center'>
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Eligibility for Copyright Registration in India
                         </h2>
-                        <p className='text-gray-400 max-w-2xl'>
+                        <p className='text-gray-400'>
                             Copyright is one of the legal privileges accorded to authors, musicians, playwrights, and
                             film and music production companies. It gives the owner of the work the sole right to
                             sell, distribute, or duplicate its publication by having it registered through Copyright
@@ -206,23 +206,7 @@ export default function Copyright() {
                         </p>
                     </div>
                     <div>
-                        <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Copyright Registration Process in India
-                        </h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            The copyright registration process in India is fairly simple and affordable. Here are the
-                            steps involved:
-                            Fill out the application form: The first step is to fill out the application form, which
-                            can be done online or downloaded from the Copyright Office website.
-                            Submit the required documents: Along with the completed application form, you
-                            will need to submit a copy of the work being copyright protected and the
-                            registration fee.
-                            Wait for the registrar's office to process your application: Once received, the
-                            registrar's office will review your application and determine whether it meets all
-                            the requirements for copyright protection.
-                            Receive your certificate of registration: If your application is approved, you will
-                            receive a certificate of registration that serves as official proof of your copyright
-                            claim.
-                        </p>
+                        <img src='/regis/copyright.png' alt='Patent' className='mx-auto' />
                     </div>
 
                 </section>

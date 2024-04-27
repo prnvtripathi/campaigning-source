@@ -298,23 +298,10 @@ export default function OPC() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between'>
+                <section className='w-11/12 mx-auto'>
                     <div>
-                        <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Steps for Registration of OPC</h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            Step 1: Check the eligibility and documentation<br />
-                            Step 2: Request DSCs and DINs for each director<br />
-                            Step 3: Submit a request for a name reservation Form Spices for company
-                            Incorporation<br />
-                            Step 4: Apply for PAN and TAN for your new business<br />
-                            Step 5: RoC issues an incorporation certificate with a PAN and TAN<br />
-                            Step 6: Open a bank account and start your business.<br />
-                            The whole process for one person company registration can be completed in a time
-                            span of just 20 days. All you have to do is reach out to us and complete the process
-                            with no delay.
-                        </p>
+                        <img src='/regis/opc.png' alt='OPC' className='w-full' />
                     </div>
-                    <Image src='/service/documents.svg' alt='Patent' width={600} height={600} />
                 </section>
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />

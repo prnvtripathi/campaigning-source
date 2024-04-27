@@ -162,22 +162,8 @@ export default function GST() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between '>
-                    <div>
-                        <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Apply for GST Number Online
-                        </h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            To apply for a GST number online, you can follow these steps:< br />
-                            ● Go to the GST portal and create an account.< br />
-                            ● Once you have created an account, login and click on the 'New Registration' tab.< br />
-                            ● Select the appropriate category of registration for your business.< br />
-                            ● Fill in the required details in the application form.< br />
-                            ● Upload the required documents.< br />
-                            ● Pay the registration fee.< br />
-                            ● Submit the application form.< br />
-                        </p>
-                    </div>
-                    <Image src='/service/documents.svg' alt='Patent' width={600} height={600} />
+                <section className='w-11/12 mx-auto flex items-center justify-center '>
+                    <img src='/regis/gst.png' alt='GST' className='' />
                 </section>
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />

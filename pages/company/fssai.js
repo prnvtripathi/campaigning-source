@@ -183,7 +183,7 @@ export default function FSSAI() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between'>
+                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse gap-x-6 items-center justify-between'>
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Benefits of FSSAI Registration</h2>
                         <p className='text-gray-400 max-w-2xl'>
@@ -206,7 +206,7 @@ export default function FSSAI() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between'>
+                <section className='w-11/12 mx-auto flex flex-col md:flex-row-reverse gap-x-6 items-center justify-between'>
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Procedure for Renewal</h2>
                         <p className='text-gray-400 max-w-2xl'>

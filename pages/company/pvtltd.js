@@ -23,7 +23,7 @@ export default function PrivateLimited() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row items-center justify-between '>
+                <section className='w-11/12 mx-auto'>
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Benefits of Pvt Ltd Company Registration:
                         </h2>
@@ -37,15 +37,7 @@ export default function PrivateLimited() {
                         </p>
                     </div>
                     <div>
-                        <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Steps for Company Registration:
-                        </h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            ● Collect initial documents.<br />
-                            ● Obtain Digital Signature Certificate (DSC) and name approval.<br />
-                            ● Collect additional documents.<br />
-                            ● Draft Memorandum of Association (MOA) and Articles of Association (AOA).<br />
-                            ● Upload completed documents for the final form submission.<br />
-                        </p>
+                        <img src='/regis/pvtltd.png' alt='Patent' className='mx-auto'/>
                     </div>
                 </section>
 

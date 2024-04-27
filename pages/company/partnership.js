@@ -237,50 +237,35 @@ export default function Partnership() {
 
                 <hr className='w-11/12 mx-auto my-8 border-gray-400' />
 
-                <section className='w-11/12 mx-auto flex flex-col md:flex-row items-start justify-between '>
+                <section className='w-11/12 mx-auto '>
                     <div>
                         <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Eligibility for Partnership Firm Registration Online</h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            Anyone with the legal capacity to enter into a contract may enter into the partnership
-                            agreement. Every individual who meets the legal requirements for majority, is of sound
-                            mind, and is not prohibited from contracting by any laws to which they are subject, may
-                            form a partnership. The following people are eligible to enter into a partnership:<br />
-                            Individual: A person who has the legal capacity to enter into a contract may join
-                            the partnership firm as a partner. An individual can be a partner in a company
-                            with more than two partners both as himself and as a representative known as
-                            Karta of the Hindu undivided family.<br />
-                            Firm: Because a partnership firm is not a person, it cannot form a partnership
-                            with another firm or person. Yet, a partner in a partnership firm is free to form a
-                            partnership with another individual and split the firm's profits with his other
-                            parent company partners.<br />
-                            Hindu Undivided Family: As long as the member has contributed their own effort
-                            and ability, a Karta of the Hindu undivided family may join a partnership in his or
-                            her individual capacity.<br />
-                            Company: If permitted to do so by its goals, a business may join a partnership
-                            firm registration as a partner because it is a juristic person.
-                            Trustees: Unless its constitution or goals forbid it, trustees of private religious
-                            trusts, family trusts, Hindu mutts, and other religious endowments are legal
-                            persons and can thus form partnerships<br />
+                        <p className='text-gray-400 flex flex-col gap-y-3'>
+                            <span>Anyone with the legal capacity to enter into a contract may enter into the partnership
+                                agreement. Every individual who meets the legal requirements for majority, is of sound
+                                mind, and is not prohibited from contracting by any laws to which they are subject, may
+                                form a partnership.</span>
+                            <span>The following people are eligible to enter into a partnership:</span>
+                            <span>Individual: A person who has the legal capacity to enter into a contract may join
+                                the partnership firm as a partner. An individual can be a partner in a company
+                                with more than two partners both as himself and as a representative known as
+                                Karta of the Hindu undivided family.</span>
+                            <span>Firm: Because a partnership firm is not a person, it cannot form a partnership
+                                with another firm or person. Yet, a partner in a partnership firm is free to form a
+                                partnership with another individual and split the firm's profits with his other
+                                parent company partners.</span>
+                            <span>Hindu Undivided Family: As long as the member has contributed their own effort
+                                and ability, a Karta of the Hindu undivided family may join a partnership in his or
+                                her individual capacity.</span>
+                            <span>Company: If permitted to do so by its goals, a business may join a partnership
+                                firm registration as a partner because it is a juristic person.
+                                Trustees: Unless its constitution or goals forbid it, trustees of private religious
+                                trusts, family trusts, Hindu mutts, and other religious endowments are legal
+                                persons and can thus form partnerships.</span>
                         </p>
                     </div>
                     <div>
-                        <h2 className='text-3xl font-semibold text-primaryText tracking-widest md:text-4xl mb-4'>Steps for Partnership Firm Registration Online
-                        </h2>
-                        <p className='text-gray-400 max-w-2xl'>
-                            ● Step 1: Submit a Register Partnership Firm Application: The Registrar of Firms in
-                            the state where the company is located must receive an application form and the
-                            required fees. All partners or their representatives must sign and verify the
-                            registration application.<br />
-                            ● Step 2: Choosing the Name of the Partnership Firm: A partnership firm
-                            registration can be referred to by any name. But make sure they abide by the
-                            rules—for example, no two names should be the same, nothing related to the
-                            government, etc.<br />
-                            ● Step 3: Registration Certificate: The firm will be registered in the Register of Firms
-                            and given the Registration Certificate if the Registrar is pleased with the
-                            registration application and supporting documentation. All firms' most recent
-                            information is available in the Register of Firms, which anybody can access for a
-                            fee.<br />
-                        </p>
+                        <img src='/regis/partnership.png' className='mx-auto'/>
                     </div>
                 </section>
 
