@@ -17,20 +17,12 @@ export default function Partnership() {
                             Partnership Company registration in India is an arrangement between two or more
                             people to conduct business operations together. In this type of partnership, profits and
                             liabilities are shared among members, making it a common choice for small businesses
-                            and entrepreneurs. A business established by two or more partners with the goal of
-                            achieving a profit is called a partnership firm registration. There are benefits to
-                            registering a partnership firm. The legal document used to establish a partnership
+                            and entrepreneurs. The legal document used to establish a partnership
                             company registration is known as a partnership deed. The Indian Partnership
                             Registration Act of 1932 is the primary governing partnership registration law in India. A
                             partnership, as defined by the law, is a union of individuals who have consented to
                             divide the profits from a company that they all, or any of them, act for a banking
-                            business. A partnership firm registration can only have a maximum of 10 members,
-                            whereas for other enterprises, it can have a maximum of 20 members. While the
-                            partners are separate legal entities, partnership firms are not. A partnership firm
-                            registration is not permitted to be a debtor, creditor, or property owner. According to the
-                            law, the assets, liabilities, and credit of a partnership registration firm belong to the
-                            partners. To prevent future misunderstandings, the partnership agreement must
-                            specifically state how profits and losses will be distributed among the partners.
+                            business.
                         </p>
                     </div>
                     <Image src='/service/gstPage.svg' alt='Patent' width={600} height={600} />
