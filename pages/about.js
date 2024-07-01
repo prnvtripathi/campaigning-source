@@ -120,12 +120,12 @@ const team = [
         position: "CMO",
         linkedin: "https://www.linkedin.com/"
     },
-    {
-        img: "/team/pranav.jpeg",
-        name: "Mr. Pranav Tripathi",
-        position: "CTO",
-        linkedin: "https://www.linkedin.com/in/tripathipranav14/"
-    },
+    // {
+    //     img: "/team/pranav.jpeg",
+    //     name: "Mr. Pranav Tripathi",
+    //     position: "CTO",
+    //     linkedin: "https://www.linkedin.com/in/tripathipranav14/"
+    // },
     {
         img: "/team/sushant.jpeg",
         name: "Mr. Sushant Sharma",
